@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheMiniCEO – آرشیو</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in آرشیو on TheMiniCEO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa-ir</language>
+    <lastBuildDate>Wed, 30 Jul 2025 09:18:42 +0330</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

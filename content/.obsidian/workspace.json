@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "8dba050661e762fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e8c6b0a6d2997ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d9a9ec2c368f6cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "588f7a70de5a0802",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assessing-product-opportunities.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "assessing-product-opportunities"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82cbc771e43a8099",
+    "type": "split",
+    "children": [
+      {
+        "id": "b79fb83a349371cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ce0edfc3eecc61b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "47c206f2feb8aafb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e3b05f0bda33af6d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b777553720eedd32",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c006a1afda3c633",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "daf263a6691a1cf6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "assessing-product-opportunities.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for assessing-product-opportunities"
+            }
+          },
+          {
+            "id": "c86a66a2ef573c62",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "assessing-product-opportunities.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from assessing-product-opportunities"
+            }
+          },
+          {
+            "id": "99a6c36ed146fb8b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7a5452b94b974d07",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "655d09af2b24dd58",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "assessing-product-opportunities.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of assessing-product-opportunities"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "655d09af2b24dd58",
+  "lastOpenFiles": [
+    "about.md",
+    "articles.md",
+    "_index.md",
+    "docs/Books/کتاب-roadmap.md",
+    "docs/Books/کتاب-lean-analytics.md",
+    "docs/Books/کتاب-inspired.md",
+    "docs/Books/webinar-06-listening.md",
+    "docs/Books/webinar-05-roadmap.md",
+    "docs/Books/talking-to-others.md",
+    "docs/Books/survival-guide-for-product-managers.md",
+    "docs/Books/storytelling-with-data.md",
+    "docs/Books/pm-courses.md",
+    "docs/Books/pm-club.md",
+    "docs/Books/okr-books.md",
+    "docs/Books/human-blockers.md",
+    "docs/Books/build-better-products.md",
+    "docs/Books/behind-every-great-product.md",
+    "docs/Archive/نفوذ-محصول-جدید-در-بازار.md",
+    "docs/Books/_index.md",
+    "docs/Archive/when-remove-features.md",
+    "docs/Archive/چطور-بدون-استفاده-از-چرا-بپرسیم-چرا؟.md",
+    "docs/Archive/بهینه-سازی-نرخ-تبدیل-cro.md",
+    "docs/Archive/اولویت-بندی-فیچرها-ویژگی-ها-۷-روش-برای.md",
+    "download/_index.md",
+    "docs/Books/images/watermark,image_ZGstdy8xLnBuZw==,t_90,g_nw,x_15,y_15",
+    "docs/Books/images/storytelling-with-data.jpg",
+    "docs/Books/images/s-l1200.jpg",
+    "docs/Books/images/71qklvirzml.webp",
+    "docs/Books/images/linear-diagram.jpg",
+    "docs/Books/images/inspired-book-cover.png",
+    "docs/Books/images/image-9.png",
+    "docs/Books/images/image-9-1024x345.png",
+    "docs/Books/images/image-8.png",
+    "docs/Books/images/barchart-diagram.jpg",
+    "docs/Books/images/WhatsApp-Image-2020-09-14-at-4.33.37-PM.jpeg",
+    "docs/Books/images",
+    "docs/Books/_drafts/growth-hacking.md",
+    "docs/Books/_drafts",
+    "download/build-better-products.md",
+    "download/_drafts",
+    "download/images/watermark,image_ZGstdy8xLnBuZw==,t_90,g_nw,x_15,y_15",
+    "download/images",
+    "course/images",
+    "download",
+    "course",
+    "images"
+  ]
+}

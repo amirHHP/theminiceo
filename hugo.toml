@@ -1,0 +1,5 @@
+baseURL = 'https://theminiceo.s3-website.ir-thr-at1.arvanstorage.ir/'
+languageCode = 'fa-ir'
+languagedirection = 'rtl'
+title = 'TheMiniCEO'
+theme = 'hextra'
