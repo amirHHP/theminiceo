@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.148.0  # <--- Change this from 0.128.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -23,7 +23,9 @@ jobs:
         with:
           submodules: recursive
       - name: Build with Hugo
-        run: hugo --minify
+        run: |
+          hugo mod get -u
+          hugo --minify
       
       # The S3 Upload Step
       - name: Deploy to S3
