@@ -35,3 +35,11 @@ jobs:
           AWS_DEFAULT_REGION: 'us-east-1' # Change to your bucket region
         run: |
           aws s3 sync ./public s3://theminiceo --delete
+      - name: Verify Secrets (Debug)
+        run: |
+          if [ -z "${{ secrets.AWS_ACCESS_KEY_ID }}" ]; then
+            echo "AWS_ACCESS_KEY_ID is EMPTY"
+            exit 1
+          else
+            echo "AWS_ACCESS_KEY_ID is set"
+          fi
