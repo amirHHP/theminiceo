@@ -4,7 +4,7 @@ date: 2019-01-29
 categories:
   - product-strategy
 coverImage: positioning.jpg
-url: product-strategy/product-positioning
+aliases: /product-strategy/product-positioning
 ---
 ![](images/positioning.jpg)
   

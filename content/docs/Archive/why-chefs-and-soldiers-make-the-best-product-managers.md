@@ -4,7 +4,7 @@ date: 2021-06-19
 categories:
   - product-articles
 coverImage: Poster.jpg
-url: product-articles/why-chefs-and-soldiers-make-the-best-product-managers
+aliases: /product-articles/why-chefs-and-soldiers-make-the-best-product-managers
 ---
 ![](images/Poster.jpg)
 پنج سال پیش، مدیراجرایی شرکت Clover Health، آقای Wilson Keenan، اولین شغل خود را در سمت مدیریت محصول بدست آورد. قبل از این اتفاق، او یک آشپز بود. آشپزی تنها تجربه کاری ویلسون نبود، اما برای جیم پترسن – شخصی که او را استخدام کرده بود – تجربه منحصر به فردی بود. در واقع، آقای پترسون برای استخدام او به فلسفه‌ای اعتقاد داشت که می‌گوید: آشپزها و سربازان بهترین مدیران محصول را تشکیل می‌دهند.

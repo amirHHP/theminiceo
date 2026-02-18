@@ -4,7 +4,7 @@ date: 2019-03-14
 categories:
   - product-basics
 coverImage: product-roadmap-vs-product-baccklog_featured@2x-1560x760.png
-url: product-basics/roadmap-backlog
+aliases: /product-basics/roadmap-backlog
 ---
 ![](images/product-roadmap-vs-product-baccklog_featured@2x-1560x760.png)
 بک‎لاگ محصول ابزار مهمی برای ثبت ایده‎ها و نیازمندی‌ها است. اما این ابزار برای تشریح روند توسعه احتمالی محصول در بلندمدت کارایی کمتری دارد. در این شرایط، نقشه راه محصول مطرح می‎شود. اما این دو چه ارتباطی با هم دارند؟ آیا بک‎لاگ از نقشه استخراج می‌شود یا برعکس؟ آیا مالک محصول باید مسئول هر دو مورد باشد؟ برای پی بردن به پیشنهاد ما، ادامه مطلب را بخوانید.

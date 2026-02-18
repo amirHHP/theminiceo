@@ -14,7 +14,7 @@ tags:
   - مشاوره-محصول
   - مهارت-مدیریت-محصول
 coverImage: powerpoint-templates-b450.jpg
-url: product-articles/product-strategy-guide
+aliases: /product-articles/product-strategy-guide
 ---
 ![](images/powerpoint-templates-b450.jpg)
 احتمالا شما هم از آن دسته افرادی هستید که ایده‌ای برای انجام دارید یا داشته‌اید. و محصولی را دیده‌ و پیش خود گفتید "اوه، این ایده من بود. من می‌خواستم آن را بسازم!" توسعه همه محصولات در ابتدا با یک ایده شروع می‌شود؛ شاید ایده شما.

@@ -4,7 +4,9 @@ date: 2019-01-25
 categories:
   - product-strategy
 coverImage: product-strategy.jpg
-url: product-strategy/good-product-strategy
+url:
+aliases:
+  - /product-strategy/good-product-strategy
 ---
 ![](images/product-strategy.jpg)
 **استراتژی محصول شما چست؟ بدون شک شما هم یک استراتژی نیاز دارید.**

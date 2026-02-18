@@ -3,7 +3,7 @@ title: PRD چیست؟ راهنمای کامل سند نیازمندی‌های �
 date: 2025-05-30
 categories:
   - product-articles
-url: product-articles/prd
+aliases: /product-articles/prd
 ---
 
 * * *

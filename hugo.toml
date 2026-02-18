@@ -1,5 +1,13 @@
-baseURL = 'https://theminiceo.s3-website.ir-thr-at1.arvanstorage.ir/'
+baseURL = 'https://theminiceo.s3-website.ir-thr-at1.arvanstorage.ir'
 languageCode = 'fa-ir'
 languagedirection = 'rtl'
 title = 'TheMiniCEO'
 theme = 'hextra'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+
+# این خط باعث می‌شود آدرس‌ها از ریشه سایت شروع شوند
+relativeURLs = false
+canonifyURLs = true

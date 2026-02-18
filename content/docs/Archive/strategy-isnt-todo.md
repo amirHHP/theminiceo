@@ -4,7 +4,7 @@ date: 2019-01-31
 categories:
   - product-strategy
 coverImage: todo.jpg
-url: product-strategy/strategy-isnt-todo
+aliases: /product-strategy/strategy-isnt-todo
 ---
 ![](images/todo.jpg)
 استیو بلنک می‌گوید: روزی با دو تن از دانشجویان قدیمی خودم در سنگاپور که در حال راه اندازی یک استارتاپ بسیار جذاب بودند صبحانه می‌خوردم. آن‌ها به شدت درگیر کشف مشتری‌های خود بودند و از میان هزاران مشتری که با آن‌ها صحبت کرده بودند به دنبال پیدا کردن پاسخ برای استراتژی خود بودند:

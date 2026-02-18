@@ -3,7 +3,8 @@ title: مذاکره با ذینفعان ؛ بهترین  توصیه‌ها بر�
 date: 2020-05-01
 categories:
   - product-skills
-url: product-skills/top-tips-negotiating-stakeholders
+aliases:
+  - /product-skills/top-tips-negotiating-stakeholders
 ---
 
 تعابیر زیادی از مهارت‌های یک «مدیر محصول» وجود دارد، «آینده نگری»، «رهبری»، «تصمیم گیری» و خیلی چیزهای دیگر. اما در مذاکره کردن چطور؟ مثلاً مذاکره با ذینفعان. آیا یک مدیر محصول می‌تواند یک «مذاکره کننده» خوب هم باشد؟

@@ -3,7 +3,9 @@ title: تجربه همکاری استارتاپ یادیز با یکی از مو
 date: 2020-12-18
 categories:
   - product-articles
-url: product-articles/corporate-with-enterprise
+url:
+aliases:
+  - /product-articles/corporate-with-enterprise
 ---
 
 _ورود مجموعه‌های کوچک به شرکت‌های بزرگ همواره موانع زیادی دارد. در این مقاله سعی دارم یکی از تجربه‌های شخصیم در رابطه با ورود یک استارتاپ به یک مجموعه بسیار بزرگ و نحوه تعامل با بخش‌های مختلفش رو بگم._

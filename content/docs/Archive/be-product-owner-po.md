@@ -4,7 +4,9 @@ date: 2020-08-23
 categories:
   - product-basics
 coverImage: 0d.jpg
-url: product-basics/be-product-owner-po
+url:
+aliases:
+  - /product-basics/be-product-owner-po
 ---
 ![](images/0d.jpg)
 ## شناسایی انگیزه‌های درونی برای مالک محصول شدن

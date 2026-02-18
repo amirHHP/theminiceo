@@ -6,7 +6,7 @@ categories:
 tags:
   - انتخاب-فیچرها
   - حذف-فیچرها
-url: product-strategy/when-remove-features
+aliases: /product-strategy/when-remove-features
 ---
 
 **کمال محصول** وقتی که چیزی برای اضافه کردن وجود ندارد بدست نمی آید، بلکه وقتی بدست می آید که از قابلیت‌های محصول دیگر فیچری برای حذف کردن وجود ندارد.

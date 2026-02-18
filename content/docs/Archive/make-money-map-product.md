@@ -3,7 +3,7 @@ title: "یک آزمون واقعی: بررسی روش‌های درآمد زای
 date: 2021-01-24
 categories:
   - product-articles
-url: product-articles/make-money-map-product
+aliases: /product-articles/make-money-map-product
 ---
 
 احتمالا تا به حال پیش آمده که برای استخدام به عنوان مدیر محصول صورت مسئله‌ای برای شما تعیین می‌شود و شما لازم است طبق آن تسکی را انجام دهید. تمرین زیر تحلیل یک تسک واقعی برای شرکت کافه بازار است.

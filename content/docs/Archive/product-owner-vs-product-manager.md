@@ -4,7 +4,7 @@ date: 2021-03-06
 categories:
   - product-articles
 coverImage: responsibilities-of-product-owner-1.png
-url: product-articles/product-owner-vs-product-manager
+aliases: /product-articles/product-owner-vs-product-manager
 ---
 ![](images/responsibilities-of-product-owner-1.png)
 در چارچوب [اسکرام](https://www.scrum.org/)، سه نقش متفاوت وجود دارد. مالک محصول، اسکرام مستر و تیم فنی. که در این مطلب نگاهی خواهیم داشت به تعریف مالک محصول، نقش آن در توسعه یک محصول نرم‌افزاری و شرح وظایف یک مالک محصول.

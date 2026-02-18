@@ -4,7 +4,7 @@ date: 2019-04-12
 categories:
   - product-strategy
 coverImage: projectaccounting.jpg
-url: product-strategy/product-metrics
+aliases: /product-strategy/product-metrics
 ---
 ![](images/projectaccounting.jpg)
 اگر یک مدیر محصول هستید بدون شک اهمیت داده-محور بودن در کار خود را می‌دانید. داده-محوری پایه و اساس تمامی محصولات موفق در دنیا بوده است و شاخص‌های محصول هم بخش مهمی از این داده محوری است.

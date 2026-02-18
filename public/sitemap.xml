@@ -26,7 +26,7 @@
     <loc>http://localhost:1313/docs/1-what-is-product-managment/</loc>
     <lastmod>2025-07-30T09:18:42+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/how-okr-help-your-product/</loc>
+    <loc>http://localhost:1313/docs/archive/how-okr-help-your-product/</loc>
     <lastmod>2025-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/product-articles/</loc>
@@ -35,7 +35,7 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/best-product-managment-course/</loc>
+    <loc>http://localhost:1313/docs/archive/best-product-managment-course/</loc>
     <lastmod>2025-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B3%D8%A7%D8%AE%D8%AA-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
@@ -50,7 +50,7 @@
     <loc>http://localhost:1313/tags/%D9%86%D9%88%D8%A2%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
     <lastmod>2025-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/prd/</loc>
+    <loc>http://localhost:1313/docs/archive/prd/</loc>
     <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/course/</loc>
@@ -95,13 +95,13 @@
     <loc>http://localhost:1313/docs/books/talking-to-others/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/you-want-manage-new-product/</loc>
+    <loc>http://localhost:1313/docs/archive/you-want-manage-new-product/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/product-management-frameworks/</loc>
     <lastmod>2023-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-management-frameworks/kano-model/</loc>
+    <loc>http://localhost:1313/docs/archive/kano-model/</loc>
     <lastmod>2023-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D9%85%D8%AF%D9%84-%DA%A9%D8%A7%D9%86%D9%88/</loc>
@@ -113,17 +113,14 @@
     <loc>http://localhost:1313/tags/%DA%86%D8%B1%D8%A7/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/%DA%86%D8%B7%D9%88%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%DA%86%D8%B1%D8%A7-%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D9%85-%DA%86%D8%B1%D8%A7%D8%9F/</loc>
+    <loc>http://localhost:1313/docs/archive/%DA%86%D8%B7%D9%88%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%DA%86%D8%B1%D8%A7-%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D9%85-%DA%86%D8%B1%D8%A7/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B1%D9%88%D8%B4-%D8%B5%D8%AD%DB%8C%D8%AD-%D8%B3%D8%A4%D8%A7%D9%84-%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF%D9%86/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/workplace-politics/</loc>
+    <loc>http://localhost:1313/docs/archive/workplace-politics/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/%D9%BE%D8%B1%D8%B3%D8%B4-%D9%88-%D9%BE%D8%A7%D8%B3%D8%AE-%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%B4%D8%BA%D9%84%DB%8C-%D9%85%D8%A7%D9%84%DA%A9-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
-    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/online-business-webinar/</loc>
     <lastmod>2021-10-15T00:00:00+00:00</lastmod>
@@ -134,10 +131,10 @@
     <loc>http://localhost:1313/categories/teamwork/</loc>
     <lastmod>2021-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/teamwork/who-is-cofounder/</loc>
+    <loc>http://localhost:1313/docs/archive/who-is-cofounder/</loc>
     <lastmod>2021-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/dealing-with-difficult-stakeholders/</loc>
+    <loc>http://localhost:1313/docs/archive/dealing-with-difficult-stakeholders/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/course/survival-guide-for-pm/</loc>
@@ -152,20 +149,8 @@
     <loc>http://localhost:1313/product-managment-course/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/%D9%86%D9%81%D9%88%D8%B0-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1/</loc>
+    <loc>http://localhost:1313/docs/archive/%D9%86%D9%81%D9%88%D8%B0-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dashboard/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/memberships/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/purchase/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/product-marketing/</loc>
     <lastmod>2021-08-28T00:00:00+00:00</lastmod>
@@ -173,7 +158,7 @@
     <loc>http://localhost:1313/tags/%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C/</loc>
     <lastmod>2021-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/product-marketing/</loc>
+    <loc>http://localhost:1313/docs/archive/product-marketing/</loc>
     <lastmod>2021-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
@@ -194,7 +179,7 @@
     <loc>http://localhost:1313/tags/%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/product-strategy-guide/</loc>
+    <loc>http://localhost:1313/docs/archive/product-strategy-guide/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
@@ -203,10 +188,10 @@
     <loc>http://localhost:1313/tags/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/why-chefs-and-soldiers-make-the-best-product-managers/</loc>
+    <loc>http://localhost:1313/docs/archive/why-chefs-and-soldiers-make-the-best-product-managers/</loc>
     <lastmod>2021-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/supperapp-opportunity/</loc>
+    <loc>http://localhost:1313/docs/archive/supperapp-opportunity/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/customer-inspired/</loc>
@@ -215,7 +200,7 @@
     <loc>http://localhost:1313/tags/customer-inspired-2/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/customer-inspired/</loc>
+    <loc>http://localhost:1313/docs/archive/customer-inspired/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%A7%D9%84%D9%87%D8%A7%D9%85-%D8%A7%D8%B2-%D9%85%D8%B4%D8%AA%D8%B1%DB%8C/</loc>
@@ -227,7 +212,7 @@
     <loc>http://localhost:1313/tags/%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D9%86%D8%A7%D8%A8/</loc>
     <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/%D8%A7%D9%87%D8%AF%D8%A7%D9%81-%D9%88-%D9%86%D8%AA%D8%A7%DB%8C%D8%AC-%DA%A9%D9%84%DB%8C%D8%AF%DB%8Cokr/</loc>
+    <loc>http://localhost:1313/docs/archive/%D8%A7%D9%87%D8%AF%D8%A7%D9%81-%D9%88-%D9%86%D8%AA%D8%A7%DB%8C%D8%AC-%DA%A9%D9%84%DB%8C%D8%AF%DB%8Cokr/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B4%D9%86%D8%A7%D8%AE%D8%AA-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86/</loc>
@@ -236,22 +221,22 @@
     <loc>http://localhost:1313/tags/%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/found-product-manager-role/</loc>
+    <loc>http://localhost:1313/docs/archive/found-product-manager-role/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/15-key-product-management-metrics-and-kpis/</loc>
+    <loc>http://localhost:1313/docs/archive/15-key-product-management-metrics-and-kpis/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/product-owner-vs-product-manager/</loc>
+    <loc>http://localhost:1313/docs/archive/product-owner-vs-product-manager/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/%D8%A7%D9%88%D9%84%D9%88%DB%8C%D8%AA-%D8%A8%D9%86%D8%AF%DB%8C-%D9%81%DB%8C%DA%86%D8%B1%D9%87%D8%A7-%D9%88%DB%8C%DA%98%DA%AF%DB%8C-%D9%87%D8%A7-%DB%B7-%D8%B1%D9%88%D8%B4-%D8%A8%D8%B1%D8%A7%DB%8C/</loc>
+    <loc>http://localhost:1313/docs/archive/%D8%A7%D9%88%D9%84%D9%88%DB%8C%D8%AA-%D8%A8%D9%86%D8%AF%DB%8C-%D9%81%DB%8C%DA%86%D8%B1%D9%87%D8%A7-%D9%88%DB%8C%DA%98%DA%AF%DB%8C-%D9%87%D8%A7-%DB%B7-%D8%B1%D9%88%D8%B4-%D8%A8%D8%B1%D8%A7%DB%8C/</loc>
     <lastmod>2021-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/1819/</loc>
+    <loc>http://localhost:1313/docs/archive/1819/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/smart/</loc>
@@ -260,7 +245,7 @@
     <loc>http://localhost:1313/tags/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%B1%D9%88%D8%B4-%D9%87%D8%AF%D9%81-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C/</loc>
     <lastmod>2021-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/smart_goal/</loc>
+    <loc>http://localhost:1313/docs/archive/smart_goal/</loc>
     <lastmod>2021-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D9%87%D8%AF%D9%81-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C/</loc>
@@ -287,7 +272,7 @@
     <loc>http://localhost:1313/tags/%D8%B3%D9%86%D8%AC%D9%87/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/key_performance_indicator/</loc>
+    <loc>http://localhost:1313/docs/archive/key_performance_indicator/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%B4%D8%A7%D8%AE%D8%B5-%DA%A9%D9%84%DB%8C%D8%AF%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF/</loc>
@@ -308,28 +293,28 @@
     <loc>http://localhost:1313/tags/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A8%DA%A9-%D9%84%D8%A7%DA%AF-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/8-different-ways-to-organize-backlog/</loc>
+    <loc>http://localhost:1313/docs/archive/8-different-ways-to-organize-backlog/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/%D8%A8%D9%87%DB%8C%D9%86%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%86%D8%B1%D8%AE-%D8%AA%D8%A8%D8%AF%DB%8C%D9%84-cro/</loc>
+    <loc>http://localhost:1313/docs/archive/%D8%A8%D9%87%DB%8C%D9%86%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%86%D8%B1%D8%AE-%D8%AA%D8%A8%D8%AF%DB%8C%D9%84-cro/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/make-money-map-product/</loc>
+    <loc>http://localhost:1313/docs/archive/make-money-map-product/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/intro-for-product-managment/</loc>
+    <loc>http://localhost:1313/docs/archive/intro-for-product-managment/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/product-discovery/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/%D8%AC%D8%B1%DB%8C%D8%A7%D9%86-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1-%DB%8C%D8%A7-user-flow-%DA%86%D8%B7%D9%88%D8%B1-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%85%DB%8C%E2%80%8C%D8%B4%D9%88%D8%AF%D8%9F/</loc>
+    <loc>http://localhost:1313/docs/archive/%D8%AC%D8%B1%DB%8C%D8%A7%D9%86-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1-%DB%8C%D8%A7-user-flow-%DA%86%D8%B7%D9%88%D8%B1-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%85%DB%8C%D8%B4%D9%88%D8%AF/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-articles/corporate-with-enterprise/</loc>
+    <loc>http://localhost:1313/docs/archive/corporate-with-enterprise/</loc>
     <lastmod>2020-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/product-strategy/</loc>
@@ -341,13 +326,13 @@
     <loc>http://localhost:1313/tags/%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/market-analysis/</loc>
+    <loc>http://localhost:1313/docs/archive/market-analysis/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/product-basics/</loc>
     <lastmod>2020-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/survival-guide-for-product-managers-intro/</loc>
+    <loc>http://localhost:1313/docs/archive/survival-guide-for-product-managers-intro/</loc>
     <lastmod>2020-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/books/human-blockers/</loc>
@@ -359,7 +344,7 @@
     <loc>http://localhost:1313/docs/books/webinar-06-listening/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/be-product-owner-po/</loc>
+    <loc>http://localhost:1313/docs/archive/be-product-owner-po/</loc>
     <lastmod>2020-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/books/webinar-05-roadmap/</loc>
@@ -371,73 +356,55 @@
     <loc>http://localhost:1313/tags/%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/</loc>
     <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/what-makes-a-great-product-manager/</loc>
+    <loc>http://localhost:1313/docs/archive/what-makes-a-great-product-manager/</loc>
     <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/register/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/books/behind-every-great-product/</loc>
     <lastmod>2020-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/%D9%BE%D8%B1%D8%AF%D8%A7%D8%AE%D8%AA/</loc>
-    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/%D8%AA%D8%A3%DB%8C%DB%8C%D8%AF-%D9%BE%D8%B1%D8%AF%D8%A7%D8%AE%D8%AA/</loc>
-    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/%D8%AA%D8%B1%D8%A7%DA%A9%D9%86%D8%B4-%D9%86%D8%A7%D9%85%D9%88%D9%81%D9%82/</loc>
-    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/%D8%B3%D9%88%D8%A7%D8%A8%D9%82-%D8%AE%D8%B1%DB%8C%D8%AF/</loc>
-    <lastmod>2020-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/product-skills/strategic-planning-process/</loc>
+    <loc>http://localhost:1313/docs/archive/strategic-planning-process/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/being-technical-enough-as-a-product-manager/</loc>
+    <loc>http://localhost:1313/docs/archive/being-technical-enough-as-a-product-manager/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/top-tips-negotiating-stakeholders/</loc>
+    <loc>http://localhost:1313/docs/archive/top-tips-negotiating-stakeholders/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/addressing-executive-swoop-ins/</loc>
+    <loc>http://localhost:1313/docs/archive/addressing-executive-swoop-ins/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/podcast/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/podcast/buildermind-s01e01-product-or-project/</loc>
+    <loc>http://localhost:1313/docs/archive/buildermind-s01e01-product-or-project/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D9%BE%D8%B1%D9%88%DA%98%D9%87/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/the-best-teams-hold-themselves-accountable/</loc>
+    <loc>http://localhost:1313/docs/archive/the-best-teams-hold-themselves-accountable/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/product-management-tools/</loc>
+    <loc>http://localhost:1313/docs/archive/product-management-tools/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/simple-lessons-i-learned-as-a-product-manager/</loc>
+    <loc>http://localhost:1313/docs/archive/simple-lessons-i-learned-as-a-product-manager/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/product-manager-guide-to-competitive-analysis/</loc>
+    <loc>http://localhost:1313/docs/archive/product-manager-guide-to-competitive-analysis/</loc>
     <lastmod>2020-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/shareable-map/</loc>
+    <loc>http://localhost:1313/docs/archive/shareable-map/</loc>
     <lastmod>2020-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learn-product-management/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%88-%D9%85%D9%86%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF-%D9%85%D8%AF%DB%8C%D8%B1-%D9%85%D8%AD%D8%B5%D9%88%D9%84/</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D9%81%DB%8C%DA%86%D8%B1%D9%87%D8%A7/</loc>
     <lastmod>2019-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/when-remove-features/</loc>
+    <loc>http://localhost:1313/docs/archive/when-remove-features/</loc>
     <lastmod>2019-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%D8%AD%D8%B0%D9%81-%D9%81%DB%8C%DA%86%D8%B1%D9%87%D8%A7/</loc>
@@ -455,64 +422,61 @@
     <loc>http://localhost:1313/frameworks/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/userstory-mapping/</loc>
+    <loc>http://localhost:1313/docs/archive/userstory-mapping/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/sample-question/</loc>
+    <loc>http://localhost:1313/docs/archive/sample-question/</loc>
     <lastmod>2019-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/product-brain-storming/</loc>
+    <loc>http://localhost:1313/docs/archive/product-brain-storming/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/product-metrics/</loc>
+    <loc>http://localhost:1313/docs/archive/product-metrics/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/product-team-performance/</loc>
+    <loc>http://localhost:1313/docs/archive/product-team-performance/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/authentic-listening/</loc>
+    <loc>http://localhost:1313/docs/archive/authentic-listening/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/roadmap-backlog/</loc>
+    <loc>http://localhost:1313/docs/archive/roadmap-backlog/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/customer-development/</loc>
+    <loc>http://localhost:1313/docs/archive/customer-development/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-skills/7-skills-for-product-management/</loc>
+    <loc>http://localhost:1313/docs/archive/7-skills-for-product-management/</loc>
     <lastmod>2019-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/jobs-to-be-done-100interview/</loc>
+    <loc>http://localhost:1313/docs/archive/jobs-to-be-done-100interview/</loc>
     <lastmod>2019-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/backward-working/</loc>
+    <loc>http://localhost:1313/docs/archive/backward-working/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-discovery/4-step-to-produce-product/</loc>
+    <loc>http://localhost:1313/docs/archive/4-step-to-produce-product/</loc>
     <lastmod>2019-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-basics/good-bad-product-manager/</loc>
+    <loc>http://localhost:1313/docs/archive/good-bad-product-manager/</loc>
     <lastmod>2019-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/navigation-product/</loc>
+    <loc>http://localhost:1313/docs/archive/navigation-product/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/product-consultant/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/strategy-isnt-todo/</loc>
+    <loc>http://localhost:1313/docs/archive/strategy-isnt-todo/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/product-positioning/</loc>
+    <loc>http://localhost:1313/docs/archive/product-positioning/</loc>
     <lastmod>2019-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product-strategy/good-product-strategy/</loc>
+    <loc>http://localhost:1313/docs/archive/good-product-strategy/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/privacy-policy/</loc>
-    <lastmod>2019-01-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/</loc>
     <lastmod>2019-01-24T00:00:00+00:00</lastmod>
   </url>
 </urlset>

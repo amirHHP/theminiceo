@@ -13,7 +13,7 @@ tags:
   - مشاوره-محصول
   - مهارت-مدیریت-محصول
 coverImage: Untitled.jpg
-url: product-articles/product-marketing
+aliases: /product-articles/product-marketing
 ---
 ![saleh](images/Untitled.jpg)
 <script type="text/JavaScript" src="https://www.aparat.com/embed/3iSg7?data[rnddiv]=6071029452&amp;data[responsive]=yes&amp;data[title]=%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%DB%8C%D8%A7%20Product%20Marketing"></script>

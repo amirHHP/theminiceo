@@ -4,7 +4,9 @@ date: 2019-02-24
 categories:
   - product-discovery
 coverImage: jobs-to-be-done-example-super-mario-e1551217004894.png
-url: product-discovery/jobs-to-be-done-100interview
+url:
+aliases:
+  - /product-discovery/jobs-to-be-done-100interview
 ---
 ![](images/jobs-to-be-done-example-super-mario-e1551217004894.png)
 تقریبا دو سال پیش بود که در دفتر شرکت 37signals در حال گوش دادن به پادکستی از Jason Fried, Bob Moesta و Chris Spiek بودم که درباره استفاده از چارچوب JTBD برای فهمیدن اینکه چرا کاربران شما از یک محصول به محصول دیگر مهاجرت می کنند صحبت می کردند.

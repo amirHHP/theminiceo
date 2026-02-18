@@ -4,7 +4,9 @@ date: 2021-01-21
 categories:
   - product-skills
 coverImage: product-team.jpg
-url: product-skills/intro-for-product-managment
+url:
+aliases:
+  - /product-skills/intro-for-product-managment
 ---
 ![](images/product-team.jpg)
 مدیریت محصول یک نقش سازمانی است. معمولا مدیران محصول را در شرکت‌هایی پیدا می‌کنید که محصولات بر پایه تکنولوژی برای مشتریان خود یا حتی استفاده داخلی توسعه می‌دهند. این نقش به نوعی تکامل یافته نقشی به نام مدیر برند است که در شرکت‌های تولید کننده کالاهای مصرفی و بسته‌بندی شده دیده می‌شود.

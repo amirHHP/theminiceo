@@ -4,7 +4,9 @@ date: 2020-04-28
 categories:
   - product-skills
 coverImage: 1552842042.jpg
-url: product-skills/addressing-executive-swoop-ins
+url:
+aliases:
+  - /product-skills/addressing-executive-swoop-ins
 ---
 ![](images/1552842042.jpg)
 موثرترین روش برای جلوگیری از دستورالعمل‌های اجرایی یا کارهای ناخواسته در مدیریت محصول که من یا تیمم احساس کنیم می‌تواند برای محصول مضر باشد چیست؟

@@ -1,7 +1,8 @@
 ---
 title: "شرکت در وبینار ۲۸ شهریور: گوش دادن ناب"
 date: 2020-09-11
-url: downloads/webinar-06-listening/
+aliases:
+  - /downloads/webinar-06-listening/
 ---
 
 ![](images/WhatsApp-Image-2020-09-14-at-4.33.37-PM.jpeg)

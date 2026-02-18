@@ -4,7 +4,8 @@ date: 2021-09-26
 categories:
   - teamwork
 coverImage: co-founder.jpg
-url: teamwork/who-is-cofounder
+aliases:
+  - /teamwork/who-/is-cofounder
 ---
 ![](images/co-founder.jpg)
 یکی از کلیدی‌ترین نیازهای یک استارتاپ هم بنیان گذار یا Co Founder است. اون شریک شما در راه اندازی کسب و کار بوده و معمولا سهام دار شرکت نیز است.

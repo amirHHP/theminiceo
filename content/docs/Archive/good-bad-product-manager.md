@@ -4,7 +4,9 @@ date: 2019-02-04
 categories:
   - product-basics
 coverImage: good-bad-pm.jpg
-url: product-basics/good-bad-product-manager
+url:
+aliases:
+  - /product-basics/good-bad-product-manager
 ---
 ![](images/good-bad-pm.jpg)
   

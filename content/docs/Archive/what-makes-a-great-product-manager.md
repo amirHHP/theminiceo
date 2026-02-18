@@ -7,7 +7,7 @@ tags:
   - ارتباطات
   - اعتماد
 coverImage: 1_MOZG38PzkQjT_iQXH6SvKQ.png
-url: product-basics/what-makes-a-great-product-manager
+aliases: /product-basics/what-makes-a-great-product-manager
 ---
 ![](images/1_MOZG38PzkQjT_iQXH6SvKQ.png)
 >  "اگر به استارتاپ‌های موفق دقت کنید، تعداد کمی از آنها محصول خود را با تقلید از سایر استارتاپ‌ها ساخته‌اند. این استارتاپ‌ها ایده خود را از کجا پیدا کرده‌اند؟ بنیان‌گذاران استارتاپ‌ها معمولا مشکلات خاص و حل نشده را حل می‌کنند"

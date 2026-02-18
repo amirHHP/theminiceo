@@ -2,7 +2,8 @@
 title: کتاب Lean Analytics
 date: 2024-09-12
 coverImage: 71qklvirzml.webp
-url: downloads/%da%a9%d8%aa%d8%a7%d8%a8-lean-analytics/
+aliases:
+  - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-lean-analytics/
 ---
 ![](images/71qklvirzml.webp)
 **عنوان: بهبود تصمیم‌گیری کسب‌وکار با استفاده از تحلیل‌های ناب**

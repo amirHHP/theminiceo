@@ -3,7 +3,7 @@ title: چطور در تحلیل رقبا مدیر محصول خوبی باشیم
 date: 2020-03-15
 categories:
   - product-skills
-url: product-skills/product-manager-guide-to-competitive-analysis
+aliases: /product-skills/product-manager-guide-to-competitive-analysis
 ---
 
 اگرچه برای اینکه بتونیم در تحلیل رقبا موفق و سرآمد باشیم، باید تجربه‌ی طولانی و خوبی در این کار کسب کرده باشیم، اما تکنیک‌های خاصی هم وجود دارد که با یادگیری آن‌ها می‌شود مهارت‌هایمان را در تحلیل رقبا بهبود بخشیم. بیایید با هم برخی از تکنیک‌های مخصوص تحلیل رقبا برای یک مدیر محصول را مرور کنیم.

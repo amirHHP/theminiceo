@@ -4,7 +4,9 @@ date: 2021-09-19
 categories:
   - product-articles
 coverImage: mainPic.jpg
-url: product-articles/dealing-with-difficult-stakeholders
+url:
+aliases:
+  - /product-articles/dealing-with-difficult-stakeholders
 ---
 ![](images/mainPic.jpg)
 آیا تابه‌حال پروژه‌تان را به دلیل اینکه یکی از [ذینفعان](https://theminiceo.ir/product-skills/top-tips-negotiating-stakeholders/) اصلی به شما «نه» گفته، متوقف کرده‌اید؟ آیا تابه‌حال با ذینفعانی از پروژه برخورد داشته‌اید که در مواقع حساس، سر و کله‌شان پیدا نیست؟ من فکر می‌کنم همه ما تابه‌حال در طول حرفه خود، در تعامل با ذینفعان سرسختی مواجه شده‌ایم.

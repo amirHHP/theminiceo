@@ -2,7 +2,8 @@
 title: کتاب Build Better Products
 date: 2024-09-12
 coverImage: 61haR7LtOhL._AC_UF8941000_QL80_.jpg
-url: downloads/build-better-products/
+aliases:
+  - /downloads/build-better-products/
 ---
 ![](images/61haR7LtOhL._AC_UF8941000_QL80_.jpg)
 **عنوان: چگونه محصولات موفق با تمرکز بر کاربران بسازیم؟**

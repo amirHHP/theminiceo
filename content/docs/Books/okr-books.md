@@ -2,7 +2,8 @@
 title: مجموعه کتاب‌های OKR
 date: 2021-09-28
 coverImage: 5cc6f8fbad143af6c903ab12_Measure-what-matters.png
-url: downloads/okr-books/
+aliases:
+  - /downloads/okr-books/
 ---
 ![okr](images/5cc6f8fbad143af6c903ab12_Measure-what-matters.png)
 OKR مخفف عبارت Objective & Key Results بوده و به معنای “اهداف و نتایج کلیدی” است. در مدل او کی آر، راهکارهایی برای تعریف و پیگیری اهداف و ارزیابی نتایج آن‌‌ها معمولاً به صورت فصلی (۳‌ماهه) و سالانه پیگیری می‌شود.

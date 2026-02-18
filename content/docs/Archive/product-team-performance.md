@@ -4,7 +4,7 @@ date: 2019-03-29
 categories:
   - product-skills
 coverImage: team-aligned.jpg
-url: product-skills/product-team-performance
+aliases: /product-skills/product-team-performance
 ---
 ![](images/team-aligned.jpg)
 با وجود اینکه اعضای تیم محصول درباره متریک‌های(سنجه ها) خود برای اندازه گیری محصول و سرعت تیم فنی نگران هستند، جامعه مدیران محصول خیلی به دنبال سنجه هایی برای بررسی عملکرد اعضای تیم محصول نبوده‌اند.  

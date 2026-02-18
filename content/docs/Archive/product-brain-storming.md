@@ -5,7 +5,7 @@ categories:
   - product-discovery
   - product-skills
 coverImage: brainstorm.jpg
-url: product-skills/product-brain-storming
+aliases: /product-skills/product-brain-storming
 ---
 ![](images/brainstorm.jpg)
 به‌عنوان رهبر محصول ایده های بسیار زیادی در سر دارید. اگر تیم شما تیمی کوچک باشد احتمالا شما به صورت مستقیم ایده‌های خود را بدون اینکه از دیگران اطلاعاتی بدست بیاورید یا پرس‌و‌جو کنید  وارد چرخه توسعه محصول می‌کنید. درصورتی‌که می‌توانید با برگزاری جلسه طوفان فکری به راحتی تیم را درگیر محصول کنید.

@@ -4,7 +4,9 @@ date: 2020-05-16
 categories:
   - product-skills
 coverImage: technical-as-a-product-manager-TheMiniCEO.jpg
-url: product-skills/being-technical-enough-as-a-product-manager
+url:
+aliases:
+  - /product-skills/being-technical-enough-as-a-product-manager
 ---
 ![](images/technical-as-a-product-manager-TheMiniCEO.jpg)
 > «اگر فنی نیستی چرا برای شغل مدیریت محصول آمدی؟»

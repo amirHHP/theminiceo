@@ -8,7 +8,9 @@ tags:
   - ساخت-محصول
   - پروژه
 coverImage: WhatsApp-Image-2020-04-03-at-1.20.14-PM.jpeg
-url: podcast/buildermind-s01e01-product-or-project
+url:
+aliases:
+  - /podcast/buildermind-s01e01-product-or-project
 ---
 ![](images/WhatsApp-Image-2020-04-03-at-1.20.14-PM.jpeg)
 [اولین قسمت پادکست بیلدرمایند](https://castbox.fm/episode/%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84%3A-%D9%BE%D8%B1%D9%88%DA%98%D9%87-%DB%8C%D8%A7-%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%9F-%DB%8C%DA%A9-%D8%AC%D9%86%DA%AF-%D9%86%D8%A7%D8%AA%D9%85%D8%A7%D9%85-id2733555-id247085390) منتشر شد.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/memberships.md",
+                "file": "content/docs/books/کتاب-lean-analytics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memberships"
+              "title": "کتاب-lean-analytics"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/memberships.md",
+                "file": "content/docs/Books/کتاب-inspired.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for memberships"
+              "title": "Backlinks for کتاب-inspired"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/memberships.md",
+                "file": "content/docs/Books/کتاب-inspired.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from memberships"
+              "title": "Outgoing links from کتاب-inspired"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/memberships.md",
+                "file": "content/docs/Books/کتاب-inspired.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of memberships"
+              "title": "Outline of کتاب-inspired"
             }
           },
           {
@@ -196,19 +196,51 @@
   },
   "active": "281d68a0cdbdcd0b",
   "lastOpenFiles": [
-    "content/online-business-webinar.md",
-    "content/product-managment-course.md",
-    "content/پرسش-و-پاسخ-مصاحبه-شغلی-مالک-محصول.md",
-    "content/product-consultant.md",
-    "content/privacy-policy.md",
-    "content/purchase.md",
-    "content/register.md",
-    "content/آموزش،-مشاوره-و-منتورینگ-مدیر-محصول.md",
-    "content/پرداخت.md",
-    "content/تأیید-پرداخت.md",
-    "content/تراکنش-ناموفق.md",
-    "content/سوابق-خرید.md",
-    "content/about.md",
-    "theminiceo"
+    "content/docs/books/کتاب-roadmap.md",
+    "content/docs/books/کتاب-lean-analytics.md",
+    "content/docs/books/کتاب-inspired.md",
+    "content/docs/books/webinar-06-listening.md",
+    "content/docs/books/webinar-05-roadmap.md",
+    "content/docs/books/talking-to-others.md",
+    "content/docs/books/survival-guide-for-product-managers.md",
+    "content/docs/books/storytelling-with-data.md",
+    "content/docs/books/pm-courses.md",
+    "content/docs/books/pm-club.md",
+    "content/docs/books/okr-books.md",
+    "content/docs/archive/15-key-product-management-metrics-and-kpis.md",
+    "content/docs/books/human-blockers.md",
+    "content/docs/books/build-better-products.md",
+    "content/docs/books/behind-every-great-product.md",
+    "content/_index.md",
+    "public/images/1599932768_hu_9c0bdc500b058ffb.webp",
+    "resources/_gen/images/images/1599932768_hu_9c0bdc500b058ffb.webp",
+    "public/images/1590308269_hu_b53ac3c89aeb9ce.webp",
+    "resources/_gen/images/images/1590308269_hu_b53ac3c89aeb9ce.webp",
+    "public/images/1690818488-1024x944_hu_db40c21f204df7f4.webp",
+    "resources/_gen/images/images/1690818488-1024x944_hu_db40c21f204df7f4.webp",
+    "public/images/1599932837-1024x944_hu_bcd2db0f36724fad.webp",
+    "resources/_gen/images/images/1599932837-1024x944_hu_bcd2db0f36724fad.webp",
+    "resources/_gen/images/images",
+    "resources/_gen/images",
+    "resources/_gen",
+    "resources",
+    "content/docs/archive/authentic-listening.md",
+    "public/product-skills/top-tips-negotiating-stakeholders/index.html",
+    "public/product-skills/top-tips-negotiating-stakeholders",
+    "public/product-articles/key_performance_indicator/index.html",
+    "public/product-articles/key_performance_indicator",
+    "public/product-management-frameworks/kano-model/index.html",
+    "public/product-management-frameworks/kano-model",
+    "content/docs/archive/when-remove-features.md",
+    "content/docs/archive/نفوذ-محصول-جدید-در-بازار.md",
+    "content/docs/archive/چطور-بدون-استفاده-از-چرا-بپرسیم-چرا؟.md",
+    "content/docs/archive/جریان-کاربر-یا-user-flow-چطور-طراحی-می‌شود؟.md",
+    "content/docs/archive/بهینه-سازی-نرخ-تبدیل-cro.md",
+    "content/docs/archive/اولویت-بندی-فیچرها-ویژگی-ها-۷-روش-برای.md",
+    "content/docs/archive/اهداف-و-نتایج-کلیدیokr.md",
+    "content/docs/archive/you-want-manage-new-product.md",
+    "content/docs/archive/workplace-politics.md",
+    "public/docs/archive/images/۶.jpg",
+    "public/docs/archive/images/۲.jpg"
   ]
 }

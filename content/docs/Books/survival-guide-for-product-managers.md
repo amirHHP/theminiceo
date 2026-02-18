@@ -2,7 +2,8 @@
 title: کتاب راهنمای بقای مدیر محصول
 date: 2020-09-16
 coverImage: 1599932837.png
-url: downloads/survival-guide-for-product-managers/
+aliases:
+  - /downloads/survival-guide-for-product-managers/
 ---
 ![](images/1599932837.png)
 در کتاب راهنمای بقای مدیر محصول با مدیریت محصولات در سازما‌ن‌های مبهم آشنا می‌شوید.

@@ -4,7 +4,7 @@ date: 2020-05-22
 categories:
   - product-skills
 coverImage: Strategic-Planning-Process-TheMiniCEO.png
-url: product-skills/strategic-planning-process
+aliases: /product-skills/strategic-planning-process
 ---
 ![](images/Strategic-Planning-Process-TheMiniCEO.png)
 تلاش برای ایجاد یک کسب و کار جدید و یا یک رویکرد نوآورانه، می‌ ­تواند بسیار خسته­ کننده باشد. در ابتدا باید بدانید که کجا می­‌خواهید باشید، سپس در رابطه با چگونگی دستیابی به آن برنامه‌­ریزی کنید. همه‌­ی این­ مسائل در حالی است که قبلاً این کارها را انجام نداده­‌اید، از این رو می‌­تواند بسیار دلهر‌ه‌­آور و آزاردهنده باشد. این فرآیند می‌­تواند به برنامه ریزی راهبردی شما جهت دهد، به شما کمک کند که ناامید نباشید و احساس کنید که اوضاع را تحت کنترل دارید.

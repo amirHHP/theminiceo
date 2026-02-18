@@ -12,7 +12,7 @@ tags:
   - مدل-هدف-گذاری-smart
   - هدف
   - هدف-گذاری
-url: product-articles/smart_goal
+aliases: /product-articles/smart_goal
 ---
 
 ![SMART](images/SMART.jpg)

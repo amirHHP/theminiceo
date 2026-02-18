@@ -3,17 +3,10 @@ title: "ارزیابی فرصت‌های محصول"
 date: 2019-06-08
 ---
 
-<figure>
 
-![](images/product_opportunities-1.png)
 
-<figcaption>
+![ارزیابی فرصت‌های محصول](images/product_opportunities-1.png)
 
-ارزیابی فرصت‌های محصول
-
-</figcaption>
-
-</figure>
 
 مارتین کاگن بنیانگذار استارتاپ Silicon Valley Product اولین کسی بود که مفهوم ارزیابی فرصت‌های محصول یا Product Opportunity Assessment را بکار برد. این مفهومن نمونه‌ای ساده‌تر و البته کاربردی‌تر از Product Requirement Document یا همان PRD می‌باشد و هدف ان در وهله اول پیشگیری از هدر دادن منابع خود بر روی فرصت‌های ضعیف و همچنین به اشتراک گذاری درک متقابل و همگانی از فرصت بوجود آمده می‌باشد.
 

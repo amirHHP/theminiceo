@@ -2,9 +2,10 @@
 title: کتاب INSPIRED
 date: 2024-09-12
 coverImage: inspired-book-cover.png
-url: downloads/%da%a9%d8%aa%d8%a7%d8%a8-inspired/
+aliases:
+  - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-inspired/
 ---
-![](images/inspired-book-cover.png)
+![](./images/inspired-book-cover.png)
 **عنوان: چگونه محصولات تکنولوژیکی را بسازیم که مشتریان عاشق آن شوند؟**
 
 **مقدمه:** در دنیای پرسرعت فناوری، خلق محصولاتی که نه تنها نیازهای مشتریان را برآورده کنند بلکه آن‌ها را به وجد آورند، یک چالش بزرگ است. کتاب "INSPIRED" نوشته‌ی مارتی کیگان یکی از بهترین منابع برای یادگیری نحوه‌ی ایجاد محصولات تکنولوژیکی موفق است.

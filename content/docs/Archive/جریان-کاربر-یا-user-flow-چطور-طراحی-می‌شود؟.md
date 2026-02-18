@@ -4,7 +4,7 @@ date: 2021-01-17
 categories:
   - product-discovery
 coverImage: Picture1-1.png
-url: product-discovery/جریان-کاربر-یا-user-flow-چطور-طراحی-می‌شود؟
+aliases: /product-discovery/جریان-کاربر-یا-user-flow-چطور-طراحی-می‌شود؟
 ---
 ![](images/Picture1-1.png)
 جریان کاربر از بسیاری جهات قابل تفسیر است. می‌تواند به عنوان یک نمای کلی که توصیف می کند کاربران کجا می توانند در محصول شما پیمایش کنند تلقی شود.

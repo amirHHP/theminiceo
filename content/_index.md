@@ -17,14 +17,15 @@ coverImage:
 
 
 {{< cards >}}
-  {{< card link="../docs/Archive" title="دسترسی به آرشیو مقالات" icon="warning" >}}
+  {{< card link="../docs/archive" title="دسترسی به آرشیو مقالات" icon="warning" >}}
 {{< /cards >}}
 
 
 {{< cards >}}
-  {{< card link="/" title="راهنمای بقای مدیر محصول" image="https://theminiceo.ir/wp-content/uploads/1599932837-1024x944.png" subtitle="هدف این کتاب، ارائه راهکارهای مناسب به مدیران محصول و توضیح توانمندی های لازم برای ورود به این عرصه است." >}}
-  {{< card link="/" title="Local Image" image="https://theminiceo.ir/wp-content/uploads/1690818488-768x708.png" subtitle="Raw image under static directory." >}}
-  {{< card link="/" title="Local Image" image="images/space.jpg" subtitle="Image under assets directory, processed by Hugo." method="Resize" options="600x q80 webp" >}}
+  {{< card link="docs/books/survival-guide-for-product-managers" title="راهنمای بقای مدیر محصول" image="images/1599932837-1024x944.png" subtitle="هدف این کتاب، ارائه راهکارهای مناسب به مدیران محصول و توضیح توانمندی های لازم برای ورود به این عرصه است." >}}
+  {{< card link="docs/books/talking-to-others" title="کتاب گفتگو با دیگران" image="images/1690818488-1024x944.png" subtitle="**گفتگو با دیگران** به شیوهای جامع و در عین حال مختصر و در دسترس به شما می‌آموزد که چگونه از ساختمان خارج شوید." >}}
+  {{< card link="docs/books/behind-every-great-product" title=" پشت پرده هر محصول عالی" image="images/1590308269.png" subtitle="تک تک اعضای تیم محصول مهم هستند. یک شرکت برای موفقیت باید طراحی، ساخت، آزمایش و فروش محصول را درست و دقیق انجام دهد." method="Resize" options="600x q80 webp" >}}
+  {{< card link="docs/books/human-blockers" title="موانع انسانی: راهنمای جذب و نگهداشت نیروی انسانی و ایجاد فرهنگ سازمانی برای کسب و کارهای نوپای ایرانی" image="images/1599932768.png" subtitle="اگر تا به حال تجربه‌ای در حوزه منابع انسانی نداشتید و به تازگی استارتاپ خود را راه اندازی کرده‌اید کتاب موانع انسانی مثل یک دستور العمل به شما کمک می‌کند مشکل خودتان را حل کنید." method="Resize" options="600x q80 webp" >}}
 {{< /cards >}}
 
 

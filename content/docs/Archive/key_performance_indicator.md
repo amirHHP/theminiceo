@@ -10,7 +10,8 @@ tags:
   - شاخص-کلیدی-عملکرد-چیست
   - متریک
   - معیار
-url: product-articles/key_performance_indicator
+aliases:
+  - /product-articles/key_performance_indicator
 ---
 
 ![شاخص کلیدی عملکرد](images/KPI-1024x576.jpg)

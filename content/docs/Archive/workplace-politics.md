@@ -3,7 +3,7 @@ title: سیاست در محل کار و چگونه با سیاست برخورد 
 date: 2022-06-17
 categories:
   - product-skills
-url: product-skills/workplace-politics
+aliases: /product-skills/workplace-politics
 ---
 
 <script type="text/JavaScript" src="https://www.aparat.com/embed/l5Ksw?data[rnddiv]=83192623237&amp;data[responsive]=yes"></script>

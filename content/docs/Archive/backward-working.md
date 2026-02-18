@@ -3,7 +3,9 @@ title: "وارونه کار کردن : چطور با حداقل نیازهای �
 date: 2019-02-19
 categories:
   - product-basics
-url: product-basics/backward-working
+url:
+aliases:
+  - /product-basics/backward-working
 ---
 
 در آمازون سرویس‌هایی که استفاده می‌کنیم قرار نیست فقط به وب سایت و نرم افزار ارائه شوند آن‌ها ساختارهای سازمانی را هم تحت تاثیر قرار می‌دهند.
