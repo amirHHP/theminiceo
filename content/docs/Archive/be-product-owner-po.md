@@ -31,7 +31,7 @@ aliases:
 
 من می‌خواهم اصولی را با شما در میان می‌گذارم که اگر قصد دارید مالک محصول شوید لازم است آنها را بدانید اما در مورد تئوری صحبت نمی‌کنم بلکه آموخته‌هایم در طی هشت سال اخیر که مالک محصول بوده‌ام را در اختیار شما قرار می‌دهم.
 
-https://theminiceo.ir/product-skills/7-skills-for-product-management/
+/product-skills/7-skills-for-product-management/
 
 اگر می‌خواهید درمورد نظریه‌های PO اطلاعاتی کسب کنید می‌توانید آن را از Scrum Guide دریافت کنید. من همچنین مقالاتی درمورد «مالک محصول چه چیزی نیست» و «مالک محصول باید چه مهارتهایی داشته باشد» نوشته‌ام که اگر می‌خواهید این نقش را به طور عمیق‌تری بررسی کنید به آنها نگاهی بیندازید.
 
@@ -59,7 +59,7 @@ https://theminiceo.ir/product-skills/7-skills-for-product-management/
 
 پی‌نوشت: این فهرست می‌تواند بزرگتر باشد اما فکر می‌کنم نکته را فهمیده‌اید.
 
-https://theminiceo.ir/product-discovery/4-step-to-produce-product/
+/product-discovery/4-step-to-produce-product/
 
 **آیا از درگیری نمی‌ترسید؟**
 

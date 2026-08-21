@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "assessing-product-opportunities"
             }
+          },
+          {
+            "id": "a959960e6c91a1a8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -56,7 +68,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -177,7 +191,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of assessing-product-opportunities"
+              "title": "Outline"
             }
           }
         ],
@@ -198,7 +212,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "655d09af2b24dd58",
+  "active": "a959960e6c91a1a8",
   "lastOpenFiles": [
     "about.md",
     "articles.md",

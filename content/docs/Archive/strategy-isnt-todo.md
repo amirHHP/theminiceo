@@ -67,6 +67,6 @@ aliases: /product-strategy/strategy-isnt-todo
 
 بزرگترین درسی که از این موضوع گرفتم این بود که: **توصیه های دیگران را اجرا نکنم تا زمانیکه ندانم چرا باید آن کار را انجام بدهم.**
 
-برای مطالعه دیگر مطالب در زمینه استراتژي محصول از [این لینک](https://theminiceo.ir/category/product-strategy/) استفاده کنید.
+برای مطالعه دیگر مطالب در زمینه استراتژي محصول از [این لینک](/category/product-strategy/) استفاده کنید.
 
 نوشته استیو بلنک پدر کارآفرینی مدرن [ThinkGrowth](https://thinkgrowth.org/strategy-is-not-a-to-do-list-dab1a4f5c278)

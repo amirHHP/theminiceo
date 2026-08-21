@@ -1,6 +1,8 @@
 ---
 title: "فریمورک Jobs To Be Done"
 date: 2019-06-29
+aliases:
+  - /frameworks/jobs-to-be-done/
 ---
 
 ![](images/JTBD-1.png)

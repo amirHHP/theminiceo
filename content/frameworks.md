@@ -7,12 +7,12 @@ date: 2019-05-27
 
 ![](images/JTBD.png)
 
-[Jobs To Be Done](https://theminiceo.ir/frameworks/jobs-to-be-done/)
+[Jobs To Be Done](/jobs-to-be-done/)
 
 ![](images/design_sprint.png)
 
-[دیزاین اسپرینت](https://theminiceo.ir/frameworks/design-sprint/)
+[دیزاین اسپرینت](/design-sprint/)
 
 ![](images/product_opportunities.png)
 
-[بررسی فرصت‌های محصول](https://theminiceo.ir/frameworks/assessing-product-opportunities/)
+[بررسی فرصت‌های محصول](/assessing-product-opportunities/)
