@@ -38,13 +38,13 @@ html, body, button, input, select, textarea {
   padding: 3rem 1.5rem;
   margin-bottom: 2.5rem;
   border-radius: 1.5rem;
-  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.14) 0%, rgba(59, 130, 246, 0.02) 70%, transparent 100%);
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.16) 0%, rgba(59, 130, 246, 0.02) 70%, transparent 100%);
   border: 1px solid rgba(226, 232, 240, 0.8);
   text-align: center;
 }
 
 .dark .hero-wrapper {
-  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.2) 0%, rgba(15, 23, 42, 0.5) 70%, transparent 100%);
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.22) 0%, rgba(15, 23, 42, 0.5) 70%, transparent 100%);
   border-color: rgba(51, 65, 85, 0.6);
 }
 
@@ -52,15 +52,15 @@ html, body, button, input, select, textarea {
 .intro-box {
   width: 100%;
   margin-bottom: 3.5rem;
-  padding: 2.25rem 2rem;
-  border-radius: 1.25rem;
-  background-color: #f8fafc;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
   border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
 }
 
 .dark .intro-box {
-  background-color: #1e293b;
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
   border-color: #334155;
   box-shadow: none;
 }
@@ -69,7 +69,7 @@ html, body, button, input, select, textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -86,10 +86,11 @@ html, body, button, input, select, textarea {
 
 .pillar-card {
   padding: 1.25rem;
-  border-radius: 0.875rem;
+  border-radius: 1rem;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 }
 
 .dark .pillar-card {
@@ -98,20 +99,21 @@ html, body, button, input, select, textarea {
 }
 
 .pillar-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   border-color: #3b82f6;
+  box-shadow: 0 8px 16px -4px rgba(59, 130, 246, 0.15);
 }
 
 .pillar-icon {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .pillar-title {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .dark .pillar-title {
@@ -119,9 +121,9 @@ html, body, button, input, select, textarea {
 }
 
 .pillar-desc {
-  font-size: 0.825rem;
+  font-size: 0.85rem;
   color: #64748b;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .dark .pillar-desc {
@@ -131,11 +133,11 @@ html, body, button, input, select, textarea {
 /* Distinct Site Sections */
 .site-section {
   margin-bottom: 3.5rem;
-  padding: 2.25rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 1.5rem;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.04);
 }
 
 .dark .site-section {
@@ -146,48 +148,57 @@ html, body, button, input, select, textarea {
 
 .site-section-alt {
   background: #f8fafc;
+  border-color: #e2e8f0;
 }
 
 .dark .site-section-alt {
   background: #1e293b;
+  border-color: #334155;
 }
 
 /* Section Header */
 .section-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.4rem;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  padding-bottom: 1.25rem;
+}
+
+.dark .section-header {
+  border-bottom-color: rgba(51, 65, 85, 0.8);
 }
 
 .section-badge {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
-  padding: 0.25rem 0.75rem;
+  padding: 0.3rem 0.85rem;
   border-radius: 9999px;
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   font-weight: 700;
   background-color: #eff6ff;
   color: #2563eb;
   border: 1px solid #dbeafe;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .dark .section-badge {
-  background-color: rgba(37, 99, 235, 0.15);
-  color: #60a5fa;
-  border-color: rgba(37, 99, 235, 0.3);
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.4);
 }
 
 .section-header-title {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.6rem;
+  gap: 0.6rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: #0f172a;
   margin: 0;
+  line-height: 1.3;
 }
 
 .dark .section-header-title {
@@ -198,6 +209,7 @@ html, body, button, input, select, textarea {
   font-size: 0.95rem;
   color: #64748b;
   margin: 0;
+  line-height: 1.6;
 }
 
 .dark .section-header-desc {
@@ -240,14 +252,14 @@ html, body, button, input, select, textarea {
 .hextra-card {
   position: relative !important;
   border-radius: 1rem !important;
-  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
   background-color: #ffffff;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
   overflow: hidden !important;
 }
 
 .dark .hextra-card {
-  border-color: rgba(51, 65, 85, 0.8) !important;
+  border-color: rgba(51, 65, 85, 0.9) !important;
   background-color: #1e293b;
 }
 
@@ -295,43 +307,48 @@ html, body, button, input, select, textarea {
 .section-footer-btn {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .section-more-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.925rem;
+  gap: 0.5rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #2563eb;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #eff6ff;
+  border: 1px solid #dbeafe;
   transition: all 0.2s ease;
 }
 
 .section-more-link:hover {
-  background-color: #eff6ff;
+  background-color: #dbeafe;
   color: #1d4ed8;
+  transform: translateX(-3px);
 }
 
 .dark .section-more-link {
-  color: #60a5fa;
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .dark .section-more-link:hover {
-  background-color: rgba(37, 99, 235, 0.15);
-  color: #93c5fd;
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #bfdbfe;
 }
 
 /* CTA Card */
 .cta-banner {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  padding: 2.25rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 1.5rem;
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
 }
