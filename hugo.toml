@@ -1,12 +1,17 @@
 baseURL = 'https://theminiceo.ir'
-languageCode = 'fa-ir'
-languagedirection = 'rtl'
+defaultContentLanguage = 'fa'
 title = 'TheMiniCEO'
 theme = 'hextra'
+
+[languages]
+  [languages.fa]
+    languageCode = 'fa-ir'
+    languageDirection = 'rtl'
+    languageName = 'فارسی'
+    title = 'TheMiniCEO'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
 
-# این خط باعث می‌شود آدرس‌ها از ریشه سایت شروع شوند
 relativeURLs = false
