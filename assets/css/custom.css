@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body, button, input, select, textarea {
+  font-family: var(--font-sans) !important;
+}
+
+/* RTL Layout fixes */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .hextra-card-tag {
+  right: auto !important;
+  left: 12px !important;
+  top: 12px !important;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  z-index: 20;
+}
+
+[dir="rtl"] .hextra-card-icon {
+  text-align: right;
+  justify-content: flex-start;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding-left: 5rem; /* leave space for the tag badge on the left */
+}
+
+/* Cards & Grid Styling */
+.hextra-cards {
+  display: grid !important;
+  gap: 1.25rem !important;
+  width: 100% !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 2rem !important;
+}
+
+@media (min-width: 1024px) {
+  .hextra-cards[style*="--hextra-cards-grid-cols: 4"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .hextra-cards[style*="--hextra-cards-grid-cols: 3"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  .hextra-cards[style*="--hextra-cards-grid-cols: 2"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hextra-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .hextra-cards {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.hextra-card {
+  position: relative !important;
+  border-radius: 1rem !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  background-color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden !important;
+}
+
+.dark .hextra-card {
+  border-color: rgba(51, 65, 85, 0.8) !important;
+  background-color: #1e293b;
+}
+
+.hextra-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.12), 0 10px 10px -8px rgba(0, 0, 0, 0.04) !important;
+  border-color: #3b82f6 !important;
+}
+
+.dark .hextra-card:hover {
+  box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.45) !important;
+  border-color: #60a5fa !important;
+}
+
+/* Card images */
+.hextra-card-image {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.dark .hextra-card-image {
+  border-bottom-color: rgba(51, 65, 85, 0.6);
+}
+
+.hextra-card:hover .hextra-card-image {
+  transform: scale(1.03);
+}
+
+/* Book cards specific image style */
+.book-card .hextra-card-image {
+  height: 220px !important;
+  object-fit: contain !important;
+  padding: 1.25rem !important;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+}
+
+.dark .book-card .hextra-card-image {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%) !important;
+}
+
+.hextra-card-subtitle {
+  font-size: 0.875rem !important;
+  line-height: 1.6 !important;
+  color: #64748b !important;
+  margin-top: 0.35rem !important;
+}
+
+.dark .hextra-card-subtitle {
+  color: #94a3b8 !important;
+}
+
+/* Hero Section */
+.hero-wrapper {
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, rgba(59, 130, 246, 0.02) 60%, transparent 100%);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  text-align: center;
+}
+
+.dark .hero-wrapper {
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18) 0%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
+  border-color: rgba(51, 65, 85, 0.5);
+}
+
+/* Section Title styling */
+.section-header {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.dark .section-header-title {
+  color: #f8fafc;
+}
+
+.section-header-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-top: -0.25rem;
+}
+
+.dark .section-header-desc {
+  color: #94a3b8;
+}
+
+/* CTA Card */
+.cta-banner {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
