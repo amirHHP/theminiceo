@@ -1,17 +1,79 @@
 baseURL = 'https://theminiceo.ir'
 defaultContentLanguage = 'fa'
-title = 'TheMiniCEO'
+title = 'مدیرعامل کوچک | TheMiniCEO'
 theme = 'hextra'
+
+enableRobotsTXT = true
 
 [languages]
   [languages.fa]
     languageCode = 'fa-ir'
     languageDirection = 'rtl'
     languageName = 'فارسی'
-    title = 'TheMiniCEO'
+    title = 'مدیرعامل کوچک | TheMiniCEO'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
+  section = ["HTML", "RSS"]
 
 relativeURLs = false
+
+[menu]
+  [[menu.main]]
+    name = "مقالات و مستندات"
+    pageRef = "/docs"
+    weight = 1
+  [[menu.main]]
+    name = "دوره‌های آموزشی"
+    pageRef = "/course"
+    weight = 2
+  [[menu.main]]
+    name = "کتابخانه"
+    pageRef = "/docs/books"
+    weight = 3
+  [[menu.main]]
+    name = "فریم‌ورک‌ها و ابزارها"
+    pageRef = "/frameworks"
+    weight = 4
+  [[menu.main]]
+    name = "مشاوره محصول"
+    pageRef = "/product-consultant"
+    weight = 5
+  [[menu.main]]
+    name = "درباره ما"
+    pageRef = "/about"
+    weight = 6
+  [[menu.main]]
+    name = "جستجو"
+    weight = 7
+    [menu.main.params]
+      type = "search"
+
+[params]
+  description = "مدیرعامل کوچک؛ مرجع تخصصی مدیریت محصول، فریم‌ورک‌های توسعه، کتاب‌ها، دوره‌های آموزشی و مشاوره اختصاصی رشد کسب‌وکار و استارتاپ"
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    width = "normal"
+
+  [params.page]
+    width = "normal"
+
+  [params.theme]
+    default = "system"
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = false
+    width = "normal"
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "content"
+      tokenize = "forward"
