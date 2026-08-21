@@ -29,16 +29,188 @@ html, body, button, input, select, textarea {
   justify-content: flex-start;
   font-size: 1.05rem;
   font-weight: 700;
-  padding-left: 5rem; /* leave space for the tag badge on the left */
+  padding-left: 5.5rem; /* leave space for the tag badge on the left */
 }
 
-/* Cards & Grid Styling */
+/* Hero Section */
+.hero-wrapper {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.14) 0%, rgba(59, 130, 246, 0.02) 70%, transparent 100%);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  text-align: center;
+}
+
+.dark .hero-wrapper {
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.2) 0%, rgba(15, 23, 42, 0.5) 70%, transparent 100%);
+  border-color: rgba(51, 65, 85, 0.6);
+}
+
+/* Intro / About Box */
+.intro-box {
+  width: 100%;
+  margin-bottom: 3.5rem;
+  padding: 2.25rem 2rem;
+  border-radius: 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.dark .intro-box {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.intro-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 1024px) {
+  .intro-pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pillar-card {
+  padding: 1.25rem;
+  border-radius: 0.875rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.dark .pillar-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.pillar-card:hover {
+  transform: translateY(-2px);
+  border-color: #3b82f6;
+}
+
+.pillar-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.dark .pillar-title {
+  color: #f8fafc;
+}
+
+.pillar-desc {
+  font-size: 0.825rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.dark .pillar-desc {
+  color: #94a3b8;
+}
+
+/* Distinct Site Sections */
+.site-section {
+  margin-bottom: 3.5rem;
+  padding: 2.25rem 2rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+.dark .site-section {
+  background: #0f172a;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.site-section-alt {
+  background: #f8fafc;
+}
+
+.dark .site-section-alt {
+  background: #1e293b;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+  margin-bottom: 0.25rem;
+}
+
+.dark .section-badge {
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.section-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.dark .section-header-title {
+  color: #f8fafc;
+}
+
+.section-header-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.dark .section-header-desc {
+  color: #94a3b8;
+}
+
+/* Cards & Grid */
 .hextra-cards {
   display: grid !important;
   gap: 1.25rem !important;
   width: 100% !important;
   margin-top: 1.25rem !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 @media (min-width: 1024px) {
@@ -108,18 +280,6 @@ html, body, button, input, select, textarea {
   transform: scale(1.03);
 }
 
-/* Book cards specific image style */
-.book-card .hextra-card-image {
-  height: 220px !important;
-  object-fit: contain !important;
-  padding: 1.25rem !important;
-  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
-}
-
-.dark .book-card .hextra-card-image {
-  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%) !important;
-}
-
 .hextra-card-subtitle {
   font-size: 0.875rem !important;
   line-height: 1.6 !important;
@@ -131,60 +291,45 @@ html, body, button, input, select, textarea {
   color: #94a3b8 !important;
 }
 
-/* Hero Section */
-.hero-wrapper {
-  width: 100%;
-  padding: 2.5rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, rgba(59, 130, 246, 0.02) 60%, transparent 100%);
-  border: 1px solid rgba(226, 232, 240, 0.6);
-  text-align: center;
-}
-
-.dark .hero-wrapper {
-  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18) 0%, rgba(15, 23, 42, 0.4) 60%, transparent 100%);
-  border-color: rgba(51, 65, 85, 0.5);
-}
-
-/* Section Title styling */
-.section-header {
-  margin-top: 3rem;
-  margin-bottom: 1.25rem;
+/* Section footer button */
+.section-footer-btn {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
 }
 
-.section-header-title {
-  display: flex;
+.section-more-link {
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #0f172a;
+  gap: 0.4rem;
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
 }
 
-.dark .section-header-title {
-  color: #f8fafc;
+.section-more-link:hover {
+  background-color: #eff6ff;
+  color: #1d4ed8;
 }
 
-.section-header-desc {
-  font-size: 0.95rem;
-  color: #64748b;
-  margin-top: -0.25rem;
+.dark .section-more-link {
+  color: #60a5fa;
 }
 
-.dark .section-header-desc {
-  color: #94a3b8;
+.dark .section-more-link:hover {
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
 }
 
 /* CTA Card */
 .cta-banner {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 2.25rem 2rem;
+  border-radius: 1.5rem;
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.1);
