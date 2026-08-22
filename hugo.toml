@@ -4,6 +4,7 @@ title = 'مدیرعامل کوچک | TheMiniCEO'
 theme = 'hextra'
 
 enableRobotsTXT = true
+hasCJKLanguage = true
 
 [languages]
   [languages.fa]
