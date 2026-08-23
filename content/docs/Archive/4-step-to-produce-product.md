@@ -85,4 +85,4 @@ aliases:
 
 [نوشته جولی زو معاون رئیس طراح محصول در فیس بوک](https://medium.com/the-year-of-the-looking-glass/the-4-stages-of-0-1-products-cdb8236dbf66)  
 
-برای مطالعه دیگر مطالب در زمینه شناخت محصول [اینجا](/category/product-discovery/) کلیک کنید.
+برای مطالعه دیگر مطالب در زمینه شناخت محصول [اینجا](/categories/product-discovery/) کلیک کنید.

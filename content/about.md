@@ -37,4 +37,4 @@ date: 2021-01-22
 
 برای اینکه بتوانید با تیم مدیرعامل کوچک ارتباط برقرار کنید، کافیست یک ایمیل برای ما ارسال کنید.
 
-**hi@theminiceo.ir**
+<!--email_off-->[hi@theminiceo.ir](mailto:hi@theminiceo.ir)<!--/email_off-->

@@ -47,9 +47,7 @@ date: 2021-09-10
 
 در پایان دوره شرکت کنندگانی که بتوانند امتیاز قابل قبول را بگیرند به شرکت‌های مرتب با مجموعه معرفی می‌شوند.
 
-[ثبت نام در دوره](/course/survival-guide-for-pm/)
-
-[دانلود کامل سرفصل دوره](/PM-survival-guide-short.pdf)
+[مشاهده سرفصل‌ها و ثبت‌نام در دوره](/course/survival-guide-for-pm/)
 
 * * *
 
@@ -87,9 +85,7 @@ date: 2021-09-10
 - هات جر
 - Google Tag Manager, Google Analytics, Seo و Google optimize
 
-[ثبت نام در دوره](/course/survival-guide-for-pm/)
-
-[دانلود کامل سرفصل دوره](/PM-survival-guide-short.pdf)
+[مشاهده سرفصل‌ها و ثبت‌نام در دوره](/course/survival-guide-for-pm/)
 
 * * *
 

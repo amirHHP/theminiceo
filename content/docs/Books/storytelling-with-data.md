@@ -26,8 +26,6 @@ aliases:
 
 پیشنهاد ما این است که سایت مکمل کتاب را از دست ندهید ([Storytellingwithdata](http://www.storytellingwithdata.com/)). در این سایت [یک وبلاگ خوب](http://www.storytellingwithdata.com/blog) و هم‌چنین [یک مجموعه پادکست ارزشمند](http://www.storytellingwithdata.com/podcast) در نظر گرفته شده که می‌تواند نکات فراوانی را به شما بیاموزد. بخش چالش‌های داستان‌پردازی با داده‌ها ([SWD Challenge](http://www.storytellingwithdata.com/swdchallenge)) هم تمرین‌ها و چالش‌هایی را در اختیار شما قرار می‌دهد تا مهارت خود را در مصورسازی داده‌ها بسنجید و بیازمایید.
 
-## ![کتاب داستان پردازی با داده ها راهنمای مصور سازی داده ها برای حرفه ای ها در کسب و کار اثر کول ناسبامر نافلیک انتشارات آریاناقلم main 1 1](images/07762211594bf68233f59faea82d311d8233f66a.jpg)
-
 ## خرید کتاب داستان پردازی با داده
 
 [خرید نسخه چاپی از دیجی کالا](https://affstat.adro.co/click/0c16f374-504e-4077-8cc4-7c231e4870bc)

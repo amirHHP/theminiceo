@@ -144,4 +144,4 @@ aliases:
 
 منبع: [نوشته جانا باستو بنیان گذار ProdPad](https://www.prodpad.com/blog/essential-skills-for-product-manager-roles/) 
 
-برای مطالعه دیگر مطالب در [زمینه اساس محصول](/category/product-basics/) اینجا کلیک کنید.
+برای مطالعه دیگر مطالب در [زمینه اساس محصول](/categories/product-basics/) اینجا کلیک کنید.

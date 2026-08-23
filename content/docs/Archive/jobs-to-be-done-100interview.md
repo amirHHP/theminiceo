@@ -77,4 +77,4 @@ aliases:
 
 منبع: [](https://blog.markgrowth.com/what-i-learned-from-doing-100-jobs-to-be-done-interviews-3b4078690075)[نوشته آمریتا گورنی معاون ریاست بازاریابی CrowdRiff](https://blog.markgrowth.com/what-i-learned-from-doing-100-jobs-to-be-done-interviews-3b4078690075)
 
-برای مطالعه دیگر مطالب در زمینه شناخت محصول [اینجا](/category/product-discovery/) کلیک کنید.
+برای مطالعه دیگر مطالب در زمینه شناخت محصول [اینجا](/categories/product-discovery/) کلیک کنید.

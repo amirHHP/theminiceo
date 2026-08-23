@@ -4,7 +4,10 @@ date: 2019-01-29
 categories:
   - product-strategy
 coverImage: positioning.jpg
-aliases: /product-strategy/product-positioning
+aliases:
+  - /product-strategy/product-positioning
+  - /product-strategy/جایگاه-یابی-محصول-نمونه-موردی-بیس-کمپ/
+  - /product-strategy/جاده-یابی-محصول-نمونه-موردی-بیس-کمپ/
 ---
 ![](images/positioning.jpg)
   
@@ -91,4 +94,4 @@ aliases: /product-strategy/product-positioning
 
 بنابر گفته Clay Christensen:  "**سوالات فضایی ایجاد می کنند که پاسخ‌ها پدیدار شوند**." پس در حداقل ترین حالت تفکر درباره جایگاه محصول شما به شما کمک می کند تا در مسیر درست قرار بگیرید و به کار خود ادامه دهید.
 
-برای مطالعه دیگر مطالب در زمینه استراتژي محصول از [این لینک](/category/product-strategy/) استفاده کنید.
+برای مطالعه دیگر مطالب در زمینه استراتژي محصول از [این لینک](/categories/product-strategy/) استفاده کنید.
