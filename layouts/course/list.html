@@ -6,18 +6,18 @@
       <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
         
         {{/* Header Hero */}}
-        <div class="course-archive-hero hx:text-center hx:py-8 hx:mb-8 hx:rounded-2xl hx:bg-gradient-to-b hx:from-blue-50/50 hx:to-transparent hx:dark:from-slate-800/40 hx:border hx:border-slate-200/60 hx:dark:border-slate-800">
-          <span class="section-badge hx:mx-auto hx:mb-3">دوره‌های تخصصی مدیریت محصول</span>
-          <h1 class="hx:text-3xl hx:md:text-5xl hx:font-black hx:text-slate-900 hx:dark:text-white hx:mb-4">
+        <div class="tmc-archive-hero">
+          <span class="section-badge" style="margin: 0 auto 0.75rem auto;">دوره‌های تخصصی مدیریت محصول</span>
+          <h1 class="hx:text-3xl hx:md:text-4xl hx:font-black hx:text-slate-900 hx:dark:text-white hx:mb-3">
             دوره‌ها و کارگاه‌های آموزشی
           </h1>
-          <p class="hx:text-base hx:md:text-lg hx:text-slate-600 hx:dark:text-slate-300 hx:max-w-2xl hx:mx-auto hx:leading-relaxed">
-            مجموعه دوره‌های عملیاتی، ویدئویی و پروژه‌محور مدیرعامل کوچک؛ با امکان پرداخت مستقیم و امن از درگاه زرین‌پال و جلسات رفع اشکال اختصاصی.
+          <p class="hx:text-base hx:text-slate-600 hx:dark:text-slate-300 hx:max-w-2xl hx:mx-auto hx:leading-relaxed" style="margin: 0 auto;">
+            مجموعه دوره‌های کاربردی و پروژه‌محور مدیرعامل کوچک؛ با امکان پرداخت مستقیم و امن از درگاه زرین‌پال و جلسات رفع اشکال اختصاصی.
           </p>
         </div>
 
         {{/* Course Cards Grid */}}
-        <div class="hx:grid hx:grid-cols-1 hx:md:grid-cols-2 hx:lg:grid-cols-3 hx:gap-6 hx:mb-12">
+        <div class="tmc-courses-grid">
           {{ range .Pages }}
             {{ $cover := "" }}
             {{ with .Params.coverImage }}
@@ -32,49 +32,49 @@
             {{ $price := .Params.price | default "۱,۹۸۰,۰۰۰ تومان" }}
             {{ $discountPrice := .Params.discount_price | default "۹۹۰,۰۰۰ تومان" }}
             {{ $discountPercent := .Params.discount_percent | default "۵۰٪" }}
-            {{ $zarinpalLink := .Params.zarinpal_link | default "https://zarinp.al/392035" }}
+            {{ $zarinpalLink := .Params.zarinpal_link | default .Site.Params.zarinpal.default_link | default "https://zarinp.al/392035" }}
 
-            <div class="course-card hx:flex hx:flex-col hx:rounded-2xl hx:bg-white hx:dark:bg-slate-800/90 hx:border hx:border-slate-200 hx:dark:border-slate-700 hx:shadow-sm hx:hover:shadow-xl hx:transition-all hx:overflow-hidden hx:group">
+            <div class="course-card">
               
               {{ if $cover }}
-                <a href="{{ .RelPermalink }}" class="hx:block hx:overflow-hidden hx:relative hx:h-48">
-                  <img src="{{ $cover }}" alt="{{ .Title }}" class="hx:w-full hx:h-full hx:object-cover hx:group-hover:scale-105 hx:transition-transform hx:duration-300" />
+                <a href="{{ .RelPermalink }}" style="display: block; position: relative; height: 180px; overflow: hidden;">
+                  <img src="{{ $cover }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;" />
                   {{ if $discountPercent }}
-                    <span class="hx:absolute hx:top-3 hx:left-3 hx:bg-rose-600 hx:text-white hx:text-xs hx:font-extrabold hx:px-2.5 hx:py-1 hx:rounded-full hx:shadow-md">
+                    <span style="position: absolute; top: 12px; left: 12px; background: #dc2626; color: #fff; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
                       {{ $discountPercent }} تخفیف
                     </span>
                   {{ end }}
                 </a>
               {{ end }}
 
-              <div class="hx:p-5 hx:flex hx:flex-col hx:flex-grow hx:justify-between">
+              <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div>
-                  <h2 class="hx:text-lg hx:font-bold hx:text-slate-900 hx:dark:text-white hx:mb-2.5 hx:line-clamp-2 hx:leading-snug">
-                    <a href="{{ .RelPermalink }}" class="hx:hover:text-blue-600 hx:dark:hover:text-blue-400 hx:transition-colors">
+                  <h2 style="font-size: 1.05rem; font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.4;">
+                    <a href="{{ .RelPermalink }}" style="color: inherit; text-decoration: none;">
                       {{ .Title }}
                     </a>
                   </h2>
-                  <p class="hx:text-xs hx:text-slate-600 hx:dark:text-slate-300 hx:line-clamp-3 hx:mb-4 hx:leading-relaxed">
-                    {{ .Summary | plainify | truncate 130 }}
+                  <p style="font-size: 0.8rem; color: #64748b; line-height: 1.6; margin: 0 0 1rem 0;">
+                    {{ .Summary | plainify | truncate 110 }}
                   </p>
                 </div>
 
-                <div class="hx:pt-4 hx:border-t hx:border-slate-100 hx:dark:border-slate-700/60">
-                  <div class="hx:flex hx:items-baseline hx:justify-between hx:mb-3">
-                    <span class="hx:text-xs hx:text-slate-400">سرمایه‌گذاری:</span>
-                    <div class="hx:text-left">
+                <div style="padding-top: 0.875rem; border-top: 1px solid #f1f5f9;">
+                  <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <span style="font-size: 0.75rem; color: #64748b;">سرمایه‌گذاری:</span>
+                    <div style="text-align: left;">
                       {{ if $price }}
-                        <span class="hx:text-xs hx:text-slate-400 hx:line-through hx:ml-1.5">{{ $price }}</span>
+                        <span style="font-size: 0.75rem; color: #94a3b8; text-decoration: line-through; margin-left: 0.35rem;">{{ $price }}</span>
                       {{ end }}
-                      <span class="hx:text-base hx:font-extrabold hx:text-emerald-600 hx:dark:text-emerald-400">{{ $discountPrice }}</span>
+                      <span style="font-size: 1rem; font-weight: 800; color: #059669;">{{ $discountPrice }}</span>
                     </div>
                   </div>
 
-                  <div class="hx:grid hx:grid-cols-2 hx:gap-2">
-                    <a href="{{ .RelPermalink }}" class="hx:flex hx:items-center hx:justify-center hx:py-2 hx:px-3 hx:rounded-lg hx:text-xs hx:font-semibold hx:bg-slate-100 hx:dark:bg-slate-700 hx:text-slate-700 hx:dark:text-slate-200 hx:hover:bg-slate-200 hx:dark:hover:bg-slate-600 hx:transition-all hx:no-underline">
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                    <a href="{{ .RelPermalink }}" style="display: flex; align-items: center; justify-content: center; padding: 0.5rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; background: #f1f5f9; color: #334155; text-decoration: none;">
                       مشاهده سرفصل‌ها
                     </a>
-                    <a href="{{ $zarinpalLink }}" target="_blank" rel="noopener noreferrer" class="hx:flex hx:items-center hx:justify-center hx:gap-1 hx:py-2 hx:px-3 hx:rounded-lg hx:text-xs hx:font-bold hx:bg-amber-500 hx:hover:bg-amber-600 hx:text-white hx:shadow-sm hx:transition-all hx:no-underline">
+                    <a href="{{ $zarinpalLink }}" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.5rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 800; background: #f59e0b; color: #ffffff; text-decoration: none; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
                       <span>خرید (زرین‌پال)</span>
                       <span>↗</span>
                     </a>

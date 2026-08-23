@@ -353,56 +353,537 @@ html, body, button, input, select, textarea {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
 }
 
-/* Course Layout & ZarinPal Buy Button Styles */
-.course-hero-card {
-  position: relative;
-  transition: all 0.3s ease;
+/* ===================================================
+   TMC Course Layout & ZarinPal Purchase Section
+   =================================================== */
+
+.tmc-course-hero {
+  margin: 1.5rem 0 2.5rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
-.zarinpal-buy-btn {
+.dark .tmc-course-hero {
+  background: #0f172a;
+  border-color: #334155;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+}
+
+.tmc-course-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .tmc-course-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Left / Main Column: Cover & Features */
+.tmc-course-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tmc-course-cover {
+  width: 100%;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.dark .tmc-course-cover {
+  border-color: #334155;
+}
+
+.tmc-course-cover img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4 Feature Badges Grid */
+.tmc-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 480px) {
+  .tmc-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tmc-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.875rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.dark .tmc-feature-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.tmc-feature-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.dark .tmc-feature-icon {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.tmc-feature-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  overflow: hidden;
+}
+
+.tmc-feature-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.dark .tmc-feature-label {
+  color: #94a3b8;
+}
+
+.tmc-feature-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dark .tmc-feature-value {
+  color: #f8fafc;
+}
+
+/* Purchase Box (Right Column) */
+.tmc-purchase-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.dark .tmc-purchase-box {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.tmc-purchase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.tmc-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.5rem;
+}
+
+.dark .tmc-status-badge {
+  color: #93c5fd;
+  background: rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.tmc-discount-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fee2e2;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.dark .tmc-discount-badge {
+  color: #f87171;
+  background: rgba(220, 38, 38, 0.15);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+/* Price Box */
+.tmc-price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.dark .tmc-price-box {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.tmc-price-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.dark .tmc-price-label {
+  color: #94a3b8;
+}
+
+.tmc-price-values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.tmc-old-price {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.dark .tmc-old-price {
+  color: #64748b;
+}
+
+.tmc-current-price {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #059669;
+  letter-spacing: -0.02em;
+}
+
+.dark .tmc-current-price {
+  color: #34d399;
+}
+
+/* ZarinPal Buy Button */
+.tmc-zarinpal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.875rem 1.25rem;
   background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
   color: #ffffff !important;
+  font-size: 0.95rem;
+  font-weight: 800;
+  border-radius: 0.75rem;
   text-decoration: none !important;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: all 0.2s ease;
 }
 
-.zarinpal-buy-btn:hover {
+.tmc-zarinpal-btn:hover {
   background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
-  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.45);
   transform: translateY(-2px);
+  color: #ffffff !important;
 }
 
-.zarinpal-buy-btn-lg {
+.tmc-zarinpal-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Trust Badge */
+.tmc-trust-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.dark .tmc-trust-badge {
+  color: #94a3b8;
+}
+
+.tmc-trust-badge svg {
+  width: 1rem;
+  height: 1rem;
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+/* Benefits Checklist */
+.tmc-benefits-list {
+  list-style: none !important;
+  padding: 0.875rem 0 0 0 !important;
+  margin: 0.875rem 0 0 0 !important;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.dark .tmc-benefits-list {
+  border-top-color: #334155;
+}
+
+.tmc-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.775rem;
+  color: #475569;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4;
+}
+
+.dark .tmc-benefit-item {
+  color: #cbd5e1;
+}
+
+.tmc-benefit-check {
+  color: #059669;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.dark .tmc-benefit-check {
+  color: #34d399;
+}
+
+/* Bottom CTA Banner */
+.tmc-bottom-cta {
+  margin: 3rem 0 2rem 0;
+  padding: 2rem 1.75rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tmc-bottom-cta {
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+.tmc-bottom-cta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tmc-bottom-cta-badge {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+@media (max-width: 768px) {
+  .tmc-bottom-cta-badge {
+    align-self: center;
+  }
+}
+
+.tmc-bottom-cta-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tmc-bottom-cta-desc {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tmc-bottom-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .tmc-bottom-cta-action {
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+
+.tmc-bottom-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.tmc-bottom-old-price {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.tmc-bottom-current-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fbbf24;
+}
+
+.tmc-bottom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
   background: #fbbf24 !important;
   color: #0f172a !important;
-  text-decoration: none !important;
+  font-size: 0.95rem;
   font-weight: 800;
-  box-shadow: 0 4px 14px 0 rgba(251, 191, 36, 0.4);
-}
-
-.zarinpal-buy-btn-lg:hover {
-  background: #f59e0b !important;
-  color: #0f172a !important;
-  transform: scale(1.03);
-}
-
-.zarinpal-btn-inline {
-  background: #f59e0b !important;
-  color: #ffffff !important;
+  border-radius: 0.75rem;
   text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.zarinpal-btn-inline:hover {
-  background: #d97706 !important;
-  color: #ffffff !important;
+.tmc-bottom-btn:hover {
+  background: #f59e0b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+  color: #0f172a !important;
+}
+
+.tmc-bottom-subtext {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+/* Course Card in Archive / List */
+.course-card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  transition: all 0.25s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .course-card {
+  background: #1e293b;
+  border-color: #334155;
 }
 
 .course-card:hover {
   border-color: #3b82f6;
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0,0,0,0.08);
 }
+
+.dark .course-card:hover {
+  box-shadow: 0 12px 24px -6px rgba(0,0,0,0.4);
+}
+
+.tmc-archive-hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .tmc-archive-hero {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.tmc-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .tmc-courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .tmc-courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
