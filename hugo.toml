@@ -5,20 +5,23 @@ theme = 'hextra'
 
 enableRobotsTXT = true
 hasCJKLanguage = true
+relativeURLs = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [languages]
   [languages.fa]
-    languageCode = 'fa-ir'
-    languageDirection = 'rtl'
-    languageName = 'فارسی'
+    locale = 'fa-ir'
+    direction = 'rtl'
+    label = 'فارسی'
     title = 'مدیرعامل کوچک | TheMiniCEO'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
-
-relativeURLs = false
 
 [markup]
   [markup.goldmark]
@@ -88,3 +91,7 @@ relativeURLs = false
     [params.search.flexsearch]
       index = "content"
       tokenize = "forward"
+
+  [params.zarinpal]
+    merchant_id = "" # مرچنت آیدی ۳۶ کاراکتری زرین‌پال (اختیاری جهت وب‌سرویس / اتصال مستقیم)
+    default_link = "https://zarinp.al/392035" # لینک پرداخت زرین‌پال پیش‌فرض دوره‌ها

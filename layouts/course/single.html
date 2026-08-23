@@ -1,0 +1,195 @@
+{{ define "main" }}
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+    {{ partial "toc.html" . }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+        
+        {{/* Breadcrumb */}}
+        <div class="course-breadcrumb hx:flex hx:items-center hx:gap-2 hx:text-sm hx:text-slate-500 hx:dark:text-slate-400 hx:mt-2 hx:mb-4">
+          <a href="/" class="hx:hover:text-blue-600 hx:transition-colors">خانه</a>
+          <span>/</span>
+          <a href="/course/" class="hx:hover:text-blue-600 hx:transition-colors">دوره‌های آموزشی</a>
+          <span>/</span>
+          <span class="hx:text-slate-800 hx:dark:text-slate-200 hx:font-medium">{{ .Title }}</span>
+        </div>
+
+        {{/* Course Header Title */}}
+        {{ if .Title }}
+          <h1 class="course-title hx:text-3xl hx:md:text-4xl hx:font-extrabold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100 hx:mt-2 hx:mb-4 hx:leading-tight">
+            {{ .Title }}
+          </h1>
+        {{ end }}
+
+        {{/* Cover Image if available */}}
+        {{ $cover := "" }}
+        {{ with .Params.coverImage }}
+          {{ if strings.HasPrefix . "images/" }}
+            {{ $cover = . | relURL }}
+          {{ else if strings.HasPrefix . "/images/" }}
+            {{ $cover = . }}
+          {{ else }}
+            {{ $cover = printf "/images/%s" . }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Course Purchase & Info Hero Box */}}
+        {{ $price := .Params.price | default "۱,۹۸۰,۰۰۰ تومان" }}
+        {{ $discountPrice := .Params.discount_price | default "۹۹۰,۰۰۰ تومان" }}
+        {{ $discountPercent := .Params.discount_percent | default "۵۰٪" }}
+        {{ $zarinpalLink := .Params.zarinpal_link | default .Site.Params.zarinpal.default_link | default "https://zarinp.al/392035" }}
+        {{ $duration := .Params.duration | default "۶ هفته" }}
+        {{ $sessions := .Params.sessions | default "۲۲ جلسه ویدیویی" }}
+        {{ $support := .Params.support | default "۳ جلسه آنلاین اختصاصی" }}
+        {{ $access := .Params.access | default "دسترسی نامحدود و همیشگی" }}
+
+        <div class="course-hero-card hx:my-6 hx:p-6 hx:md:p-8 hx:rounded-2xl hx:bg-gradient-to-br hx:from-blue-50/70 hx:via-white hx:to-indigo-50/50 hx:dark:from-slate-900 hx:dark:via-slate-800 hx:dark:to-slate-900 hx:border hx:border-blue-100 hx:dark:border-slate-700 hx:shadow-lg">
+          <div class="hx:grid hx:grid-cols-1 hx:lg:grid-cols-12 hx:gap-6 hx:items-center">
+            
+            {{/* Left/Main Column: Image or Badges & Info */}}
+            <div class="hx:lg:col-span-7 hx:flex hx:flex-col hx:gap-4">
+              {{ if $cover }}
+                <div class="course-cover-wrapper hx:overflow-hidden hx:rounded-xl hx:border hx:border-slate-200 hx:dark:border-slate-700 hx:shadow-sm">
+                  <img src="{{ $cover }}" alt="{{ .Title }}" class="hx:w-full hx:h-64 hx:object-cover hx:object-center" />
+                </div>
+              {{ end }}
+
+              {{/* Badges row */}}
+              <div class="course-features-grid hx:grid hx:grid-cols-2 hx:sm:grid-cols-4 hx:gap-3 hx:mt-2">
+                <div class="feature-item hx:flex hx:items-center hx:gap-2 hx:p-2.5 hx:rounded-xl hx:bg-white/80 hx:dark:bg-slate-800/90 hx:border hx:border-slate-200/80 hx:dark:border-slate-700/80">
+                  <span class="hx:text-xl">⏱️</span>
+                  <div class="hx:text-xs">
+                    <div class="hx:text-slate-500 hx:dark:text-slate-400">مدت دوره</div>
+                    <div class="hx:font-bold hx:text-slate-800 hx:dark:text-slate-200">{{ $duration }}</div>
+                  </div>
+                </div>
+                <div class="feature-item hx:flex hx:items-center hx:gap-2 hx:p-2.5 hx:rounded-xl hx:bg-white/80 hx:dark:bg-slate-800/90 hx:border hx:border-slate-200/80 hx:dark:border-slate-700/80">
+                  <span class="hx:text-xl">🎥</span>
+                  <div class="hx:text-xs">
+                    <div class="hx:text-slate-500 hx:dark:text-slate-400">محتوا</div>
+                    <div class="hx:font-bold hx:text-slate-800 hx:dark:text-slate-200">{{ $sessions }}</div>
+                  </div>
+                </div>
+                <div class="feature-item hx:flex hx:items-center hx:gap-2 hx:p-2.5 hx:rounded-xl hx:bg-white/80 hx:dark:bg-slate-800/90 hx:border hx:border-slate-200/80 hx:dark:border-slate-700/80">
+                  <span class="hx:text-xl">👥</span>
+                  <div class="hx:text-xs">
+                    <div class="hx:text-slate-500 hx:dark:text-slate-400">رفع اشکال</div>
+                    <div class="hx:font-bold hx:text-slate-800 hx:dark:text-slate-200">{{ $support }}</div>
+                  </div>
+                </div>
+                <div class="feature-item hx:flex hx:items-center hx:gap-2 hx:p-2.5 hx:rounded-xl hx:bg-white/80 hx:dark:bg-slate-800/90 hx:border hx:border-slate-200/80 hx:dark:border-slate-700/80">
+                  <span class="hx:text-xl">💻</span>
+                  <div class="hx:text-xs">
+                    <div class="hx:text-slate-500 hx:dark:text-slate-400">دسترسی</div>
+                    <div class="hx:font-bold hx:text-slate-800 hx:dark:text-slate-200">{{ $access }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {{/* Right Column: Pricing & ZarinPal Buy CTA */}}
+            <div class="hx:lg:col-span-5 hx:flex hx:flex-col hx:p-5 hx:rounded-xl hx:bg-white hx:dark:bg-slate-800 hx:border hx:border-blue-200 hx:dark:border-slate-700 hx:shadow-sm">
+              <div class="hx:flex hx:items-center hx:justify-between hx:mb-3">
+                <span class="hx:text-xs hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400 hx:bg-blue-50 hx:dark:bg-blue-900/40 hx:px-2.5 hx:py-1 hx:rounded-md">
+                  ثبت‌نام آنلاین دوره
+                </span>
+                {{ if $discountPercent }}
+                  <span class="hx:text-xs hx:font-bold hx:text-rose-600 hx:dark:text-rose-400 hx:bg-rose-50 hx:dark:bg-rose-900/30 hx:px-2.5 hx:py-1 hx:rounded-full hx:animate-pulse">
+                    {{ $discountPercent }} تخفیف ویژه
+                  </span>
+                {{ end }}
+              </div>
+
+              {{/* Price Box */}}
+              <div class="course-price-container hx:my-3 hx:p-3 hx:rounded-lg hx:bg-slate-50 hx:dark:bg-slate-900/60 hx:border hx:border-slate-100 hx:dark:border-slate-700/50">
+                <div class="hx:flex hx:items-baseline hx:justify-between">
+                  <span class="hx:text-sm hx:text-slate-500 hx:dark:text-slate-400">مبلغ سرمایه‌گذاری:</span>
+                  <div class="hx:text-left">
+                    {{ if $price }}
+                      <div class="hx:text-sm hx:text-slate-400 hx:line-through hx:mb-0.5">{{ $price }}</div>
+                    {{ end }}
+                    <div class="hx:text-2xl hx:font-extrabold hx:text-emerald-600 hx:dark:text-emerald-400">
+                      {{ $discountPrice }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {{/* Main Buy Button (ZarinPal) */}}
+              <a href="{{ $zarinpalLink }}" target="_blank" rel="noopener noreferrer" class="zarinpal-buy-btn hx:w-full hx:flex hx:items-center hx:justify-center hx:gap-2.5 hx:py-3.5 hx:px-6 hx:rounded-xl hx:text-base hx:font-bold hx:text-white hx:bg-gradient-to-r hx:from-amber-500 hx:via-amber-600 hx:to-yellow-500 hx:hover:from-amber-600 hx:hover:to-yellow-600 hx:shadow-md hx:hover:shadow-lg hx:transition-all hx:transform hx:hover:-translate-y-0.5 hx:no-underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-5 hx:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>خرید و پرداخت آنلاین با زرین‌پال</span>
+              </a>
+
+              {{/* Zarinpal Trust Badge */}}
+              <div class="zarinpal-trust-badge hx:mt-3.5 hx:flex hx:items-center hx:justify-center hx:gap-2 hx:text-xs hx:text-slate-500 hx:dark:text-slate-400">
+                <svg class="hx:w-4 hx:h-4 hx:text-amber-500 hx:shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+                <span>پرداخت امن از طریق درگاه مستقیم <strong>زرین‌پال</strong> (شتاب)</span>
+              </div>
+
+              {{/* Quick list of guarantees */}}
+              <ul class="hx:mt-4 hx:pt-3 hx:border-t hx:border-slate-100 hx:dark:border-slate-700/60 hx:text-xs hx:text-slate-600 hx:dark:text-slate-300 hx:space-y-1.5">
+                <li class="hx:flex hx:items-center hx:gap-1.5">
+                  <span class="hx:text-emerald-500">✓</span> فعال‌سازی آنی پس از پرداخت
+                </li>
+                <li class="hx:flex hx:items-center hx:gap-1.5">
+                  <span class="hx:text-emerald-500">✓</span> ۳ جلسه آنلاین رفع اشکال و مشاوره اختصاصی
+                </li>
+                <li class="hx:flex hx:items-center hx:gap-1.5">
+                  <span class="hx:text-emerald-500">✓</span> ۵۰٪ تخفیف وفاداری برای دوره‌های بعدی
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+
+        {{/* Course Content from Markdown */}}
+        <div class="content course-content hx:mt-8">
+          {{ .Content }}
+        </div>
+
+        {{/* Bottom Call to Action Box (ZarinPal Banner) */}}
+        <div class="course-bottom-cta hx:mt-12 hx:p-6 hx:md:p-8 hx:rounded-2xl hx:bg-gradient-to-r hx:from-slate-900 hx:via-blue-950 hx:to-slate-900 hx:text-white hx:shadow-xl hx:border hx:border-slate-700">
+          <div class="hx:flex hx:flex-col hx:md:flex-row hx:items-center hx:justify-between hx:gap-6">
+            <div class="hx:text-right hx:space-y-2">
+              <span class="hx:inline-block hx:px-3 hx:py-1 hx:rounded-full hx:text-xs hx:font-bold hx:bg-amber-500/20 hx:text-amber-300 hx:border hx:border-amber-500/30">
+                درگاه مستقیم زرین‌پال
+              </span>
+              <h3 class="hx:text-xl hx:md:text-2xl hx:font-extrabold hx:text-white">
+                آماده ثبت‌نام در دوره «{{ .Title }}» هستید؟
+              </h3>
+              <p class="hx:text-sm hx:text-slate-300 hx:max-w-xl">
+                با خرید این دوره، دسترسی نامحدود به تمامی ویدیوها، جلسات آنلاین رفع اشکال و ۵۰٪ تخفیف وفاداری دریافت خواهید کرد.
+              </p>
+            </div>
+            
+            <div class="hx:flex hx:flex-col hx:items-center hx:md:items-end hx:gap-3 hx:shrink-0 hx:w-full hx:md:w-auto">
+              <div class="hx:text-center hx:md:text-left">
+                {{ if $price }}
+                  <span class="hx:text-xs hx:text-slate-400 hx:line-through hx:ml-2">{{ $price }}</span>
+                {{ end }}
+                <span class="hx:text-2xl hx:font-black hx:text-amber-400">{{ $discountPrice }}</span>
+              </div>
+              <a href="{{ $zarinpalLink }}" target="_blank" rel="noopener noreferrer" class="zarinpal-buy-btn-lg hx:w-full hx:md:w-auto hx:flex hx:items-center hx:justify-center hx:gap-2 hx:py-3 hx:px-8 hx:rounded-xl hx:text-base hx:font-extrabold hx:text-slate-950 hx:bg-amber-400 hx:hover:bg-amber-300 hx:shadow-lg hx:transition-all hx:transform hx:hover:scale-105 hx:no-underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-5 hx:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>ثبت‌نام و پرداخت از درگاه زرین‌پال</span>
+              </a>
+              <span class="hx:text-[11px] hx:text-slate-400">تضمین امنیت پرداخت توسط شاپرک و زرین‌پال</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hx:mt-16"></div>
+        {{ partial "components/comments.html" . }}
+      </main>
+    </article>
+  </div>
+{{ end }}

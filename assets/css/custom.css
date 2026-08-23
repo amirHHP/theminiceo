@@ -352,3 +352,57 @@ html, body, button, input, select, textarea {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
 }
+
+/* Course Layout & ZarinPal Buy Button Styles */
+.course-hero-card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.zarinpal-buy-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+}
+
+.zarinpal-buy-btn:hover {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.zarinpal-buy-btn-lg {
+  background: #fbbf24 !important;
+  color: #0f172a !important;
+  text-decoration: none !important;
+  font-weight: 800;
+  box-shadow: 0 4px 14px 0 rgba(251, 191, 36, 0.4);
+}
+
+.zarinpal-buy-btn-lg:hover {
+  background: #f59e0b !important;
+  color: #0f172a !important;
+  transform: scale(1.03);
+}
+
+.zarinpal-btn-inline {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.zarinpal-btn-inline:hover {
+  background: #d97706 !important;
+  color: #ffffff !important;
+}
+
+.course-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+}
+
