@@ -1,51 +1,263 @@
 {{- $displayThemeToggle := .Site.Params.theme.displayToggle | default true -}}
 
-<footer class="hextra-footer hx:bg-slate-50/90 hx:dark:bg-neutral-900/90 hx:border-t hx:border-slate-200/80 hx:dark:border-neutral-800 hx:backdrop-blur-sm hx:print:hidden hx:mt-16">
-  <div class="hextra-max-footer-width hx:mx-auto hx:px-6 hx:py-8">
+<footer class="tmc-site-footer hx:print:hidden">
+  <div class="tmc-footer-wrapper">
     
-    <!-- Top row: Brand & clean navigation -->
-    <div class="hx:flex hx:flex-col hx:md:flex-row hx:items-center hx:justify-between hx:gap-5 hx:pb-6 hx:border-b hx:border-slate-200/60 hx:dark:border-neutral-800/60">
-      <!-- Brand Logo + Name -->
-      <a href="/" class="hx:flex hx:items-center hx:gap-3 hx:group">
-        <img class="hx:block hx:dark:hidden hx:rounded-lg hx:transition-transform hx:group-hover:scale-105" src="/images/logo.svg" alt="TheMiniCEO Logo" height="30" width="30">
-        <img class="hx:hidden hx:dark:block hx:rounded-lg hx:transition-transform hx:group-hover:scale-105" src="/images/logo-dark.svg" alt="TheMiniCEO Logo Dark" height="30" width="30">
-        <div class="hx:text-right">
-          <span class="hx:font-extrabold hx:text-sm hx:text-slate-900 hx:dark:text-white">مدیرعامل کوچک</span>
-          <span class="hx:block hx:text-[11px] hx:text-slate-500 hx:dark:text-slate-400">مرجع تخصصی مدیریت محصول و کسب‌وکار</span>
+    <!-- Top Row: Brand & Navigation -->
+    <div class="tmc-footer-top">
+      
+      <!-- Brand Section -->
+      <a href="/" class="tmc-footer-brand">
+        <img class="hx:block hx:dark:hidden tmc-brand-img" src="/images/logo.svg" alt="TheMiniCEO Logo" width="36" height="36">
+        <img class="hx:hidden hx:dark:block tmc-brand-img" src="/images/logo-dark.svg" alt="TheMiniCEO Logo Dark" width="36" height="36">
+        <div class="tmc-brand-text">
+          <span class="tmc-brand-title">مدیرعامل کوچک</span>
+          <span class="tmc-brand-subtitle">مرجع جامع مدیریت محصول و کسب‌وکار</span>
         </div>
       </a>
 
-      <!-- Clean Navigation Links -->
-      <nav class="hx:flex hx:flex-wrap hx:items-center hx:justify-center hx:gap-x-5 hx:gap-y-2 hx:text-xs hx:font-medium hx:text-slate-600 hx:dark:text-slate-300">
-        <a href="/docs/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">مقالات و مستندات</a>
-        <a href="/categories/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">دسته‌بندی‌ها</a>
-        <a href="/tags/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">موضوعات و برچسب‌ها</a>
-        <a href="/course/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">دوره‌ها</a>
-        <a href="/frameworks/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">فریم‌ورک‌ها</a>
-        <a href="/docs/books/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">کتابخانه</a>
-        <a href="/product-consultant/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">مشاوره محصول</a>
-        <a href="/about/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">درباره ما</a>
+      <!-- Navigation Links -->
+      <nav class="tmc-footer-links" aria-label="پاورقی">
+        <a href="/docs/" class="tmc-link-item">مقالات</a>
+        <a href="/categories/" class="tmc-link-item">دسته‌بندی‌ها</a>
+        <a href="/tags/" class="tmc-link-item">برچسب‌ها</a>
+        <a href="/course/" class="tmc-link-item">دوره‌های آموزشی</a>
+        <a href="/frameworks/" class="tmc-link-item">فریم‌ورک‌ها</a>
+        <a href="/docs/books/" class="tmc-link-item">کتابخانه</a>
+        <a href="/product-consultant/" class="tmc-link-item">مشاوره محصول</a>
+        <a href="/about/" class="tmc-link-item">درباره ما</a>
       </nav>
+
     </div>
 
-    <!-- Bottom row: Copyright, Contact, Theme Toggle -->
-    <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-center hx:justify-between hx:gap-3 hx:pt-5 hx:text-xs hx:text-slate-500 hx:dark:text-slate-400">
-      <div>
+    <!-- Divider Line -->
+    <div class="tmc-footer-line"></div>
+
+    <!-- Bottom Row: Copyright & Actions -->
+    <div class="tmc-footer-bottom">
+      <div class="tmc-copyright">
         © 2026 مدیرعامل کوچک (TheMiniCEO). تمامی حقوق محفوظ است.
       </div>
 
-      <div class="hx:flex hx:items-center hx:gap-4">
-        <a href="/about/" class="hx:transition-colors hx:hover:text-blue-600 hx:dark:hover:text-blue-400">
-          ارتباط با ما
-        </a>
-
+      <div class="tmc-bottom-actions">
+        <a href="/about/" class="tmc-contact-link">ارتباط با ما</a>
         {{- if $displayThemeToggle -}}
-          <div class="hx:border-r hx:border-slate-300 hx:dark:border-neutral-700 hx:h-3.5"></div>
-          {{- partial "theme-toggle.html" (dict "hideLabel" false) -}}
+          <span class="tmc-action-dot">•</span>
+          <div class="tmc-theme-wrapper">
+            {{- partial "theme-toggle.html" (dict "hideLabel" false) -}}
+          </div>
         {{- end -}}
       </div>
     </div>
 
   </div>
 </footer>
+
+<style>
+.tmc-site-footer {
+  width: 100%;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 4rem;
+  padding: 2.5rem 1.5rem 1.75rem;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+html.dark .tmc-site-footer,
+.dark .tmc-site-footer {
+  background-color: #0b0f19;
+  border-top: 1px solid #1e293b;
+}
+
+.tmc-footer-wrapper {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+.tmc-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tmc-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.tmc-footer-brand:hover {
+  opacity: 0.85;
+}
+
+.tmc-brand-img {
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.tmc-brand-text {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.tmc-brand-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+html.dark .tmc-brand-title,
+.dark .tmc-brand-title {
+  color: #f8fafc;
+}
+
+.tmc-brand-subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+}
+
+html.dark .tmc-brand-subtitle,
+.dark .tmc-brand-subtitle {
+  color: #94a3b8;
+}
+
+.tmc-footer-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tmc-link-item {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+html.dark .tmc-link-item,
+.dark .tmc-link-item {
+  color: #94a3b8;
+}
+
+.tmc-link-item:hover {
+  color: #2563eb;
+  background-color: #f1f5f9;
+}
+
+html.dark .tmc-link-item:hover,
+.dark .tmc-link-item:hover {
+  color: #60a5fa;
+  background-color: rgba(30, 41, 59, 0.6);
+}
+
+.tmc-footer-line {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 1.5rem 0 1.25rem;
+  width: 100%;
+}
+
+html.dark .tmc-footer-line,
+.dark .tmc-footer-line {
+  background-color: #1e293b;
+}
+
+.tmc-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+html.dark .tmc-footer-bottom,
+.dark .tmc-footer-bottom {
+  color: #94a3b8;
+}
+
+.tmc-bottom-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tmc-contact-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+html.dark .tmc-contact-link,
+.dark .tmc-contact-link {
+  color: #94a3b8;
+}
+
+.tmc-contact-link:hover {
+  color: #2563eb;
+}
+
+html.dark .tmc-contact-link:hover,
+.dark .tmc-contact-link:hover {
+  color: #60a5fa;
+}
+
+.tmc-action-dot {
+  color: #cbd5e1;
+  font-size: 0.8rem;
+}
+
+html.dark .tmc-action-dot,
+.dark .tmc-action-dot {
+  color: #334155;
+}
+
+@media (max-width: 840px) {
+  .tmc-site-footer {
+    padding: 2rem 1rem 1.5rem;
+  }
+  .tmc-footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  .tmc-footer-brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .tmc-brand-text {
+    text-align: center;
+  }
+  .tmc-footer-links {
+    justify-content: center;
+    gap: 0.3rem 0.4rem;
+  }
+  .tmc-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+</style>
+
+
 
