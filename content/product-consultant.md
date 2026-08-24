@@ -246,6 +246,4 @@ coverImage: "projectaccounting.jpg"
 
 * * *
 
-**اگر استارتاپ یا کسب و کار شما در هر کدام از دسته‌های بالا قرار می‌گیرد یا اینکه به‌دنبال خدمات خاصی در زمینه محصول هستید از طریق فرم زیر با ما ارتباط برقرار کنید.**
-
-**ایمیل: <!--email_off-->[hi@theminiceo.ir](mailto:hi@theminiceo.ir)<!--/email_off-->**
+**ایمیل ارتباط: `hi [at] theminiceo.ir`**
