@@ -1,0 +1,23 @@
+{{- $desc := "" -}}
+{{- with .Description | plainify | htmlUnescape -}}
+  {{- $desc = . -}}
+{{- else -}}
+  {{- if .IsHome -}}
+    {{- with .Site.Params.description | plainify | htmlUnescape -}}
+      {{- $desc = . -}}
+    {{- end -}}
+  {{- else if and .Summary (ne (.Summary | plainify | htmlUnescape | chomp) "") -}}
+    {{- $desc = (.Summary | plainify | htmlUnescape | chomp) -}}
+  {{- else if eq .Data.Singular "tag" -}}
+    {{- $desc = printf "مجموعه مقالات، نکات و آموزش‌های تخصصی درباره «%s» در وب‌سایت مدیرعامل کوچک" .Title -}}
+  {{- else if eq .Data.Singular "category" -}}
+    {{- $desc = printf "مجموعه مقالات و راهنماهای تخصصی «%s» در حوزه مدیریت محصول و رشد کسب‌وکار | مدیرعامل کوچک" .Title -}}
+  {{- else if .Title -}}
+    {{- $desc = printf "%s – مقالات، کتاب‌ها و مستندات تخصصی مدیریت محصول در مدیرعامل کوچک" .Title -}}
+  {{- else -}}
+    {{- with .Site.Params.description | plainify | htmlUnescape -}}
+      {{- $desc = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $desc | plainify | htmlUnescape | chomp -}}

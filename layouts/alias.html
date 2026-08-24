@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang | default "fa" }}" dir="{{ site.Language.Direction | default "rtl" }}">
+  <head>
+    <title>{{ with .Page }}{{ .Title }}{{ else }}{{ .Permalink }}{{ end }}</title>
+    <link rel="canonical" href="{{ .Permalink }}"/>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="description" content="در حال انتقال به {{ with .Page }}{{ .Title }}{{ else }}{{ .Permalink }}{{ end }}..."/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
+  </head>
+  <body>
+    <p>در حال انتقال به <a href="{{ .Permalink }}">{{ with .Page }}{{ .Title }}{{ else }}{{ .Permalink }}{{ end }}</a>...</p>
+  </body>
+</html>

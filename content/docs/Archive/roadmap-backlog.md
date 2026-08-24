@@ -33,7 +33,7 @@ aliases: /product-basics/roadmap-backlog
 ![تمرکز بک لاگ محصول بر انتشار بعدی](images/ProductBacklogFocusedOnNextRelease-1024x233.png)
 
 
-بیشتر بخوانید: [استراتژی محصول خوب چگونه است؟ + نمونه موردی اسنپ](/product-strategy/good-product-strategy/)
+بیشتر بخوانید: [استراتژی محصول خوب چگونه است؟ + نمونه موردی اسنپ](/docs/archive/good-product-strategy/)
 
 ### **تمامي همپوشاني‌هاي بين نقشه راه و بك‌لاگ را به حداقل برسانيد**
 

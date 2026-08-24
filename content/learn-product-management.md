@@ -16,15 +16,15 @@ coverImage: "product-strategy.jpg"
 
 #### ۵ مقاله
 
-- [مدیریت محصول و مقدمه‌ای بر وظایف و مهارت‌های لازم](/product-skills/intro-for-product-managment/)
+- [مدیریت محصول و مقدمه‌ای بر وظایف و مهارت‌های لازم](/docs/archive/intro-for-product-managment/)
 
-- [هفت مهارت ساده ولی هوشمندانه برای کسب تسلط در ایفای نقش یک مدیر محصول](/product-skills/7-skills-for-product-management/)
+- [هفت مهارت ساده ولی هوشمندانه برای کسب تسلط در ایفای نقش یک مدیر محصول](/docs/archive/7-skills-for-product-management/)
 
-- [مدیر محصول خوب و مدیر محصول بد را بشناسید](/product-basics/good-bad-product-manager/)
+- [مدیر محصول خوب و مدیر محصول بد را بشناسید](/docs/archive/good-bad-product-manager/)
 
-- [نمونه سوالات مصاحبه مدیر‌محصول در شرکت‌های مختلف](/product-skills/sample-question/)
+- [نمونه سوالات مصاحبه مدیر‌محصول در شرکت‌های مختلف](/docs/archive/sample-question/)
 
-- [تسلط فنی به اندازه یک مدیر محصول](/product-skills/being-technical-enough-as-a-product-manager/)
+- [تسلط فنی به اندازه یک مدیر محصول](/docs/archive/being-technical-enough-as-a-product-manager/)
 
 ## ساخت محصول
 
@@ -38,9 +38,9 @@ coverImage: "product-strategy.jpg"
 
 #### ۲ مقاله
 
-- [ساخت محصول از صفر تا ۱۰۰ تنها در ۴ مرحله](/product-discovery/4-step-to-produce-product/)
+- [ساخت محصول از صفر تا ۱۰۰ تنها در ۴ مرحله](/docs/archive/4-step-to-produce-product/)
 
-- [نقشه راه محصول و بک لاگ محصول – شباهت ها و تفاوت ها](/product-basics/roadmap-backlog/)
+- [نقشه راه محصول و بک لاگ محصول – شباهت ها و تفاوت ها](/docs/archive/roadmap-backlog/)
 
 ## مشتری
 
@@ -54,7 +54,7 @@ coverImage: "product-strategy.jpg"
 
 #### ۱ مقاله
 
-- [توسعه مشتری برای مدیران محصول](/product-discovery/customer-development/)
+- [توسعه مشتری برای مدیران محصول](/docs/archive/customer-development/)
 
 آموزش  مدیریت محصول در سال‌های اخیر یکی از مهمترین دوره‌های آموزشی در حوزه محصول و تولید مبتنی بر فناوری اطلاعات بوده است. اما برای آموزش رایگان مدیریت محصول چه کار باید بکنیم؟ با ما در این مسیر همراه باشید.
 
@@ -68,12 +68,12 @@ coverImage: "product-strategy.jpg"
 
 ## ۴ مقاله
 
-- [استراتژی لیستی از کارهایی که باید انجام شوند نیست!](/product-strategy/strategy-isnt-todo/)
-- [استراتژی محصول خوب چگونه است؟ + نمونه موردی اسنپ](/product-strategy/good-product-strategy/)
+- [استراتژی لیستی از کارهایی که باید انجام شوند نیست!](/docs/archive/strategy-isnt-todo/)
+- [استراتژی محصول خوب چگونه است؟ + نمونه موردی اسنپ](/docs/archive/good-product-strategy/)
     
-- [جایگاه محصول چیست؟ + نمونه موردی بیس کمپ](/product-strategy/product-positioning/)
+- [جایگاه محصول چیست؟ + نمونه موردی بیس کمپ](/docs/archive/product-positioning/)
     
-- [مسیریابی محصول در هزارتوی محصول + راهنمای عملی مسیریابی محصول](/product-strategy/navigation-product/)
+- [مسیریابی محصول در هزارتوی محصول + راهنمای عملی مسیریابی محصول](/docs/archive/navigation-product/)
     
 
 ## بهبود مهارت‌های نرم
@@ -88,12 +88,12 @@ coverImage: "product-strategy.jpg"
 
 ## ۴ مقاله
 
-- [مذاکره با ذینفعان؛ بهترین توصیه‌ها برای مدیران محصول](/product-skills/top-tips-negotiating-stakeholders/)
-- [سیاست‌های محیط کار، چرا باید در محل کار سیاست پیشه کنیم؟](/product-skills/workplace-politics/)
+- [مذاکره با ذینفعان؛ بهترین توصیه‌ها برای مدیران محصول](/docs/archive/top-tips-negotiating-stakeholders/)
+- [سیاست‌های محیط کار، چرا باید در محل کار سیاست پیشه کنیم؟](/docs/archive/workplace-politics/)
     
-- [بهترین تیم‌ها، پاسخگو و مسئولیت‌پذیر هستند](/product-skills/the-best-teams-hold-themselves-accountable/).
+- [بهترین تیم‌ها، پاسخگو و مسئولیت‌پذیر هستند](/docs/archive/the-best-teams-hold-themselves-accountable/).
     
-- [گوش دادن فعال: کلید اصلی مدیران محصول برای ارتباط مؤثر](/product-skills/authentic-listening/)
+- [گوش دادن فعال: کلید اصلی مدیران محصول برای ارتباط مؤثر](/docs/archive/authentic-listening/)
     
 
 ## مدیر محصول حرفه‌ای
@@ -106,13 +106,13 @@ coverImage: "product-strategy.jpg"
 
 ## ۴ مقاله
 
-- [آنچه از ۱۰۰ مصاحبه JTBD یاد گرفتم: چرا کاربران مهاجرت می‌کنند](/product-discovery/jobs-to-be-done-100interview/).
+- [آنچه از ۱۰۰ مصاحبه JTBD یاد گرفتم: چرا کاربران مهاجرت می‌کنند](/docs/archive/jobs-to-be-done-100interview/).
     
-- [وارونه کار کردن: چطور با حداقل نیازهای تکنولوژی به چیزی برسیم که ما را به اهدافمان می‌رساند](/product-basics/backward-working/).
+- [وارونه کار کردن: چطور با حداقل نیازهای تکنولوژی به چیزی برسیم که ما را به اهدافمان می‌رساند](/docs/archive/backward-working/).
     
-- [یوزر استوری مپینگ چیست و چگونه انجام می‌شود؟](/product-discovery/userstory-mapping/)
+- [یوزر استوری مپینگ چیست و چگونه انجام می‌شود؟](/docs/archive/userstory-mapping/)
     
-- [جلسه طوفان فکری محصول را چگونه برگزار کنیم؟](/product-skills/product-brain-storming/)
+- [جلسه طوفان فکری محصول را چگونه برگزار کنیم؟](/docs/archive/product-brain-storming/)
     
 
 ## ارزیابی محصول
@@ -127,6 +127,6 @@ coverImage: "product-strategy.jpg"
 
 ## ۲ مقاله
 
-- [تیم محصول چگونه ارزیابی شود؟](/product-skills/product-team-performance/)
+- [تیم محصول چگونه ارزیابی شود؟](/docs/archive/product-team-performance/)
     
--  [شاخص‌های محصول چطور در مدیریت محصول کمک می‌کنند؟](/product-strategy/product-metrics/)
+-  [شاخص‌های محصول چطور در مدیریت محصول کمک می‌کنند؟](/docs/archive/product-metrics/)

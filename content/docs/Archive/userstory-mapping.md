@@ -37,7 +37,7 @@ aliases: /product-discovery/userstory-mapping
 
 </figure>
 
-مطالعه بیشتر: [جایگاه یابی محصول + نمونه موردی بیس کمپ](/product-strategy/product-positioning/)
+مطالعه بیشتر: [جایگاه یابی محصول + نمونه موردی بیس کمپ](/docs/archive/product-positioning/)
 
 ### مرحله ۲- نگاشت مسیر کاربر در رسیدن به هدف محصول
 
