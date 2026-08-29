@@ -1,9 +1,6 @@
 ---
-title: کتاب INSPIRED
-date: 2024-09-12
-coverImage: inspired-book-cover.png
-aliases:
-  - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-inspired/
+title: کتاب Escaping the Build Trap
+date: 2026-08-29
 ---
 
 اگر کتاب‌های قبلی درباره «چگونه محصول بسازیم» بودند، کتاب **Escaping the Build Trap** نوشته ملیسا پری (Melissa Perri) درباره این است که **«چرا بسیاری از سازمان‌ها با وجود تلاش زیاد، محصولاتی بی‌خاصیت می‌سازند»**.
