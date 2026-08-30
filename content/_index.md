@@ -25,11 +25,16 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:flex hx:flex-wrap hx:justify-center hx:gap-3 hx:mb-2">
-{{< hextra/hero-button text="مشاهده دوره‌های آموزشی" link="/course/" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);" >}}
-{{< hextra/hero-button text="ابزارها و فریم‌ورک‌ها" link="/frameworks/" style="background: linear-gradient(135deg, #0d9488, #0f766e);" >}}
-{{< hextra/hero-button text="کتابخانه تخصصی" link="/docs/books/" style="background: linear-gradient(135deg, #475569, #334155);" >}}
-{{< hextra/hero-button text="رزرو مشاوره اختصاصی" link="/product-consultant/" style="background: linear-gradient(135deg, #059669, #047857);" >}}
+<div class="hero-ctas not-prose">
+  <div class="hero-ctas-main">
+    <a class="hero-cta hero-cta--primary" href="/course/">مشاهده دوره‌های آموزشی</a>
+    <a class="hero-cta hero-cta--secondary" href="/product-consultant/">رزرو مشاوره اختصاصی</a>
+  </div>
+  <div class="hero-ctas-more">
+    <a class="hero-cta hero-cta--ghost" href="/frameworks/">ابزارها و فریم‌ورک‌ها</a>
+    <span class="hero-ctas-dot" aria-hidden="true"></span>
+    <a class="hero-cta hero-cta--ghost" href="/docs/books/">کتابخانه تخصصی</a>
+  </div>
 </div>
 
 </div>
