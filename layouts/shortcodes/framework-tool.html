@@ -1,0 +1,6 @@
+{{- $name := .Get "name" -}}
+{{- $lang := .Page.Language.Lang | default "fa" -}}
+<div class="fw-tool not-prose" data-fw-tool="{{ $name }}" data-lang="{{ $lang }}"></div>
+<noscript>
+  <p>برای استفاده از ابزار تعاملی این صفحه، جاوااسکریپت را روشن کنید.</p>
+</noscript>

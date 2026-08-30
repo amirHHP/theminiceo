@@ -1395,6 +1395,234 @@ html, body, button, input, select, textarea {
   }
 }
 
+/* Interactive framework tools on featured articles */
+.fw-tool {
+  width: 100%;
+  margin: 2rem 0 2.5rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  box-shadow: 0 8px 20px -12px rgba(15, 23, 42, 0.12);
+}
+
+.dark .fw-tool {
+  background: #0f172a;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.fw-tool-head h3 {
+  margin: 0.35rem 0 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.dark .fw-tool-head h3 {
+  color: #f8fafc;
+}
+
+.fw-tool-head p,
+.fw-tool-hint,
+.fw-tool-note,
+.fw-opp-q small {
+  color: #64748b;
+}
+
+.dark .fw-tool-head p,
+.dark .fw-tool-hint,
+.dark .fw-tool-note,
+.dark .fw-opp-q small {
+  color: #94a3b8;
+}
+
+.fw-tool-badge {
+  display: inline-flex;
+  padding: 0.2rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+}
+
+.dark .fw-tool-badge {
+  background: rgba(37, 99, 235, 0.2);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.fw-tool-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.9rem 0;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dark .fw-tool-field {
+  color: #e2e8f0;
+}
+
+.fw-tool input[type="text"],
+.fw-tool input[type="date"],
+.fw-tool textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  font-weight: 500;
+  background: #ffffff;
+  color: inherit;
+}
+
+.dark .fw-tool input[type="text"],
+.dark .fw-tool input[type="date"],
+.dark .fw-tool textarea {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+.fw-tool input:focus,
+.fw-tool textarea:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.fw-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.fw-tool-preview {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  border: 1px dashed #93c5fd;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #1e3a8a;
+}
+
+.dark .fw-tool-preview {
+  background: #1e293b;
+  border-color: #1d4ed8;
+  color: #bfdbfe;
+}
+
+.fw-tool-preview.is-go { border-style: solid; border-color: #34d399; color: #065f46; }
+.fw-tool-preview.is-caution { border-style: solid; border-color: #fbbf24; color: #92400e; }
+.fw-tool-preview.is-nogo { border-style: solid; border-color: #f87171; color: #991b1b; }
+
+.dark .fw-tool-preview.is-go { color: #6ee7b7; }
+.dark .fw-tool-preview.is-caution { color: #fcd34d; }
+.dark .fw-tool-preview.is-nogo { color: #fca5a5; }
+
+.fw-tool-note {
+  min-height: 1.4em;
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+
+.fw-tool-note.is-ok { color: #047857; }
+.fw-tool-note.is-warn { color: #b45309; }
+.dark .fw-tool-note.is-ok { color: #6ee7b7; }
+.dark .fw-tool-note.is-warn { color: #fbbf24; }
+
+.fw-tool-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.fw-tool-btn {
+  border: 0;
+  border-radius: 0.75rem;
+  padding: 0.55rem 0.95rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.fw-tool-btn-secondary { background: #0f766e; }
+.fw-tool-btn-ghost {
+  background: transparent;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.dark .fw-tool-btn-ghost {
+  color: #e2e8f0;
+  border-color: #475569;
+}
+
+.fw-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0.45rem 0;
+  font-weight: 600;
+}
+
+.fw-sprint-day {
+  margin-top: 1.1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .fw-sprint-day {
+  border-top-color: #334155;
+}
+
+.fw-sprint-day h4,
+.fw-opp-q h4 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.fw-tool-progress {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0.25rem;
+  font-weight: 700;
+}
+
+.fw-opp-q {
+  margin: 1.15rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dark .fw-opp-q {
+  border-bottom-color: #334155;
+}
+
+.fw-score input[type="range"] {
+  width: 100%;
+}
+
+.fw-score em {
+  font-style: normal;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+@media (max-width: 720px) {
+  .fw-tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 860px) {
   .tmc-footer-main {
     flex-direction: column;
