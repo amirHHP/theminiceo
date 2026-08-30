@@ -62,6 +62,141 @@ html, body, button, input, select, textarea {
   border-color: rgba(51, 65, 85, 0.6);
 }
 
+/* Hero CTAs: one primary action, one secondary, quieter resource links */
+.hero-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-ctas-main,
+.hero-ctas-more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-ctas-main {
+  gap: 1rem;
+}
+
+.hero-ctas-more {
+  gap: 0.65rem;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-decoration: none !important;
+  white-space: nowrap;
+  line-height: 1.4;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.hero-cta:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.hero-cta--primary,
+.hero-cta--secondary {
+  min-height: 3rem;
+  padding: 0.8rem 1.45rem;
+  border-radius: 0.875rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hero-cta--primary {
+  background: #2563eb;
+  color: #ffffff !important;
+  border: 1.5px solid #1d4ed8;
+  box-shadow: 0 10px 22px -10px rgba(37, 99, 235, 0.55);
+}
+
+.hero-cta--primary:hover {
+  background: #1d4ed8;
+  border-color: #1e40af;
+  transform: translateY(-1px);
+  color: #ffffff !important;
+}
+
+.hero-cta--secondary {
+  background: #ffffff;
+  color: #1e293b !important;
+  border: 1.5px solid #cbd5e1;
+}
+
+.hero-cta--secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a !important;
+}
+
+.hero-cta--ghost {
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569 !important;
+  background: transparent;
+  border: none;
+}
+
+.hero-cta--ghost:hover {
+  color: #2563eb !important;
+  background: #eff6ff;
+}
+
+.hero-ctas-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: #cbd5e1;
+}
+
+.dark .hero-cta--secondary {
+  background: #0f172a;
+  color: #e2e8f0 !important;
+  border-color: #475569;
+}
+
+.dark .hero-cta--secondary:hover {
+  background: #1e293b;
+  border-color: #64748b;
+  color: #f8fafc !important;
+}
+
+.dark .hero-cta--ghost {
+  color: #94a3b8 !important;
+}
+
+.dark .hero-cta--ghost:hover {
+  color: #93c5fd !important;
+  background: rgba(37, 99, 235, 0.15);
+}
+
+.dark .hero-ctas-dot {
+  background: #475569;
+}
+
+@media (max-width: 640px) {
+  .hero-ctas-main {
+    flex-direction: column;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .hero-cta--primary,
+  .hero-cta--secondary {
+    width: 100%;
+  }
+}
+
 /* Intro / About Box */
 .intro-box {
   width: 100%;
@@ -146,6 +281,7 @@ html, body, button, input, select, textarea {
 
 /* Distinct Site Sections */
 .site-section {
+  width: 100%;
   margin-bottom: 3.5rem;
   padding: 2.5rem 2rem;
   border-radius: 1.5rem;
@@ -357,6 +493,7 @@ html, body, button, input, select, textarea {
 
 /* CTA Card */
 .cta-banner {
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   padding: 2.5rem 2rem;
@@ -1035,6 +1172,92 @@ html, body, button, input, select, textarea {
 
 .dark .tmc-footer-divider {
   background-color: #334155;
+}
+
+/* Frameworks & tools catalog */
+.fw-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+
+.fw-jump a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.fw-jump a:hover {
+  border-color: #3b82f6;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.dark .fw-jump a {
+  background: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+.dark .fw-jump a:hover {
+  border-color: #60a5fa;
+  color: #93c5fd;
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.fw-section {
+  scroll-margin-top: 5.5rem;
+}
+
+.hextra-card:not(:has(.hextra-card-image)) {
+  min-height: 100%;
+}
+
+.hextra-card .hextra-card-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  color: #2563eb;
+}
+
+.dark .hextra-card .hextra-card-icon svg {
+  color: #60a5fa;
+}
+
+@media (max-width: 639px) {
+  .hero-wrapper {
+    padding: 2rem 1.15rem;
+  }
+
+  .site-section,
+  .cta-banner {
+    padding: 1.5rem 1.15rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .fw-jump {
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+  }
+
+  .fw-jump a {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .section-header-title {
+    font-size: 1.35rem;
+  }
 }
 
 @media (max-width: 860px) {
