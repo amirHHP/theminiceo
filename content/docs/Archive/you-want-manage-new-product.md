@@ -4,7 +4,7 @@ date: 2023-07-10
 categories:
   - product-skills
 aliases:
-  - /product-skills/you-want-manage-new-product
+  - /product-skills/you-want-manage-new-product/
   - /product-skills/پس-شما-می-خواهید-یک-محصول-را-مدیریت-کنید/
 ---
 

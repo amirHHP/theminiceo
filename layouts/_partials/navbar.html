@@ -40,7 +40,11 @@
         {{- $external := strings.HasPrefix $link "http" -}}
         {{- with .PageRef -}}
           {{- if hasPrefix . "/" -}}
-            {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
+            {{- $ref := strings.TrimPrefix "/" . -}}
+            {{- if not (strings.HasSuffix $ref "/") -}}
+              {{- $ref = printf "%s/" $ref -}}
+            {{- end -}}
+            {{- $link = relLangURL $ref -}}
           {{- end -}}
         {{- end -}}
 
@@ -77,7 +81,11 @@
                   {{- $external := strings.HasPrefix $link "http" -}}
                   {{- with .PageRef -}}
                     {{- if hasPrefix . "/" -}}
-                      {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
+                      {{- $ref := strings.TrimPrefix "/" . -}}
+                      {{- if not (strings.HasSuffix $ref "/") -}}
+                        {{- $ref = printf "%s/" $ref -}}
+                      {{- end -}}
+                      {{- $link = relLangURL $ref -}}
                     {{- end -}}
                   {{- end -}}
                   <li class="hextra-nav-menu-item hx:flex hx:flex-col">

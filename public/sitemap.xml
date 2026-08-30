@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://theminiceo.ir/categories/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <loc>https://theminiceo.ir/docs/books/the-lean-product-playbook/</loc>
+    <lastmod>2026-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theminiceo.ir/docs/books/escaping-the-build-trap/</loc>
+    <lastmod>2026-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theminiceo.ir/docs/books/the-lean-startup/</loc>
+    <lastmod>2026-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theminiceo.ir/</loc>
+    <lastmod>2026-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theminiceo.ir/categories/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theminiceo.ir/docs/1-what-is-product-managment/what-is-product-managment/</loc>
@@ -81,9 +90,6 @@
     <lastmod>2024-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theminiceo.ir/docs/books/build-better-products/</loc>
-    <lastmod>2024-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theminiceo.ir/docs/books/escaping-the-build-trap/</loc>
     <lastmod>2024-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theminiceo.ir/docs/books/%DA%A9%D8%AA%D8%A7%D8%A8-inspired/</loc>

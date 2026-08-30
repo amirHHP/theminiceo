@@ -36,27 +36,27 @@ relativeURLs = false
 [menu]
   [[menu.main]]
     name = "مقالات و مستندات"
-    pageRef = "/docs"
+    pageRef = "/docs/"
     weight = 1
   [[menu.main]]
     name = "دوره‌های آموزشی"
-    pageRef = "/course"
+    pageRef = "/course/"
     weight = 2
   [[menu.main]]
     name = "کتابخانه"
-    pageRef = "/docs/books"
+    pageRef = "/docs/books/"
     weight = 3
   [[menu.main]]
     name = "فریم‌ورک‌ها و ابزارها"
-    pageRef = "/frameworks"
+    pageRef = "/frameworks/"
     weight = 4
   [[menu.main]]
     name = "مشاوره محصول"
-    pageRef = "/product-consultant"
+    pageRef = "/product-consultant/"
     weight = 5
   [[menu.main]]
     name = "درباره ما"
-    pageRef = "/about"
+    pageRef = "/about/"
     weight = 6
   [[menu.main]]
     name = "جستجو"
