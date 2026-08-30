@@ -7,25 +7,25 @@
     <div class="tmc-footer-top">
       
       <!-- Brand Section -->
-      <a href="/" class="tmc-footer-brand">
+      <a href="{{ .Site.Home.RelPermalink }}" class="tmc-footer-brand">
         <img class="hx:block hx:dark:hidden tmc-brand-img" src="/images/logo.svg" alt="TheMiniCEO Logo" width="36" height="36">
         <img class="hx:hidden hx:dark:block tmc-brand-img" src="/images/logo-dark.svg" alt="TheMiniCEO Logo Dark" width="36" height="36">
         <div class="tmc-brand-text">
-          <span class="tmc-brand-title">مدیرعامل کوچک</span>
-          <span class="tmc-brand-subtitle">مرجع جامع مدیریت محصول و کسب‌وکار</span>
+          <span class="tmc-brand-title">{{ T "footerBrandTitle" }}</span>
+          <span class="tmc-brand-subtitle">{{ T "footerBrandSubtitle" }}</span>
         </div>
       </a>
 
       <!-- Navigation Links -->
-      <nav class="tmc-footer-links" aria-label="پاورقی">
-        <a href="/docs/" class="tmc-link-item">مقالات</a>
-        <a href="/categories/" class="tmc-link-item">دسته‌بندی‌ها</a>
-        <a href="/tags/" class="tmc-link-item">برچسب‌ها</a>
-        <a href="/course/" class="tmc-link-item">دوره‌های آموزشی</a>
-        <a href="/frameworks/" class="tmc-link-item">فریم‌ورک‌ها</a>
-        <a href="/docs/books/" class="tmc-link-item">کتابخانه</a>
-        <a href="/product-consultant/" class="tmc-link-item">مشاوره محصول</a>
-        <a href="/about/" class="tmc-link-item">درباره ما</a>
+      <nav class="tmc-footer-links" aria-label="{{ T "footerAriaLabel" }}">
+        <a href="{{ relLangURL "docs/" }}" class="tmc-link-item">{{ T "footerArticles" }}</a>
+        <a href="{{ relLangURL "categories/" }}" class="tmc-link-item">{{ T "footerCategories" }}</a>
+        <a href="{{ relLangURL "tags/" }}" class="tmc-link-item">{{ T "footerTags" }}</a>
+        <a href="{{ relLangURL "course/" }}" class="tmc-link-item">{{ T "footerCourses" }}</a>
+        <a href="{{ relLangURL "frameworks/" }}" class="tmc-link-item">{{ T "footerFrameworks" }}</a>
+        <a href="{{ relLangURL "docs/books/" }}" class="tmc-link-item">{{ T "footerLibrary" }}</a>
+        <a href="{{ relLangURL "product-consultant/" }}" class="tmc-link-item">{{ T "footerConsulting" }}</a>
+        <a href="{{ relLangURL "about/" }}" class="tmc-link-item">{{ T "footerAbout" }}</a>
       </nav>
 
     </div>
@@ -36,11 +36,21 @@
     <!-- Bottom Row: Copyright & Actions -->
     <div class="tmc-footer-bottom">
       <div class="tmc-copyright">
-        © 2026 مدیرعامل کوچک (TheMiniCEO). تمامی حقوق محفوظ است.
+        {{ T "footerCopyright" }}
       </div>
 
       <div class="tmc-bottom-actions">
-        <a href="/about/" class="tmc-contact-link">ارتباط با ما</a>
+        {{- if hugo.IsMultilingual -}}
+          <div class="hx:flex hx:items-center hx:gap-0.5 hx:text-xs hx:font-bold hx:uppercase">
+            {{- range site.Languages -}}
+              {{- $link := partial "utils/lang-link" (dict "lang" .Lang "context" $) -}}
+              {{- $active := eq .Lang $.Language.Lang -}}
+              <a href="{{ $link }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" class="hx:px-1.5 hx:py-0.5 hx:rounded {{ if $active }}hx:text-slate-900 hx:dark:text-white{{ else }}hx:text-slate-400 hx:hover:text-blue-600{{ end }}">{{- .Lang -}}</a>
+            {{- end -}}
+          </div>
+          <span class="tmc-action-dot">•</span>
+        {{- end -}}
+        <a href="{{ relLangURL "about/" }}" class="tmc-contact-link">{{ T "footerContact" }}</a>
         {{- if $displayThemeToggle -}}
           <span class="tmc-action-dot">•</span>
           <div class="tmc-theme-wrapper">
@@ -60,7 +70,6 @@
   border-top: 1px solid #e2e8f0;
   margin-top: 4rem;
   padding: 2.5rem 1.5rem 1.75rem;
-  direction: rtl;
   box-sizing: border-box;
 }
 
@@ -104,7 +113,7 @@ html.dark .tmc-site-footer,
 .tmc-brand-text {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: start;
 }
 
 .tmc-brand-title {

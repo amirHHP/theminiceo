@@ -7,12 +7,12 @@
         
         {{/* Header Hero */}}
         <div class="tmc-archive-hero">
-          <span class="section-badge" style="margin: 0 auto 0.75rem auto;">دوره‌های تخصصی مدیریت محصول</span>
+          <span class="section-badge" style="margin: 0 auto 0.75rem auto;">{{ T "courseHeroBadge" }}</span>
           <h1 class="hx:text-3xl hx:md:text-4xl hx:font-black hx:text-slate-900 hx:dark:text-white hx:mb-3">
-            دوره‌ها و کارگاه‌های آموزشی
+            {{ T "courseHeroTitle" }}
           </h1>
           <p class="hx:text-base hx:text-slate-600 hx:dark:text-slate-300 hx:max-w-2xl hx:mx-auto hx:leading-relaxed" style="margin: 0 auto;">
-            مجموعه دوره‌های کاربردی و پروژه‌محور مدیرعامل کوچک؛ با امکان پرداخت مستقیم و امن از درگاه زرین‌پال و جلسات رفع اشکال اختصاصی.
+            {{ T "courseHeroDesc" }}
           </p>
         </div>
 
@@ -29,9 +29,9 @@
                 {{ $cover = printf "/images/%s" . }}
               {{ end }}
             {{ end }}
-            {{ $price := .Params.price | default "۱,۹۸۰,۰۰۰ تومان" }}
-            {{ $discountPrice := .Params.discount_price | default "۹۹۰,۰۰۰ تومان" }}
-            {{ $discountPercent := .Params.discount_percent | default "۵۰٪" }}
+            {{ $price := .Params.price | default (T "courseDefaultPrice") }}
+            {{ $discountPrice := .Params.discount_price | default (T "courseDefaultDiscountPrice") }}
+            {{ $discountPercent := .Params.discount_percent | default (T "courseDefaultDiscountPercent") }}
             {{ $zarinpalLink := .Params.zarinpal_link | default .Site.Params.zarinpal.default_link | default "https://zarinp.al/392035" }}
 
             <div class="course-card">
@@ -41,7 +41,7 @@
                   <img src="{{ $cover }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;" />
                   {{ if $discountPercent }}
                     <span style="position: absolute; top: 12px; left: 12px; background: #dc2626; color: #fff; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-                      {{ $discountPercent }} تخفیف
+                      {{ $discountPercent }} {{ T "courseDiscountSuffix" }}
                     </span>
                   {{ end }}
                 </a>
@@ -61,7 +61,7 @@
 
                 <div style="padding-top: 0.875rem; border-top: 1px solid #f1f5f9;">
                   <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.75rem;">
-                    <span style="font-size: 0.75rem; color: #64748b;">سرمایه‌گذاری:</span>
+                    <span style="font-size: 0.75rem; color: #64748b;">{{ T "courseInvestment" }}</span>
                     <div style="text-align: left;">
                       {{ if $price }}
                         <span style="font-size: 0.75rem; color: #94a3b8; text-decoration: line-through; margin-left: 0.35rem;">{{ $price }}</span>
@@ -72,10 +72,10 @@
 
                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
                     <a href="{{ .RelPermalink }}" style="display: flex; align-items: center; justify-content: center; padding: 0.5rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; background: #f1f5f9; color: #334155; text-decoration: none;">
-                      مشاهده سرفصل‌ها
+                      {{ T "courseViewSyllabus" }}
                     </a>
                     <a href="{{ $zarinpalLink }}" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.5rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 800; background: #f59e0b; color: #ffffff; text-decoration: none; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
-                      <span>خرید (زرین‌پال)</span>
+                      <span>{{ T "courseBuyZarinpal" }}</span>
                       <span>↗</span>
                     </a>
                   </div>

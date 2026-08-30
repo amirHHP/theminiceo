@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Variable.woff2') format('woff2-variations'),
+       url('/fonts/Vazirmatn-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -8,9 +15,16 @@ html, body, button, input, select, textarea {
   font-family: var(--font-sans) !important;
 }
 
-/* RTL Layout fixes */
+[dir="ltr"] {
+  text-align: left;
+}
+
 [dir="rtl"] {
   text-align: right;
+}
+
+[dir="ltr"] .hextra-card-icon {
+  text-align: left;
 }
 
 [dir="rtl"] .hextra-card-tag {
@@ -895,7 +909,6 @@ html, body, button, input, select, textarea {
   padding: 2.5rem 1.5rem 2rem;
   margin-top: 4rem;
   color: #475569;
-  direction: rtl;
 }
 
 .dark .tmc-footer {

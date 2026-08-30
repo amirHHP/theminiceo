@@ -68,69 +68,69 @@
 <div class="hx:mx-auto hx:flex hx:max-w-screen-xl hx:flex-col hx:items-center hx:justify-center hx:px-6 hx:py-16 hx:text-center" style="min-height: 70vh;">
   <!-- Visual Badge / Illustration -->
   <div class="hx:mb-6 hx:inline-flex hx:items-center hx:justify-center hx:rounded-2xl hx:bg-blue-50 hx:p-6 hx:text-blue-600 hx:dark:bg-blue-950/40 hx:dark:text-blue-400" style="box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);">
-    <span style="font-size: 3.5rem; font-weight: 900; letter-spacing: 2px; line-height: 1;">۴۰۴</span>
+    <span style="font-size: 3.5rem; font-weight: 900; letter-spacing: 2px; line-height: 1;">{{ T "notFoundCode" }}</span>
   </div>
 
   <h1 class="hx:mb-4 hx:text-3xl hx:font-extrabold hx:tracking-tight hx:text-gray-900 hx:dark:text-white sm:hx:text-4xl">
-    صفحه مورد نظر یافت نشد!
+    {{ T "notFoundTitle" }}
   </h1>
 
   <p class="hx:mb-8 hx:max-w-xl hx:text-base hx:leading-relaxed hx:text-gray-600 hx:dark:text-gray-300">
-    آدرس این صفحه ممکن است تغییر کرده باشد یا موقتاً در دسترس نباشد. برای دسترسی به محتوای مورد نظرتان می‌توانید از بخش‌های زیر استفاده کنید:
+    {{ T "notFoundDescription" }}
   </p>
 
   <!-- Quick Navigation Cards Grid -->
   <div class="hx:mb-10 hx:grid hx:w-full hx:max-w-3xl hx:grid-cols-1 hx:gap-4 sm:hx:grid-cols-2">
-    <a href="/docs/" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-right hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
+    <a href="{{ relLangURL "docs/" }}" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-start hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
       <div class="hx:mb-2 hx:flex hx:items-center hx:gap-2 hx:text-lg hx:font-bold hx:text-gray-900 hx:dark:text-white">
         <span>📚</span>
-        <span>مقالات و مستندات</span>
+        <span>{{ T "notFoundDocs" }}</span>
       </div>
       <p class="hx:text-xs hx:leading-relaxed hx:text-gray-500 hx:dark:text-gray-400">
-        آرشیو کامل مقالات مدیریت محصول، تحلیل کسب‌وکار، سنجه‌ها و متدولوژی‌ها
+        {{ T "notFoundDocsDesc" }}
       </p>
     </a>
 
-    <a href="/course/" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-right hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
+    <a href="{{ relLangURL "course/" }}" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-start hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
       <div class="hx:mb-2 hx:flex hx:items-center hx:gap-2 hx:text-lg hx:font-bold hx:text-gray-900 hx:dark:text-white">
         <span>🎓</span>
-        <span>دوره‌های آموزشی</span>
+        <span>{{ T "notFoundCourses" }}</span>
       </div>
       <p class="hx:text-xs hx:leading-relaxed hx:text-gray-500 hx:dark:text-gray-400">
-        دوره‌های تخصصی مدیریت محصول برای توسعه‌دهندگان، دیزاینرها و کسب‌وکارها
+        {{ T "notFoundCoursesDesc" }}
       </p>
     </a>
 
-    <a href="/docs/books/" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-right hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
+    <a href="{{ relLangURL "docs/books/" }}" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-start hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
       <div class="hx:mb-2 hx:flex hx:items-center hx:gap-2 hx:text-lg hx:font-bold hx:text-gray-900 hx:dark:text-white">
         <span>📖</span>
-        <span>کتابخانه تخصصی</span>
+        <span>{{ T "notFoundLibrary" }}</span>
       </div>
       <p class="hx:text-xs hx:leading-relaxed hx:text-gray-500 hx:dark:text-gray-400">
-        معرفی و بررسی برترین کتاب‌های مدیریت محصول و استارتاپ
+        {{ T "notFoundLibraryDesc" }}
       </p>
     </a>
 
-    <a href="/frameworks/" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-right hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
+    <a href="{{ relLangURL "frameworks/" }}" class="hx:flex hx:flex-col hx:items-start hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:p-5 hx:text-start hx:transition-all hx:hover:border-blue-500 hx:hover:shadow-md hx:dark:border-gray-800 hx:dark:bg-gray-900/60 hx:dark:hover:border-blue-400">
       <div class="hx:mb-2 hx:flex hx:items-center hx:gap-2 hx:text-lg hx:font-bold hx:text-gray-900 hx:dark:text-white">
         <span>🧭</span>
-        <span>فریم‌ورک‌ها و ابزارها</span>
+        <span>{{ T "notFoundFrameworks" }}</span>
       </div>
       <p class="hx:text-xs hx:leading-relaxed hx:text-gray-500 hx:dark:text-gray-400">
-        قالب‌ها و چارچوب‌های عملیاتی نظیر Design Sprint، Kano و JTBD
+        {{ T "notFoundFrameworksDesc" }}
       </p>
     </a>
   </div>
 
   <!-- Action CTA Buttons -->
   <div class="hx:flex hx:flex-wrap hx:items-center hx:justify-center hx:gap-3">
-    <a href="/" class="hx:inline-flex hx:items-center hx:gap-2 hx:rounded-lg hx:bg-blue-600 hx:px-6 hx:py-2.5 hx:text-sm hx:font-semibold hx:text-white hx:shadow-sm hx:transition-all hx:hover:bg-blue-700 hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2 hx:focus-visible:outline-blue-600">
+    <a href="{{ .Site.Home.RelPermalink }}" class="hx:inline-flex hx:items-center hx:gap-2 hx:rounded-lg hx:bg-blue-600 hx:px-6 hx:py-2.5 hx:text-sm hx:font-semibold hx:text-white hx:shadow-sm hx:transition-all hx:hover:bg-blue-700 hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2 hx:focus-visible:outline-blue-600">
       <span>🏠</span>
-      <span>بازگشت به صفحه اصلی</span>
+      <span>{{ T "notFoundHome" }}</span>
     </a>
-    <a href="/about/" class="hx:inline-flex hx:items-center hx:gap-2 hx:rounded-lg hx:border hx:border-gray-300 hx:bg-white hx:px-5 hx:py-2.5 hx:text-sm hx:font-semibold hx:text-gray-700 hx:shadow-sm hx:transition-all hx:hover:bg-gray-50 hx:dark:border-gray-700 hx:dark:bg-gray-800 hx:dark:text-gray-200 hx:dark:hover:bg-gray-700">
+    <a href="{{ relLangURL "about/" }}" class="hx:inline-flex hx:items-center hx:gap-2 hx:rounded-lg hx:border hx:border-gray-300 hx:bg-white hx:px-5 hx:py-2.5 hx:text-sm hx:font-semibold hx:text-gray-700 hx:shadow-sm hx:transition-all hx:hover:bg-gray-50 hx:dark:border-gray-700 hx:dark:bg-gray-800 hx:dark:text-gray-200 hx:dark:hover:bg-gray-700">
       <span>👤</span>
-      <span>درباره مدیرعامل کوچک</span>
+      <span>{{ T "notFoundAbout" }}</span>
     </a>
   </div>
 </div>

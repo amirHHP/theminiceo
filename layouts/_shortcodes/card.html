@@ -1,0 +1,69 @@
+{{- $link := .Get "link" -}}
+{{- $title := .Get "title" -}}
+{{- $icon := .Get "icon" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $image := .Get "image" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- $srcset := "" -}}
+{{- $sizes := "" -}}
+{{- $imageStyle := .Get "imageStyle" -}}
+{{- $tag := .Get "tag" -}}
+{{- $tagType := .Get "tagType" -}}
+
+{{/* Card thumbnails are ~180px tall; do not upscale, and skip 800w so mobile DPR does not fetch oversized files. */}}
+{{- $method := .Get "method" | default "Resize" | humanize -}}
+{{- $options := .Get "options" | default "480x webp q70" -}}
+{{- $process := .Get "process" | default (printf "%s %s" $method $options) -}}
+
+{{- if and $image (not (urls.Parse $image).Scheme) -}}
+  {{- $imagePath := strings.TrimPrefix "/" $image -}}
+  {{- with or (.Page.Resources.Get $image) (.Page.Resources.Get $imagePath) (resources.Get $imagePath) (resources.Get $image) -}}
+    {{/* .Process does not work on svgs */}}
+    {{- if (not (eq .MediaType.SubType "svg")) -}}
+      {{- $orig := . -}}
+      {{- $processed := $orig.Process $process -}}
+      {{- if gt $processed.Width $orig.Width -}}
+        {{- $processed = $orig.Process "webp q70" -}}
+      {{- end -}}
+      {{- $width = $processed.Width -}}
+      {{- $height = $processed.Height -}}
+      {{- $image = $processed.RelPermalink -}}
+
+      {{- $srcsetParts := slice -}}
+      {{- range slice 400 480 -}}
+        {{- $w := . -}}
+        {{- if ge $orig.Width $w -}}
+          {{- $resized := $orig.Resize (printf "%dx webp q70" $w) -}}
+          {{- $srcsetParts = $srcsetParts | append (printf "%s %dw" $resized.RelPermalink $w) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if gt (len $srcsetParts) 1 -}}
+        {{- $srcset = delimit $srcsetParts ", " -}}
+        {{- $sizes = "(min-width: 768px) 33vw, 100vw" -}}
+      {{- end -}}
+    {{- end -}}
+  {{ else }}
+    {{/* Otherwise, use relative link of the image */}}
+    {{- if hasPrefix $image "/" -}}
+      {{- $image = relURL (strings.TrimPrefix "/" $image) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- partial "shortcodes/card" (dict
+  "page"        .Page
+  "link"        $link
+  "title"       $title
+  "icon"        $icon
+  "subtitle"    $subtitle
+  "image"       $image
+  "width"       $width
+  "height"      $height
+  "srcset"      $srcset
+  "sizes"       $sizes
+  "imageStyle"  $imageStyle
+  "tag"         $tag
+  "tagType"     $tagType
+  )
+-}}

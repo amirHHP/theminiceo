@@ -115,6 +115,21 @@
       {{- end -}}
     {{- end -}}
 
+    {{- if hugo.IsMultilingual -}}
+      <div class="hx:flex hx:items-center hx:gap-0.5 hx:text-xs hx:font-bold hx:shrink-0 hx:uppercase" role="navigation" aria-label="{{ T "changeLanguage" }}">
+        {{- range site.Languages -}}
+          {{- $link := partial "utils/lang-link" (dict "lang" .Lang "context" $currentPage) -}}
+          {{- $active := eq .Lang $currentPage.Language.Lang -}}
+          <a
+            href="{{ $link }}"
+            lang="{{ .Lang }}"
+            hreflang="{{ .Lang }}"
+            class="hx:px-2 hx:py-1 hx:rounded-md hx:transition-colors {{ if $active }}hx:bg-gray-100 hx:text-gray-900 hx:dark:bg-neutral-800 hx:dark:text-white{{ else }}hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-200{{ end }}"
+            {{ if $active }}aria-current="true"{{ end }}
+          >{{- .Lang -}}</a>
+        {{- end -}}
+      </div>
+    {{- end -}}
 
     <button type="button" aria-label="Menu" class="hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden">
       {{- partial "utils/icon.html" (dict "name" "hamburger-menu" "attributes" "height=24") -}}

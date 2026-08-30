@@ -1,6 +1,6 @@
 {{/* Buy Button Shortcode for Markdown */}}
 {{ $link := .Get "link" | default (.Get 0) | default "https://zarinp.al/392035" }}
-{{ $text := .Get "text" | default "خرید و پرداخت آنلاین با زرین‌پال" }}
+{{ $text := .Get "text" | default (T "buyDefaultText") }}
 {{ $price := .Get "price" | default "" }}
 {{ $oldPrice := .Get "old_price" | default "" }}
 {{ $discount := .Get "discount" | default "" }}
@@ -14,10 +14,10 @@
     </div>
     <div>
       <div class="hx:text-sm hx:font-bold hx:text-slate-900 hx:dark:text-white">
-        پرداخت امن از درگاه زرین‌پال
+        {{ T "buySecurePayment" }}
       </div>
       <div class="hx:text-xs hx:text-slate-500 hx:dark:text-slate-400">
-        دسترسی فوری به دوره بلافاصله پس از پرداخت
+        {{ T "buyInstantAccess" }}
       </div>
     </div>
   </div>

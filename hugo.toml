@@ -16,12 +16,32 @@ relativeURLs = false
   category = "categories"
   tag = "tags"
 
+defaultContentLanguageInSubdir = false
+
 [languages]
   [languages.fa]
-    locale = 'fa-ir'
-    direction = 'rtl'
+    languageName = 'فارسی'
     label = 'فارسی'
+    languageCode = 'fa'
+    locale = 'fa-IR'
+    languageDirection = 'rtl'
+    direction = 'rtl'
+    weight = 1
     title = 'مدیرعامل کوچک | TheMiniCEO'
+    [languages.fa.params]
+      description = 'مدیرعامل کوچک؛ مرجع تخصصی مدیریت محصول، فریم‌ورک‌های توسعه، کتاب‌ها، دوره‌های آموزشی و مشاوره اختصاصی رشد کسب‌وکار و استارتاپ'
+
+  [languages.en]
+    languageName = 'English'
+    label = 'English'
+    languageCode = 'en'
+    locale = 'en'
+    languageDirection = 'ltr'
+    direction = 'ltr'
+    weight = 2
+    title = 'TheMiniCEO'
+    [languages.en.params]
+      description = 'TheMiniCEO: product management guides, frameworks, books, courses, and advisory for building products people actually need.'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -33,36 +53,79 @@ relativeURLs = false
     [markup.goldmark.renderer]
       unsafe = true
 
-[menu]
-  [[menu.main]]
-    name = "مقالات و مستندات"
-    pageRef = "/docs/"
-    weight = 1
-  [[menu.main]]
-    name = "دوره‌های آموزشی"
-    pageRef = "/course/"
-    weight = 2
-  [[menu.main]]
-    name = "کتابخانه"
-    pageRef = "/docs/books/"
-    weight = 3
-  [[menu.main]]
-    name = "فریم‌ورک‌ها و ابزارها"
-    pageRef = "/frameworks/"
-    weight = 4
-  [[menu.main]]
-    name = "مشاوره محصول"
-    pageRef = "/product-consultant/"
-    weight = 5
-  [[menu.main]]
-    name = "درباره ما"
-    pageRef = "/about/"
-    weight = 6
-  [[menu.main]]
-    name = "جستجو"
-    weight = 7
-    [menu.main.params]
-      type = "search"
+[[languages.fa.menu.main]]
+  identifier = 'docs'
+  name = 'مقالات و مستندات'
+  pageRef = '/docs/'
+  weight = 1
+[[languages.fa.menu.main]]
+  identifier = 'courses'
+  name = 'دوره‌های آموزشی'
+  pageRef = '/course/'
+  weight = 2
+[[languages.fa.menu.main]]
+  identifier = 'library'
+  name = 'کتابخانه'
+  pageRef = '/docs/books/'
+  weight = 3
+[[languages.fa.menu.main]]
+  identifier = 'frameworks'
+  name = 'فریم‌ورک‌ها و ابزارها'
+  pageRef = '/frameworks/'
+  weight = 4
+[[languages.fa.menu.main]]
+  identifier = 'consulting'
+  name = 'مشاوره محصول'
+  pageRef = '/product-consultant/'
+  weight = 5
+[[languages.fa.menu.main]]
+  identifier = 'about'
+  name = 'درباره ما'
+  pageRef = '/about/'
+  weight = 6
+[[languages.fa.menu.main]]
+  identifier = 'search'
+  name = 'جستجو'
+  weight = 7
+  [languages.fa.menu.main.params]
+    type = 'search'
+
+[[languages.en.menu.main]]
+  identifier = 'docs'
+  name = 'Articles & Docs'
+  pageRef = '/docs/'
+  weight = 1
+[[languages.en.menu.main]]
+  identifier = 'courses'
+  name = 'Courses'
+  pageRef = '/course/'
+  weight = 2
+[[languages.en.menu.main]]
+  identifier = 'library'
+  name = 'Library'
+  pageRef = '/docs/books/'
+  weight = 3
+[[languages.en.menu.main]]
+  identifier = 'frameworks'
+  name = 'Frameworks & Tools'
+  pageRef = '/frameworks/'
+  weight = 4
+[[languages.en.menu.main]]
+  identifier = 'consulting'
+  name = 'Product Advisory'
+  pageRef = '/product-consultant/'
+  weight = 5
+[[languages.en.menu.main]]
+  identifier = 'about'
+  name = 'About'
+  pageRef = '/about/'
+  weight = 6
+[[languages.en.menu.main]]
+  identifier = 'search'
+  name = 'Search'
+  weight = 7
+  [languages.en.menu.main.params]
+    type = 'search'
 
 [params]
   description = "مدیرعامل کوچک؛ مرجع تخصصی مدیریت محصول، فریم‌ورک‌های توسعه، کتاب‌ها، دوره‌های آموزشی و مشاوره اختصاصی رشد کسب‌وکار و استارتاپ"
@@ -101,3 +164,33 @@ relativeURLs = false
   [params.zarinpal]
     merchant_id = "" # مرچنت آیدی ۳۶ کاراکتری زرین‌پال (اختیاری جهت وب‌سرویس / اتصال مستقیم)
     default_link = "https://zarinp.al/392035" # لینک پرداخت زرین‌پال پیش‌فرض دوره‌ها
+
+[imaging]
+  quality = 70
+  resampleFilter = "CatmullRom"
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
