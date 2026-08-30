@@ -1,0 +1,47 @@
+{{/* Hextra opengraph, plus og:image dimensions/alt for the site-wide fallback. */}}
+
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+{{- $ogImages := slice -}}
+{{- $ogAlt := .Title | default .Site.Title -}}
+{{- $ogWidth := 0 -}}
+{{- $ogHeight := 0 -}}
+{{- with $.Params.images -}}
+  {{- range first 6 . -}}
+    {{- $ogImages = $ogImages | append (. | absURL) -}}
+  {{- end -}}
+{{- else -}}
+  {{- with $.Site.Params.images -}}
+    {{- $ogImages = $ogImages | append (index . 0 | absURL) -}}
+    {{- $ogWidth = 1200 -}}
+    {{- $ogHeight = 630 -}}
+    {{- $ogAlt = $.Site.Title -}}
+  {{- end -}}
+{{- end -}}
+{{- range $ogImages }}
+<meta property="og:image" content="{{ . }}" />
+{{- end -}}
+{{- if $ogWidth }}
+<meta property="og:image:width" content="{{ $ogWidth }}" />
+<meta property="og:image:height" content="{{ $ogHeight }}" />
+{{- end -}}
+{{- with $ogImages }}
+<meta property="og:image:alt" content="{{ $ogAlt }}" />
+{{- end -}}
+
+{{- if .IsPage }}
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+<meta property="article:section" content="{{ .Section }}" />
+{{ with .PublishDate }}<meta property="article:published_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />{{ end }}
+{{ with .Lastmod }}<meta property="article:modified_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />{{ end }}
+{{- end -}}
+
+{{- with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
+{{- with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
+{{- with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+{{- with .Params.videos }}{{- range . }}
+<meta property="og:video" content="{{ . | absURL }}" />
+{{ end }}{{ end }}

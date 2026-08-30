@@ -66,6 +66,7 @@ relativeURLs = false
 
 [params]
   description = "مدیرعامل کوچک؛ مرجع تخصصی مدیریت محصول، فریم‌ورک‌های توسعه، کتاب‌ها، دوره‌های آموزشی و مشاوره اختصاصی رشد کسب‌وکار و استارتاپ"
+  images = ["images/og-default.png"]
 
   [params.navbar]
     displayTitle = true
