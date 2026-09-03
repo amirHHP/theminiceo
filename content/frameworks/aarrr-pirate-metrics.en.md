@@ -24,4 +24,10 @@ Give each stage one primary metric and one supporting metric. Then attack the we
 
 AARRR complements a [North Star Metric](/en/frameworks/north-star-metric/): the North Star gives you one core number; AARRR opens the funnel behind it.
 
+## Tool: funnel leak finder
+
+Enter user counts for one period. The tool shows step-to-step conversion and names the weakest link.
+
+{{< framework-tool name="aarrr" >}}
+
 Further reading: [15 key product metrics](/en/docs/archive/15-key-product-management-metrics-and-kpis/) and [Lean Analytics](/en/docs/books/کتاب-lean-analytics/).

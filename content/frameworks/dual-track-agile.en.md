@@ -22,4 +22,10 @@ Delivery-only teams fill the backlog with stakeholder requests and learn after r
 
 Dual Track does not replace Scrum or Kanban. It sits on top of them.
 
+## Tool: Dual-Track weekly board
+
+Put this week’s discovery next to delivery. If one side is empty, you are on a single track.
+
+{{< framework-tool name="dualtrack" >}}
+
 Further reading: [Jeff Patton on Dual Track](https://jpattonassociates.com/dual-track-development/) and the [Design Sprint](/en/design-sprint/).

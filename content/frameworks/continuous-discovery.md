@@ -21,4 +21,10 @@ aliases:
 
 وقتی تیم فقط Delivery می‌کند و بعد از انتشار می‌فهمد مسئله را اشتباه فهمیده. Continuous Discovery مسیر [Dual-Track](/frameworks/dual-track-agile/) را تغذیه می‌کند: کشف و ساخت همزمان جلو می‌روند.
 
+## ابزار: ردیاب عادت هفتگی
+
+چهار عادت هفته را ببندید: مصاحبه، سه نفر در اتاق، فرضیه، آزمایش ارزان. هدف کامل بودن هفته است نه پروژهٔ فصلی.
+
+{{< framework-tool name="discovery" >}}
+
 مطالعه بیشتر: [توسعه مشتری](/docs/archive/customer-development/)، [Jobs To Be Done](/jobs-to-be-done/) و [Product Talk](https://www.producttalk.org/).

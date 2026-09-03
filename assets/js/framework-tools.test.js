@@ -108,3 +108,109 @@ test("opportunityRecommendation returns caution for mixed scores", () => {
   assert.equal(result.verdict, "caution");
   assert.deepEqual(result.weak, [3]);
 });
+
+test("riceScore uses percent confidence in the Intercom formula", () => {
+  assert.equal(tools.riceScore(1000, 2, 80, 4), 400);
+  assert.equal(tools.riceScore(1000, 2, 0.8, 4), 400);
+  assert.equal(tools.riceScore(1000, 2, 80, 0), null);
+});
+
+test("riceRank sorts scored items descending and drops incomplete rows", () => {
+  const ranked = tools.riceRank([
+    { name: "Invite", reach: 800, impact: 1, confidence: 80, effort: 2 },
+    { name: "Incomplete" },
+    { name: "Onboarding", reach: 400, impact: 3, confidence: 50, effort: 1 }
+  ]);
+  assert.equal(ranked.length, 2);
+  assert.equal(ranked[0].name, "Onboarding");
+  assert.equal(ranked[0].score, 600);
+  assert.equal(ranked[1].score, 320);
+});
+
+test("aarrrBottleneck flags the weakest sequential conversion", () => {
+  const rates = tools.aarrrRates([1000, 400, 200, 50, 80]);
+  assert.equal(rates.steps[0].rate, 40);
+  assert.equal(rates.steps[2].rate, 25);
+  assert.equal(rates.referralShare, 8);
+  const bottle = tools.aarrrBottleneck([1000, 400, 200, 50, 80]);
+  assert.equal(bottle.index, 2);
+  assert.equal(bottle.rate, 25);
+});
+
+test("heartCompleteness requires selected dimensions to be fully written", () => {
+  const incomplete = tools.heartCompleteness([
+    { on: true, goal: "raise NPS", signal: "survey", metric: "" }
+  ]);
+  assert.equal(incomplete.ready, false);
+  const ready = tools.heartCompleteness([
+    { on: false, goal: "", signal: "", metric: "" },
+    { on: true, goal: "users finish checkout", signal: "error-free submit", metric: "task success %" }
+  ]);
+  assert.equal(ready.ready, true);
+  assert.equal(ready.selected, 1);
+});
+
+test("northStarAssess rejects vanity names and incomplete inputs", () => {
+  const vanity = tools.northStarAssess({
+    name: "page views",
+    checks: { value: true, leading: true, actionable: true, inputs: true },
+    inputs: ["sessions", "bounce"]
+  });
+  assert.equal(vanity.ready, false);
+  assert.ok(vanity.warnings.includes("vanity"));
+  const ready = tools.northStarAssess({
+    name: "nights booked per month",
+    checks: { value: true, leading: true, actionable: true, inputs: true },
+    inputs: ["search to book", "host reply time"]
+  });
+  assert.equal(ready.ready, true);
+});
+
+test("plgRecommendation maps scores to sales, hybrid, or plg", () => {
+  assert.equal(tools.plgRecommendation([5, 5, 4, 4]).verdict, "plg");
+  assert.equal(tools.plgRecommendation([1, 3, 3, 3]).verdict, "sales");
+  assert.equal(tools.plgRecommendation([3, 2, 4, 4]).verdict, "hybrid");
+  assert.equal(tools.plgRecommendation([5, 5]).verdict, "incomplete");
+});
+
+test("dualTrackBalance warns when one track is empty", () => {
+  assert.equal(
+    tools.dualTrackBalance({ discovery: "", delivery: "ship the billing rewrite this sprint" }).verdict,
+    "delivery-only"
+  );
+  assert.equal(
+    tools.dualTrackBalance({
+      discovery: "interview switchers about activation drop",
+      delivery: "build the confirmed empty-state experiment",
+      oneTeam: true,
+      decisions: true,
+      fedByDiscovery: true
+    }).verdict,
+    "ok"
+  );
+});
+
+test("ostAssess requires an outcome and two solutions, and flags feature-shaped opportunities", () => {
+  const weak = tools.ostAssess({ outcome: "activation", opportunities: [{ name: "add a feature button", solutions: ["a"] }] });
+  assert.equal(weak.complete, false);
+  assert.equal(weak.flaggedSolutionish, 1);
+  const ready = tools.ostAssess({
+    outcome: "first-week activation reaches 40%",
+    opportunities: [{ name: "cannot tell which subscription is active", solutions: ["timeline", "digest"], experiment: "fake door" }]
+  });
+  assert.equal(ready.complete, true);
+  assert.equal(ready.flaggedSolutionish, 0);
+});
+
+test("discoveryHabitScore counts the four weekly habits", () => {
+  const empty = tools.discoveryHabitScore({});
+  assert.equal(empty.percent, 0);
+  const full = tools.discoveryHabitScore({
+    interview: true,
+    trio: true,
+    hypothesis: "if we shorten onboarding, activation rises",
+    experiment: "prototype the three-step signup"
+  });
+  assert.equal(full.points, 4);
+  assert.equal(full.percent, 100);
+});

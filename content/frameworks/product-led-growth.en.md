@@ -23,4 +23,10 @@ An enterprise product with a long sales cycle and heavy implementation may need 
 
 Use [AARRR](/en/frameworks/aarrr-pirate-metrics/) and a [North Star Metric](/en/frameworks/north-star-metric/) to design the PLG funnel.
 
+## Tool: PLG readiness
+
+Score the four pillars from 1 to 5. The tool says product-led, hybrid, or still sales-led.
+
+{{< framework-tool name="plg" >}}
+
 Further reading: [OpenView on Product-Led Growth](https://openviewpartners.com/product-led-growth/) and [conversion-rate optimization](/en/docs/archive/بهینه-سازی-نرخ-تبدیل-cro/).

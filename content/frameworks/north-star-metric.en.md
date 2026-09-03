@@ -23,4 +23,10 @@ Examples: Spotify’s time spent listening, Airbnb’s nights booked, Slack’s 
 
 Do not treat the North Star as a substitute for OKRs or KPIs. An OKR is a period goal; KPIs are a set of measures; the North Star is a compass. If the number rises while customers get worse off, change the metric.
 
+## Tool: North Star builder
+
+Name the metric, tick the quality tests, and add inputs. The tool warns you if the name looks like a vanity metric.
+
+{{< framework-tool name="northstar" >}}
+
 Further reading: [Amplitude’s North Star guide](https://amplitude.com/north-star) and [15 key product metrics](/en/docs/archive/15-key-product-management-metrics-and-kpis/).

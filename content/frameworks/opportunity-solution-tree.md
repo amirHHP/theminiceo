@@ -23,4 +23,10 @@ aliases:
 
 درخت را زنده نگه دارید. هر هفته با بینش جدید شاخه‌ها را هرس یا گسترش دهید. این چارچوب معمولاً همراه [Continuous Discovery](/frameworks/continuous-discovery/) استفاده می‌شود.
 
+## ابزار: سازندهٔ درخت فرصت–راه‌حل
+
+یک outcome بنویسید، فرصت مشتری را اضافه کنید، دو راه‌حل و یک آزمایش ارزان بگذارید. اگر فرصت شبیه فیچر باشد، ابزار هشدار می‌دهد.
+
+{{< framework-tool name="ost" >}}
+
 مطالعه بیشتر: [کتاب Continuous Discovery Habits](https://www.producttalk.org/2021/05/continuous-discovery-habits/) و [ارزیابی فرصت‌های محصول](/assessing-product-opportunities/).

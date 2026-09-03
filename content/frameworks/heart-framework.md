@@ -28,4 +28,10 @@ aliases:
 
 HEART روی تجربه تمرکز دارد؛ [AARRR](/frameworks/aarrr-pirate-metrics/) روی قیف رشد. معمولاً هر دو را کنار هم می‌گذارند: HEART کیفیت استفاده را می‌گوید، AARRR حرکت در قیف را.
 
+## ابزار: کاربرگ HEART + GSM
+
+دو یا سه بُعد را انتخاب کنید و برای هرکدام هدف، سیگنال و سنجه بنویسید. لازم نیست هر پنج خانه را پر کنید.
+
+{{< framework-tool name="heart" >}}
+
 مطالعه بیشتر: [مقاله پژوهشی گوگل درباره HEART](https://research.google/pubs/large-scale-measurement-of-user-experience-quality/) و [شاخص‌های محصول](/docs/archive/product-metrics/).

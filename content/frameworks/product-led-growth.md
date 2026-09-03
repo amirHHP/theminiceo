@@ -23,4 +23,10 @@ aliases:
 
 برای طراحی قیف PLG از [AARRR](/frameworks/aarrr-pirate-metrics/) و [North Star](/frameworks/north-star-metric/) استفاده کنید.
 
+## ابزار: آمادگی Product-Led Growth
+
+چهار ستون را از ۱ تا ۵ امتیاز بدهید. ابزار می‌گوید مدل‌تان محصول‌محور، ترکیبی، یا هنوز فروش‌محور است.
+
+{{< framework-tool name="plg" >}}
+
 مطالعه بیشتر: [OpenView درباره Product-Led Growth](https://openviewpartners.com/product-led-growth/) و [بهینه‌سازی نرخ تبدیل](/docs/archive/بهینه-سازی-نرخ-تبدیل-cro/).

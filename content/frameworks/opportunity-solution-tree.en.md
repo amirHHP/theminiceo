@@ -23,4 +23,10 @@ Most teams jump from a stakeholder request to a story. The tree forces you to as
 
 Keep the tree alive. Each week, prune or grow branches with new insight. Teams usually use this together with [Continuous Discovery](/en/frameworks/continuous-discovery/).
 
+## Tool: tree builder
+
+Write one outcome, add a customer opportunity, two solutions, and a cheap experiment. The tool warns you if an opportunity reads like a feature.
+
+{{< framework-tool name="ost" >}}
+
 Further reading: [Continuous Discovery Habits](https://www.producttalk.org/2021/05/continuous-discovery-habits/) and [assessing product opportunities](/en/assessing-product-opportunities/).

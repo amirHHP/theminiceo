@@ -24,4 +24,10 @@ aliases:
 
 AARRR مکمل [North Star](/frameworks/north-star-metric/) است: North Star یک عدد محوری می‌دهد؛ AARRR قیف پشت آن را باز می‌کند.
 
+## ابزار: تشخیص نشتی قیف
+
+تعداد کاربر هر مرحله را برای یک دوره وارد کنید. ابزار تبدیل مرحله‌به‌مرحله را نشان می‌دهد و ضعیف‌ترین حلقه را مشخص می‌کند.
+
+{{< framework-tool name="aarrr" >}}
+
 مطالعه بیشتر: [۱۵ شاخص کلیدی محصول](/docs/archive/15-key-product-management-metrics-and-kpis/) و [Lean Analytics](/docs/books/کتاب-lean-analytics/).

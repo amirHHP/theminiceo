@@ -28,4 +28,10 @@ For each dimension that actually applies to your product (you do not need all fi
 
 HEART focuses on experience quality; [AARRR](/en/frameworks/aarrr-pirate-metrics/) focuses on the growth funnel. Teams often use both: HEART says how good the use is, AARRR says how people move through the funnel.
 
+## Tool: HEART + GSM worksheet
+
+Pick two or three dimensions and write a goal, signal, and metric for each. You do not need all five.
+
+{{< framework-tool name="heart" >}}
+
 Further reading: [Google’s HEART research](https://research.google/pubs/large-scale-measurement-of-user-experience-quality/) and [product metrics](/en/docs/archive/product-metrics/).

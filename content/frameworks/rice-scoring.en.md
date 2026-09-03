@@ -25,4 +25,10 @@ Higher scores rank higher. Low confidence shrinks the score on purpose so large 
 
 When the backlog is crowded and every stakeholder has a different “number one.” RICE turns the debate into numbers you can revisit. For tiny growth experiments, the lighter **ICE** score is usually enough.
 
+## Tool: RICE calculator
+
+Score a few backlog items. The tool ranks them and copies the list for the next meeting.
+
+{{< framework-tool name="rice" >}}
+
 Further reading: [7 feature-prioritization methods](/en/docs/archive/اولویت-بندی-فیچرها-ویژگی-ها-۷-روش-برای/) and [Intercom’s original RICE article](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/).

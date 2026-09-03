@@ -1,0 +1,50 @@
+{{- $menu := .menu -}}
+{{- $label := $menu.Name | safeHTML -}}
+
+<div class="tmc-nav-tools hx:relative hx:inline-block hx:shrink-0">
+  <button
+    type="button"
+    class="hextra-nav-menu-toggle tmc-nav-tools-toggle"
+    title="{{ $label }}"
+    aria-label="{{ $label }}"
+    aria-haspopup="menu"
+    data-state="closed"
+  >
+    <span class="tmc-nav-tools-label">{{ $label }}</span>
+    {{- partial "utils/icon.html" (dict "name" "chevron-down" "attributes" "height=12 class=\"tmc-nav-tools-chevron\"") -}}
+  </button>
+  <ul class="hextra-nav-menu-items tmc-nav-tools-menu hx:hidden" role="menu">
+    {{- range $menu.Children }}
+      {{- $link := .URL -}}
+      {{- $external := strings.HasPrefix $link "http" -}}
+      {{- with .PageRef -}}
+        {{- if hasPrefix . "/" -}}
+          {{- $ref := strings.TrimPrefix "/" . -}}
+          {{- if not (strings.HasSuffix $ref "/") -}}
+            {{- $ref = printf "%s/" $ref -}}
+          {{- end -}}
+          {{- $link = relLangURL $ref -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $itemName := .Name | safeHTML -}}
+      <li role="none">
+        <a
+          href="{{ $link }}"
+          role="menuitem"
+          class="tmc-nav-tool{{ if .Params.featured }} tmc-nav-tool--featured{{ end }}"
+          {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
+        >
+          <span class="tmc-nav-tool-row">
+            <span class="tmc-nav-tool-name">{{ $itemName }}</span>
+            {{- with .Params.badge }}
+              <span class="tmc-nav-tool-badge">{{ . }}</span>
+            {{- end }}
+          </span>
+          {{- with .Params.description }}
+            <span class="tmc-nav-tool-desc">{{ . }}</span>
+          {{- end }}
+        </a>
+      </li>
+    {{- end }}
+  </ul>
+</div>

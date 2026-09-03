@@ -23,4 +23,10 @@ aliases:
 
 North Star را با OKR یا KPI عوضی نگیرید. OKR هدف دوره‌ای است؛ KPI مجموعه سنجه است؛ North Star قطب‌نماست. اگر عدد بالا برود ولی مشتری ناراضی بماند، سنجه را عوض کنید.
 
+## ابزار: سازندهٔ North Star
+
+نام سنجه را بنویسید، چهار شرط کیفیت را چک کنید و ورودی‌ها را بگذارید. اگر نام شبیه vanity باشد، ابزار هشدار می‌دهد.
+
+{{< framework-tool name="northstar" >}}
+
 مطالعه بیشتر: [راهنمای Amplitude برای North Star](https://amplitude.com/north-star) و [۱۵ شاخص کلیدی محصول](/docs/archive/15-key-product-management-metrics-and-kpis/).

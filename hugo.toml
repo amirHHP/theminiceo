@@ -70,7 +70,7 @@ defaultContentLanguageInSubdir = false
   weight = 3
 [[languages.fa.menu.main]]
   identifier = 'frameworks'
-  name = 'فریم‌ورک‌ها و ابزارها'
+  name = 'فریم‌ورک‌ها'
   pageRef = '/frameworks/'
   weight = 4
 [[languages.fa.menu.main]]
@@ -84,9 +84,26 @@ defaultContentLanguageInSubdir = false
   pageRef = '/about/'
   weight = 6
 [[languages.fa.menu.main]]
+  identifier = 'products'
+  name = 'ابزارها'
+  weight = 7
+  [languages.fa.menu.main.params]
+    type = 'products'
+# Add more header tools with parent = 'products' (name, url, description, badge).
+[[languages.fa.menu.main]]
+  identifier = 'zendo'
+  parent = 'products'
+  name = 'Zendo'
+  url = 'https://zendo.theminiceo.ir/'
+  weight = 1
+  [languages.fa.menu.main.params]
+    description = 'مدیر وظایف مینیمال با GTD و هوش مصنوعی'
+    badge = 'شروع رایگان'
+    featured = true
+[[languages.fa.menu.main]]
   identifier = 'search'
   name = 'جستجو'
-  weight = 7
+  weight = 8
   [languages.fa.menu.main.params]
     type = 'search'
 
@@ -107,7 +124,7 @@ defaultContentLanguageInSubdir = false
   weight = 3
 [[languages.en.menu.main]]
   identifier = 'frameworks'
-  name = 'Frameworks & Tools'
+  name = 'Frameworks'
   pageRef = '/frameworks/'
   weight = 4
 [[languages.en.menu.main]]
@@ -121,9 +138,25 @@ defaultContentLanguageInSubdir = false
   pageRef = '/about/'
   weight = 6
 [[languages.en.menu.main]]
+  identifier = 'products'
+  name = 'Tools'
+  weight = 7
+  [languages.en.menu.main.params]
+    type = 'products'
+[[languages.en.menu.main]]
+  identifier = 'zendo'
+  parent = 'products'
+  name = 'Zendo'
+  url = 'https://zendo.theminiceo.ir/'
+  weight = 1
+  [languages.en.menu.main.params]
+    description = 'Minimal GTD tasks, powered by Gemini'
+    badge = 'Start free'
+    featured = true
+[[languages.en.menu.main]]
   identifier = 'search'
   name = 'Search'
-  weight = 7
+  weight = 8
   [languages.en.menu.main.params]
     type = 'search'
 

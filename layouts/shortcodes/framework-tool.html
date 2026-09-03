@@ -2,5 +2,9 @@
 {{- $lang := .Page.Language.Lang | default "fa" -}}
 <div class="fw-tool not-prose" data-fw-tool="{{ $name }}" data-lang="{{ $lang }}"></div>
 <noscript>
+  {{- if eq $lang "en" }}
+  <p>Turn on JavaScript to use the interactive tool on this page.</p>
+  {{- else }}
   <p>برای استفاده از ابزار تعاملی این صفحه، جاوااسکریپت را روشن کنید.</p>
+  {{- end }}
 </noscript>

@@ -21,4 +21,10 @@ aliases:
 
 When the team only delivers, then learns after release that it solved the wrong problem. Continuous Discovery feeds [Dual-Track Agile](/en/frameworks/dual-track-agile/): discovery and delivery move in parallel.
 
+## Tool: weekly habit tracker
+
+Close the four habits: interview, trio in the room, hypothesis, cheap test. The goal is a complete week, not a quarterly research project.
+
+{{< framework-tool name="discovery" >}}
+
 Further reading: [Customer Development](/en/docs/archive/customer-development/), [Jobs To Be Done](/en/jobs-to-be-done/), and [Product Talk](https://www.producttalk.org/).

@@ -6,7 +6,6 @@
     <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
   {{- end }}
 {{- end }}
-{{- $path := .RelPermalink -}}
-{{- if or (in $path "jobs-to-be-done") (in $path "design-sprint") (in $path "assessing-product-opportunities") -}}
+{{- if .HasShortcode "framework-tool" -}}
   <script src="{{ "js/framework-tools.js" | relURL }}" defer></script>
 {{- end -}}

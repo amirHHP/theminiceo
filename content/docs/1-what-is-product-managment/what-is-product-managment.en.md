@@ -1,6 +1,8 @@
 ---
 title: "What is product management? A complete guide to its strategic role in the organization"
 date: 2025-09-15
+weight: 1
+linkTitle: "What is product management?"
 categories: 
   - "product-skills"
 ---

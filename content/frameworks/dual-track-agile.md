@@ -22,4 +22,10 @@ aliases:
 
 Dual Track جایگزین اسکرام یا کانبان نیست؛ روی آن‌ها سوار می‌شود.
 
+## ابزار: تختهٔ هفتگی Dual-Track
+
+کشف این هفته را کنار تحویل بگذارید. اگر یکی خالی باشد، مسیر تکی شده‌اید.
+
+{{< framework-tool name="dualtrack" >}}
+
 مطالعه بیشتر: [مقاله Jeff Patton درباره Dual Track](https://jpattonassociates.com/dual-track-development/) و [دیزاین اسپرینت](/design-sprint/).
