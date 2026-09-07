@@ -227,3 +227,15 @@ defaultContentLanguageInSubdir = false
   [[module.mounts]]
     source = "static/images"
     target = "assets/images"
+  [[module.mounts]]
+    source = "content/docs/archive/images"
+    target = "static/en/docs/archive/images"
+  [[module.mounts]]
+    source = "content/docs/books/images"
+    target = "static/en/docs/books/images"
+  [[module.mounts]]
+    source = "content/images"
+    target = "static/en/images"
+  [[module.mounts]]
+    source = "content/course/images"
+    target = "static/en/course/images"
