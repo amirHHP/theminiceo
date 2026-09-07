@@ -228,10 +228,10 @@ defaultContentLanguageInSubdir = false
     source = "static/images"
     target = "assets/images"
   [[module.mounts]]
-    source = "content/docs/archive/images"
+    source = "content/docs/Archive/images"
     target = "static/en/docs/archive/images"
   [[module.mounts]]
-    source = "content/docs/books/images"
+    source = "content/docs/Books/images"
     target = "static/en/docs/books/images"
   [[module.mounts]]
     source = "content/images"
