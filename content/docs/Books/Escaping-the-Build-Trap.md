@@ -66,3 +66,9 @@ date: 2026-08-29
 
 **«به جای اینکه بپرسی چقدر سریع می‌توانیم این را بسازیم، بپرس چرا اصلاً باید این را بسازیم و چطور بفهمیم که کار کرده است؟»**
 
+---
+
+### 📥 دریافت فایل کتاب
+
+{{< book-download url="https://dl.theminiceo.ir/Escaping_the_Build_Trap_How_Effective_Product_Management_Creates.pdf" title="دانلود کتاب Escaping the Build Trap (نسخه اصلی انگلیسی)" size="20.9 مگابایت" format="PDF" >}}
+

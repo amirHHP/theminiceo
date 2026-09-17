@@ -1,0 +1,47 @@
+{{/* Book Download Shortcode for Hextra Theme */}}
+{{ $url := .Get "url" | default (.Get 0) }}
+{{ $title := .Get "title" | default "دانلود مستقیم نسخه اصلی کتاب" }}
+{{ $size := .Get "size" | default "" }}
+{{ $format := .Get "format" | default "PDF" }}
+{{ $lang := .Get "lang" | default "انگلیسی" }}
+
+<div class="book-download-box hx:my-8 hx:p-5 hx:rounded-2xl hx:bg-gradient-to-br hx:from-blue-50/70 hx:via-indigo-50/40 hx:to-slate-50/60 hx:dark:from-blue-950/20 hx:dark:via-indigo-950/15 hx:dark:to-slate-900/30 hx:border hx:border-blue-200/80 hx:dark:border-blue-800/40 hx:shadow-sm">
+  <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:justify-between hx:gap-4">
+    <div class="hx:flex hx:items-center hx:gap-3.5">
+      <div class="hx:w-12 hx:h-12 hx:rounded-xl hx:bg-blue-600 hx:text-white hx:flex hx:items-center hx:justify-center hx:shrink-0 hx:shadow-md hx:shadow-blue-500/20">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-6 hx:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      </div>
+      <div>
+        <div class="hx:text-base hx:font-bold hx:text-slate-900 hx:dark:text-white">
+          {{ $title }}
+        </div>
+        <div class="hx:flex hx:items-center hx:gap-2 hx:mt-1 hx:text-xs hx:text-slate-600 hx:dark:text-slate-400">
+          <span class="hx:inline-flex hx:items-center hx:px-2 hx:py-0.5 hx:rounded-md hx:font-medium hx:bg-blue-100 hx:text-blue-800 hx:dark:bg-blue-900/50 hx:dark:text-blue-300">
+            {{ $format }}
+          </span>
+          {{ if $size }}
+            <span>•</span>
+            <span>حجم: {{ $size }}</span>
+          {{ end }}
+          {{ if $lang }}
+            <span>•</span>
+            <span>زبان: {{ $lang }}</span>
+          {{ end }}
+          <span>•</span>
+          <span class="hx:text-emerald-600 hx:dark:text-emerald-400 hx:font-medium">سرور پرسرعت داخلی</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx:w-full hx:sm:w-auto hx:flex hx:justify-end">
+      <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" download class="hx:w-full hx:sm:w-auto hx:inline-flex hx:items-center hx:justify-center hx:gap-2 hx:py-2.5 hx:px-6 hx:rounded-xl hx:text-sm hx:font-bold hx:text-white hx:bg-blue-600 hx:hover:bg-blue-700 hx:active:scale-[0.98] hx:shadow-md hx:shadow-blue-600/25 hx:transition-all hx:no-underline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        <span>دریافت فایل کتاب</span>
+      </a>
+    </div>
+  </div>
+</div>

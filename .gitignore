@@ -4,6 +4,9 @@ resources/_gen/
 .hugo_build.lock
 hugo_stats.json
 *.log
+content/pdfs/
+scripts/.env
+scripts/.venv/
 
 # Obsidian
 .obsidian/

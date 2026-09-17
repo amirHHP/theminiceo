@@ -69,24 +69,29 @@ defaultContentLanguageInSubdir = false
   pageRef = '/docs/books/'
   weight = 3
 [[languages.fa.menu.main]]
+  identifier = 'reports'
+  name = 'گزارش‌ها'
+  pageRef = '/docs/reports/'
+  weight = 4
+[[languages.fa.menu.main]]
   identifier = 'frameworks'
   name = 'فریم‌ورک‌ها'
   pageRef = '/frameworks/'
-  weight = 4
+  weight = 5
 [[languages.fa.menu.main]]
   identifier = 'consulting'
   name = 'مشاوره محصول'
   pageRef = '/product-consultant/'
-  weight = 5
+  weight = 6
 [[languages.fa.menu.main]]
   identifier = 'about'
   name = 'درباره ما'
   pageRef = '/about/'
-  weight = 6
+  weight = 7
 [[languages.fa.menu.main]]
   identifier = 'products'
   name = 'ابزارها'
-  weight = 7
+  weight = 8
   [languages.fa.menu.main.params]
     type = 'products'
 # Add more header tools with parent = 'products' (name, url, description, badge).
@@ -123,24 +128,29 @@ defaultContentLanguageInSubdir = false
   pageRef = '/docs/books/'
   weight = 3
 [[languages.en.menu.main]]
+  identifier = 'reports'
+  name = 'Reports'
+  pageRef = '/docs/reports/'
+  weight = 4
+[[languages.en.menu.main]]
   identifier = 'frameworks'
   name = 'Frameworks'
   pageRef = '/frameworks/'
-  weight = 4
+  weight = 5
 [[languages.en.menu.main]]
   identifier = 'consulting'
   name = 'Product Advisory'
   pageRef = '/product-consultant/'
-  weight = 5
+  weight = 6
 [[languages.en.menu.main]]
   identifier = 'about'
   name = 'About'
   pageRef = '/about/'
-  weight = 6
+  weight = 7
 [[languages.en.menu.main]]
   identifier = 'products'
   name = 'Tools'
-  weight = 7
+  weight = 8
   [languages.en.menu.main.params]
     type = 'products'
 [[languages.en.menu.main]]
