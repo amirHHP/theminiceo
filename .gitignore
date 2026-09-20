@@ -7,6 +7,9 @@ hugo_stats.json
 content/pdfs/
 scripts/.env
 scripts/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Obsidian
 .obsidian/

@@ -1,7 +1,21 @@
 ---
+aliases:
+  - /docs/books/the-lean-product-playbook-how-to-innovate-with-minimum-viable-products/
 title: The Lean Product Playbook
 date: 2026-08-29
 ---
+
+| مشخصات کتاب | توضیحات |
+| :--- | :--- |
+| **پدیدآور / نویسنده** | دن اولسن (Dan Olsen) |
+| **حوزه تخصصی** | استراتژی و توسعه محصول |
+| **تعداد صفحات** | 336 صفحه |
+| **فرمت و کیفیت** | PDF • دیجیتال استاندارد |
+| **حجم فایل** | 5.5 مگابایت |
+| **سطح مخاطب** | تخصصی • مدیران محصول و نوآوران |
+
+---
+
 <style>
 .mermaid { direction: ltr; }
 </style>
@@ -99,3 +113,10 @@ $$Opportunity = Importance + \max(Importance - Satisfaction, 0)$$
 برای شروع، از مدل **هرم PMF** استفاده کن. همیشه از خودت بپرس: «آیا من الان دارم درباره مسئله (مشکل کاربر) حرف می‌زنم یا راه حل (دکمه و کد)؟». اگر دومی بود، یک قدم به عقب برگرد.
 
 ![lean-product-playbook-info](./images/lean-product-playbook.jpeg)
+
+
+---
+
+### 📥 دریافت فایل کتاب
+
+{{< book-download url="https://dl.theminiceo.ir/The_lean_product_playbook_How_to_innovate_with_minimum_viable_products.pdf" title="دانلود کتاب The Lean Product Playbook (نسخه اصلی انگلیسی)" size="5.5 مگابایت" format="PDF" lang="انگلیسی" >}}

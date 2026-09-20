@@ -3,8 +3,22 @@ title: کتاب Lean Analytics
 date: 2024-09-12
 coverImage: 71qklvirzml.webp
 aliases:
+  - /docs/books/lean-analytics-harkat-aval/
+  - /docs/books/lean-analytics-use-data-to-build-a-better-startup-faster-by-alistair/
   - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-lean-analytics/
 ---
+
+| مشخصات کتاب | توضیحات |
+| :--- | :--- |
+| **پدیدآور / نویسنده** | آلیستر کرول و بنجامین یوکوویتز (Alistair Croll & Benjamin Yoskovitz) |
+| **حوزه تخصصی** | سنجه‌های محصول و تحلیل داده |
+| **تعداد صفحات** | 440 صفحه |
+| **فرمت و کیفیت** | PDF • دیجیتال استاندارد |
+| **حجم فایل** | 6.9 مگابایت |
+| **سطح مخاطب** | تخصصی • مدیران محصول و نوآوران |
+
+---
+
 ![](images/71qklvirzml.webp)
 **عنوان: بهبود تصمیم‌گیری کسب‌وکار با استفاده از تحلیل‌های ناب**
 
@@ -23,3 +37,12 @@ aliases:
 **چرا این کتاب مفید است؟** "Lean Analytics" برای کارآفرینان، مدیران محصول و تیم‌های استارتاپی که به دنبال راه‌های نوآورانه برای بهینه‌سازی و رشد کسب‌وکارشان هستند، منبع ارزشمندی است. این کتاب با ارائه یک رویکرد داده‌محور، شما را قادر می‌سازد تا تصمیم‌های بهتری بگیرید و نتایج بهتری کسب کنید.
 
 **نتیجه‌گیری:** اگر به دنبال راه‌هایی برای استفاده از داده‌ها به منظور بهبود عملکرد کسب‌وکار خود هستید، "Lean Analytics" کتابی است که نمی‌خواهید از دست بدهید. این کتاب به شما کمک می‌کند که از داده‌ها به عنوان یک ابزار قدرتمند برای رشد کسب‌وکار استفاده کنید.
+
+
+---
+
+### 📥 دریافت فایل کتاب
+
+{{< book-download url="https://dl.theminiceo.ir/Lean_Analytics_Use_Data_to_Build_a_Better_Startup_Faster_by_Alistair.pdf" title="دانلود کتاب Lean Analytics (نسخه اصلی انگلیسی)" size="6.9 مگابایت" format="PDF" lang="انگلیسی" >}}
+
+{{< book-download url="https://dl.theminiceo.ir/Lean-Analytics-Harkat-Aval.pdf" title="دانلود کتاب تحلیل داده ناب (ترجمه فارسی - حرکت اول)" size="3.8 مگابایت" format="PDF" lang="فارسی" >}}
