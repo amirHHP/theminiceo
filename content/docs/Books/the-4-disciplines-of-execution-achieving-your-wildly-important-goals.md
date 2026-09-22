@@ -1,5 +1,5 @@
 ---
-title: "کتاب The 4 Disciplines of Execution Achieving Your Wildly Important Goals"
+title: کتاب The 4 Disciplines of Execution
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The 4 Disciplines of Execution Achieving Your Wildly Important Goals در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: Seven simple but smart skills for mastering the product manager role
+title: 7 Essential Skills for Mastering Product Management
 date: 2019-03-03
 categories:
   - product-skills

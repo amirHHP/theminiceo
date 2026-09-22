@@ -1,5 +1,5 @@
 ---
-title: "کتاب Leading Inclusion Drive Change Your Employees Can See and Feel Gena"
+title: کتاب Leading Inclusion
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Leading Inclusion Drive Change Your Employees Can See and Feel Gena در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Power of Experiments Decision Making in a Data Driven WorldMichael"
+title: کتاب The Power of Experiments
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Power of Experiments Decision Making in a Data Driven WorldMichael در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

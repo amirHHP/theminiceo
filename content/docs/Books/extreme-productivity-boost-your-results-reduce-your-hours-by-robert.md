@@ -1,5 +1,5 @@
 ---
-title: "کتاب Extreme Productivity Boost Your Results, Reduce Your Hours by Robert"
+title: کتاب Extreme Productivity
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Extreme Productivity Boost Your Results, Reduce Your Hours by Robert در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

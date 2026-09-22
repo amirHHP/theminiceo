@@ -1,5 +1,5 @@
 ---
-title: "کتاب Effective Data Storytelling How to Drive Change with Data, Narrative"
+title: کتاب Effective Data Storytelling
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Effective Data Storytelling How to Drive Change with Data, Narrative در حوزه سنجه‌ها، رشد و تحلیل داده برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "سنجه‌ها، رشد و تحلیل داده", "مدیریت محصول"]

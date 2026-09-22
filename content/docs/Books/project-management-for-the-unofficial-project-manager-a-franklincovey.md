@@ -1,5 +1,5 @@
 ---
-title: "کتاب Project Management for the Unofficial Project Manager A FranklinCovey"
+title: کتاب Project Management for Unofficial Project Managers
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Project Management for the Unofficial Project Manager A FranklinCovey در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

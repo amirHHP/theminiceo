@@ -1,5 +1,5 @@
 ---
-title: "کتاب Small Data The Tiny Clues That Uncover Huge Trends Martin Lindstrom"
+title: کتاب Small Data
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Small Data The Tiny Clues That Uncover Huge Trends Martin Lindstrom در حوزه سنجه‌ها، رشد و تحلیل داده برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "سنجه‌ها، رشد و تحلیل داده", "مدیریت محصول"]

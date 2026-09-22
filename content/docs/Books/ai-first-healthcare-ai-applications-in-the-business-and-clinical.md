@@ -1,5 +1,5 @@
 ---
-title: "کتاب AI First Healthcare AI Applications in the Business and Clinical"
+title: "کتاب AI-First Healthcare"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب AI First Healthcare AI Applications in the Business and Clinical در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

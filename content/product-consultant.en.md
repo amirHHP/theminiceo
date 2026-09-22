@@ -105,8 +105,8 @@ description: "Expert product advisory for startups and businesses — from idea 
 .lp-final p{font-size:1.05rem;opacity:.88;max-width:480px;margin:0 auto 2rem;line-height:1.7}
 .lp-btn-w{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:#fff;color:#312e81;border-radius:.75rem;font-weight:700;font-size:1.05rem;text-decoration:none;transition:all .2s;box-shadow:0 4px 14px rgba(0,0,0,.15)}
 .lp-btn-w:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2);color:#312e81}
-.lp-final-email{margin-top:1.5rem;font-size:.9rem;opacity:.7}
-.lp-final-email a{color:#c7d2fe;text-decoration:underline}
+.lp-final-email{margin-top:1.5rem;font-size:.9rem;opacity:.85}
+.lp-final-email code{background:rgba(255,255,255,.15);color:#fff;padding:.2rem .5rem;border-radius:.35rem;font-family:monospace;direction:ltr;display:inline-block}
 .lp-mid-cta{text-align:center;padding:2rem 1rem;background:#fafbff;border-radius:1rem;margin:1rem 0}
 .dark .lp-mid-cta{background:#1e1b4b}
 .lp-mid-cta p{color:#6b7280;margin-bottom:1rem;font-size:.95rem}
@@ -419,6 +419,6 @@ description: "Expert product advisory for startups and businesses — from idea 
 <h2>Ready to change your product's growth trajectory?</h2>
 <p>Book a free 30-minute consultation right now and talk to our team about your product challenges.</p>
 <a href="https://zeeg.me/amirhp/30min" target="_blank" rel="noopener" class="lp-btn-w">Book a free consultation →</a>
-<div class="lp-final-email">Or email us: <a href="mailto:hi@theminiceo.ir">hi@theminiceo.ir</a></div>
+<div class="lp-final-email">Or email us: <code dir="ltr">hi [at] theminiceo.ir</code></div>
 </div>
 </div>

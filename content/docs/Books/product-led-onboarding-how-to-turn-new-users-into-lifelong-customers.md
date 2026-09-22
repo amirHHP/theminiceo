@@ -1,5 +1,5 @@
 ---
-title: "کتاب Product Led Onboarding How to Turn New Users Into Lifelong Customers"
+title: "کتاب Product-Led Onboarding"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Product Led Onboarding How to Turn New Users Into Lifelong Customers در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

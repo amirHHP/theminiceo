@@ -1,5 +1,5 @@
 ---
-title: "کتاب Swipe to Unlock The Primer on Technology and Business Strategy"
+title: کتاب Swipe to Unlock
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Swipe to Unlock The Primer on Technology and Business Strategy در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

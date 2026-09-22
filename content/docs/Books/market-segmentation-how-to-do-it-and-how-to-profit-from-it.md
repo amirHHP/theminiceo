@@ -1,5 +1,5 @@
 ---
-title: "کتاب Market Segmentation How to Do It and How to Profit from It"
+title: کتاب Market Segmentation
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Market Segmentation How to Do It and How to Profit from It در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

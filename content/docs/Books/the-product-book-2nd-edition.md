@@ -1,5 +1,5 @@
 ---
-title: "کتاب محصول (The Product Book: How to Become a Great Product Manager)"
+title: کتاب محصول
 date: 2026-09-15
 description: "دانشنامه جامع ورود به مدیریت محصول و تسلط بر چرخه عمر کامل محصولات فناوری."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

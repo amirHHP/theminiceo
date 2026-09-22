@@ -1,5 +1,5 @@
 ---
-title: "Product positioning and messaging: value proposition and target audience"
+title: Product positioning and messaging
 date: 2026-08-30
 weight: 3
 linkTitle: "Positioning & Messaging"

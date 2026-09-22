@@ -1,5 +1,5 @@
 ---
-title: "کتاب Primal leadership Learning to lead with emotional intelligence Richard"
+title: کتاب Primal Leadership
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Primal leadership Learning to lead with emotional intelligence Richard در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

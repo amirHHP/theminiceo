@@ -1,5 +1,5 @@
 ---
-title: "کتاب What got you here wont get you there how successful people become"
+title: کتاب What Got You Here Won't Get You There
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب What got you here wont get you there how successful people become در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

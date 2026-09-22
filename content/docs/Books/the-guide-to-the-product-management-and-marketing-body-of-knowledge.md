@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Guide to the Product Management and Marketing Body of Knowledge"
+title: کتاب Guide to the Product Management Body of Knowledge
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Guide to the Product Management and Marketing Body of Knowledge در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

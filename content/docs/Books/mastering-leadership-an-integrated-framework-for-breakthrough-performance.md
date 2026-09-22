@@ -1,5 +1,5 @@
 ---
-title: "کتاب Mastering Leadership An Integrated Framework for Breakthrough Performance"
+title: کتاب Mastering Leadership
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Mastering Leadership An Integrated Framework for Breakthrough Performance در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

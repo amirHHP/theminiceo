@@ -1,5 +1,5 @@
 ---
-title: "کتاب The First 90 Days, Updated and Expanded Proven Strategies for Getting"
+title: کتاب The First 90 Days
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The First 90 Days, Updated and Expanded Proven Strategies for Getting در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

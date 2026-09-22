@@ -1,5 +1,5 @@
 ---
-title: "کتاب Scaling People Tactics for Management and Company Building Claire"
+title: کتاب Scaling People
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Scaling People Tactics for Management and Company Building Claire در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

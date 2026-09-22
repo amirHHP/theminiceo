@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Anxious Generation How the Great Rewiring of Childhood Is Causing"
+title: کتاب The Anxious Generation
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Anxious Generation How the Great Rewiring of Childhood Is Causing در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Big Ideas for Curious Minds An Introduction to Philosophy The School"
+title: کتاب Big Ideas for Curious Minds
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Big Ideas for Curious Minds An Introduction to Philosophy The School در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

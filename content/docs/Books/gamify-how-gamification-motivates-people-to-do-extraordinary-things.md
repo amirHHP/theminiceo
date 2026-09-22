@@ -1,5 +1,5 @@
 ---
-title: "کتاب Gamify How Gamification Motivates People to Do Extraordinary Things"
+title: کتاب Gamify
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Gamify How Gamification Motivates People to Do Extraordinary Things در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Are Your Lights On Gerald M Weinberg, Donald C Gause, Sally Cox"
+title: "کتاب Are Your Lights On?"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Are Your Lights On Gerald M Weinberg, Donald C Gause, Sally Cox در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

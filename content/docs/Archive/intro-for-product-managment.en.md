@@ -1,5 +1,5 @@
 ---
-title: "Product management: an introduction to the product manager’s work and skills"
+title: Product management
 date: 2021-01-21
 categories:
   - product-skills

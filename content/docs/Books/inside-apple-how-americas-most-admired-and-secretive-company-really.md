@@ -1,5 +1,5 @@
 ---
-title: "کتاب Inside Apple How Americas Most Admired and Secretive Company Really"
+title: کتاب Inside Apple
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Inside Apple How Americas Most Admired and Secretive Company Really در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

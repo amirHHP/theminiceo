@@ -1,5 +1,5 @@
 ---
-title: "What is product management? A complete guide to its strategic role in the organization"
+title: "What Is Product Management? A Strategic Guide"
 date: 2025-09-15
 weight: 1
 linkTitle: "What is product management?"

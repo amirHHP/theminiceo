@@ -1,5 +1,5 @@
 ---
-title: "Human blockers: a hiring, retention, and culture guide for Iranian startups"
+title: "Human Blockers: Hiring & Culture Guide for Startups"
 date: 2020-09-19
 coverImage: 1599932768.png
 ---

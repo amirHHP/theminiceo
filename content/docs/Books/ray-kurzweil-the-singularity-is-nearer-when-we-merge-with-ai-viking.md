@@ -1,5 +1,5 @@
 ---
-title: "کتاب Ray Kurzweil The Singularity Is Nearer When We Merge with AI Viking"
+title: کتاب The Singularity Is Nearer
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Ray Kurzweil The Singularity Is Nearer When We Merge with AI Viking در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

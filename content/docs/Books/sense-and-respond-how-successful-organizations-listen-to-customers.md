@@ -1,5 +1,5 @@
 ---
-title: "کتاب Sense and Respond How Successful Organizations Listen to Customers"
+title: کتاب Sense and Respond
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Sense and Respond How Successful Organizations Listen to Customers در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Design Is the Problem The Future of Design Must be Sustainable by"
+title: کتاب Design Is the Problem
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Design Is the Problem The Future of Design Must be Sustainable by در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

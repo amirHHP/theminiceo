@@ -1,5 +1,5 @@
 ---
-title: "کتاب get together how to build a community with your people kindle edition"
+title: کتاب Get Together
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب get together how to build a community with your people kindle edition در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

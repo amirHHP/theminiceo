@@ -1,5 +1,5 @@
 ---
-title: "کتاب Modern Monopolies What It Takes to Dominate the 21st Century Economy"
+title: کتاب Modern Monopolies
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Modern Monopolies What It Takes to Dominate the 21st Century Economy در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

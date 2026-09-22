@@ -1,5 +1,5 @@
 ---
-title: "کتاب Guesstimation 2 0 Solving Today's Problems on the Back of a Napkin"
+title: کتاب Guesstimation 2.0
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Guesstimation 2 0 Solving Today's Problems on the Back of a Napkin در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

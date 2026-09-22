@@ -1,5 +1,5 @@
 ---
-title: "کتاب Converted The Data Driven Way to Win Customers Hearts Neil Hoyne"
+title: کتاب Converted (Neil Hoyne)
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Converted The Data Driven Way to Win Customers Hearts Neil Hoyne در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

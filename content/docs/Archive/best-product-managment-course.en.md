@@ -1,5 +1,5 @@
 ---
-title: How to choose a suitable product management course (features and key points)
+title: How to Choose the Best Product Management Course
 date: 2025-06-05
 categories:
   - product-articles

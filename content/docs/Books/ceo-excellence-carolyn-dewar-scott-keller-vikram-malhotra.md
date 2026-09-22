@@ -1,5 +1,5 @@
 ---
-title: "کتاب CEO Excellence Carolyn Dewar, Scott Keller, Vikram Malhotra"
+title: کتاب CEO Excellence
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب CEO Excellence Carolyn Dewar, Scott Keller, Vikram Malhotra در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

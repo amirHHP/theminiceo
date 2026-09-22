@@ -1,6 +1,6 @@
 ---
 title: "Design Sprint"
-description: "A complete guide to the five-day Google Ventures Design Sprint: when to run it, who must be in the room, each day of the week, and an interactive sprint planner."
+description: "Complete guide to the five-day Google Ventures Design Sprint: when to run it, who to invite, the daily agenda, and an interactive planner."
 date: 2019-06-08
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Product frameworks and methodologies: Agile, Scrum, Kanban, and Design Thinking"
+title: Product frameworks and methodologies
 date: 2026-08-30
 weight: 3
 linkTitle: "Frameworks & Methodologies"

@@ -1,5 +1,5 @@
 ---
-title: What are OKRs and how do objectives and key results help your product grow?
+title: "What Are OKRs & How Do They Help Your Product Grow?"
 date: 2025-06-22
 categories:
   - product-articles

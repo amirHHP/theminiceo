@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Brand Called You Make Your Business Stand Out in a Crowded Marketplace"
+title: کتاب The Brand Called You
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Brand Called You Make Your Business Stand Out in a Crowded Marketplace در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

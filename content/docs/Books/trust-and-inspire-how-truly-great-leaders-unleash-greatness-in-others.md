@@ -1,5 +1,5 @@
 ---
-title: "کتاب Trust and Inspire How Truly Great Leaders Unleash Greatness in Others"
+title: کتاب Trust and Inspire
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Trust and Inspire How Truly Great Leaders Unleash Greatness in Others در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

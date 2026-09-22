@@ -1,5 +1,5 @@
 ---
-title: "کتاب Discipline Equals Freedom Field Manual JOCKO WILLINK 2017"
+title: کتاب Discipline Equals Freedom
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Discipline Equals Freedom Field Manual JOCKO WILLINK 2017 در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Traction How Any Startup Can Achieve Explosive Customer Growth"
+title: کتاب Traction
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Traction How Any Startup Can Achieve Explosive Customer Growth در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: How do we work with difficult stakeholders while keeping commitment and integrity?
+title: How to Work with Difficult Stakeholders Effectively
 date: 2021-09-19
 categories:
   - product-articles

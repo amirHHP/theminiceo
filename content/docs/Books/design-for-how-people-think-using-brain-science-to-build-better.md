@@ -1,5 +1,5 @@
 ---
-title: "کتاب Design for How People Think Using Brain Science to Build Better"
+title: کتاب Design for How People Think
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Design for How People Think Using Brain Science to Build Better در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

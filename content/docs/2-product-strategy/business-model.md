@@ -1,5 +1,5 @@
 ---
-title: "مدل کسب‌وکار، قیمت‌گذاری و سنجه‌های عملکرد (Business Model, Pricing & Metrics)"
+title: مدل کسب‌وکار، قیمت‌گذاری و سنجه‌های عملکرد
 date: 2026-08-30
 weight: 4
 linkTitle: "مدل کسب‌وکار"

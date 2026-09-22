@@ -1,5 +1,5 @@
 ---
-title: "کتاب Product Analytics Applied Data Science Techniques for Actionable"
+title: کتاب Product Analytics
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Product Analytics Applied Data Science Techniques for Actionable در حوزه سنجه‌ها، رشد و تحلیل داده برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "سنجه‌ها، رشد و تحلیل داده", "مدیریت محصول"]

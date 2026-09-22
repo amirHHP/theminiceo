@@ -1,5 +1,5 @@
 ---
-title: Product navigation in the product maze + a practical guide
+title: "Product Navigation in the Maze: A Practical Guide"
 date: 2019-02-02
 categories:
   - product-strategy

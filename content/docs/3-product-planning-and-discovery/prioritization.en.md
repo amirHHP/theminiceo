@@ -1,5 +1,5 @@
 ---
-title: "Product prioritization: RICE, MoSCoW, Kano, and backlog management"
+title: Product prioritization
 date: 2026-08-30
 weight: 3
 linkTitle: "Prioritization"

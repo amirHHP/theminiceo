@@ -1,5 +1,5 @@
 ---
-title: What is a PRD? A complete guide to the product requirements document for product managers
+title: "What is a PRD? Complete Product Requirements Guide"
 date: 2025-05-30
 categories:
   - product-articles

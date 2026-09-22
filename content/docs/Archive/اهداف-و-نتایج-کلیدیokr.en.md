@@ -1,5 +1,5 @@
 ---
-title: What is OKR, and how do objectives and key results help your product grow?
+title: "What Is OKR & How Does It Help Your Product Grow?"
 date: 2021-04-22
 categories:
   - product-articles

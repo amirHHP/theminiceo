@@ -1,5 +1,5 @@
 ---
-title: "Working backward: how to reach your goals with the minimum technology you need"
+title: Working backward
 date: 2019-02-19
 categories:
   - product-basics

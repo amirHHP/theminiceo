@@ -1,5 +1,5 @@
 ---
-title: "Buildermind podcast — episode 1: project or product? An unfinished war"
+title: Buildermind podcast — episode 1
 date: 2020-04-09
 categories:
   - product-basics

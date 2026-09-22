@@ -1,5 +1,5 @@
 ---
-title: The product manager role and assessing your product-management intelligence
+title: "The Product Manager Role & Assessing Your PM IQ"
 date: 2021-04-07
 categories:
   - product-skills

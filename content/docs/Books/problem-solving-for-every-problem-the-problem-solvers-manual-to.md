@@ -1,5 +1,5 @@
 ---
-title: "کتاب Problem Solving For Every Problem The Problem Solver’s Manual To"
+title: کتاب Problem Solving For Every Problem
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Problem Solving For Every Problem The Problem Solver’s Manual To در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

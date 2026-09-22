@@ -1,5 +1,5 @@
 ---
-title: "آنچه از ۱۰۰ مصاحبه JTBD یاد گرفتم: چرا کاربران مهاجرت می‌کنند"
+title: آنچه از ۱۰۰ مصاحبه JTBD یاد گرفتم
 date: 2019-02-24
 categories:
   - product-discovery

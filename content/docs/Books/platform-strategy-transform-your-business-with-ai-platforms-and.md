@@ -1,5 +1,5 @@
 ---
-title: "کتاب Platform Strategy Transform Your Business with AI, Platforms and"
+title: کتاب Platform Strategy
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Platform Strategy Transform Your Business with AI, Platforms and در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

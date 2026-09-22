@@ -1,5 +1,5 @@
 ---
-title: The experience of the Yadiz startup working with one of the country’s large educational institutions
+title: "Yadiz Startup: Enterprise Collaboration Case Study"
 date: 2020-12-18
 categories:
   - product-articles

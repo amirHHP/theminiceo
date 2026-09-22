@@ -1,5 +1,5 @@
 ---
-title: "کتاب Measuring the user experience collecting, analyzing, and presenting"
+title: کتاب Measuring the User Experience
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Measuring the user experience collecting, analyzing, and presenting در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

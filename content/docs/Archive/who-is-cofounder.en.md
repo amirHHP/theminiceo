@@ -1,5 +1,5 @@
 ---
-title: What does co-founder mean, and what are their responsibilities?
+title: "What Is a Co-Founder? Roles & Responsibilities"
 date: 2021-09-26
 categories:
   - teamwork

@@ -1,5 +1,5 @@
 ---
-title: "The product manager role: responsibilities, skills, and a day in the life"
+title: The product manager role
 date: 2026-08-30
 weight: 2
 linkTitle: "The Product Manager Role"

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Radical focus achieving your most important goals with objectives"
+title: کتاب Radical Focus
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Radical focus achieving your most important goals with objectives در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

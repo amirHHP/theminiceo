@@ -1,5 +1,5 @@
 ---
-title: "Product-manager tools: backlog, roadmap, analytics, and design"
+title: "Product-manager tools"
 date: 2026-08-30
 weight: 1
 linkTitle: "Product-manager tools"

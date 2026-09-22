@@ -1,5 +1,5 @@
 ---
-title: "کتاب Everybody Writes Your Go To Guide to Creating Ridiculously Good"
+title: کتاب Everybody Writes
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Everybody Writes Your Go To Guide to Creating Ridiculously Good در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

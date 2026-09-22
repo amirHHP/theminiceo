@@ -1,6 +1,6 @@
 ---
 title: "Assessing product opportunities"
-description: "A complete guide to Marty Cagan’s product opportunity assessment: the ten questions, how to run the meeting, a go / no-go decision, and an interactive scoring worksheet."
+description: "Guide to Marty Cagan's product opportunity assessment: the ten questions, running the meeting, go/no-go decisions, and an interactive scorecard."
 date: 2019-06-08
 ---
 

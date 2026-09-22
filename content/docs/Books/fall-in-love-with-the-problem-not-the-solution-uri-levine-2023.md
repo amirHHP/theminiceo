@@ -1,5 +1,5 @@
 ---
-title: "کتاب Fall in Love with the Problem, Not the Solution Uri Levine 2023"
+title: کتاب Fall in Love with the Problem
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Fall in Love with the Problem, Not the Solution Uri Levine 2023 در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

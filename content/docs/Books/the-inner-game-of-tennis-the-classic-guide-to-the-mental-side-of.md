@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Inner Game of Tennis The Classic Guide to the Mental Side of"
+title: کتاب The Inner Game of Tennis
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Inner Game of Tennis The Classic Guide to the Mental Side of در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

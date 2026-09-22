@@ -10,11 +10,21 @@
   {{ end -}}
   {{ partialCached "favicons.html" . -}}
   <title>
-    {{- if .IsHome -}}
+    {{- if .Params.titleTag -}}
+      {{/* Per-page SEO title override via front matter */}}
+      {{ .Params.titleTag -}}
+    {{- else if .IsHome -}}
       {{ .Site.Title -}}
     {{ else -}}
-      {{ with .Title }}{{ . }} – {{ end -}}
-      {{ .Site.Title -}}
+      {{- $pageTitle := .Title -}}
+      {{- $siteTitle := .Site.Title -}}
+      {{- $sep := " – " -}}
+      {{- $full := printf "%s%s%s" $pageTitle $sep $siteTitle -}}
+      {{- if gt (len $full) 60 -}}
+        {{- $pageTitle -}}
+      {{- else -}}
+        {{- $full -}}
+      {{- end -}}
     {{ end -}}
   </title>
   <meta name="description" content="{{ partial "utils/page-description.html" . }}" />

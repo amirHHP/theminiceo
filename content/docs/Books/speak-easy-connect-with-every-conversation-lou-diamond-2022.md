@@ -1,5 +1,5 @@
 ---
-title: "کتاب Speak Easy Connect with Every Conversation Lou Diamond 2022"
+title: کتاب Speak Easy
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Speak Easy Connect with Every Conversation Lou Diamond 2022 در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

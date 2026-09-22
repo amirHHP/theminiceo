@@ -1,5 +1,5 @@
 ---
-title: "Complete product management course based on The Product Manager’s Survival Guide"
+title: "Product Management Course: PM Survival Guide"
 date: 2021-09-17
 coverImage: "ff378077-316b-47a1-a2e9-241ad2ce9c76.jpeg"
 price: "2,480,000 Toman"

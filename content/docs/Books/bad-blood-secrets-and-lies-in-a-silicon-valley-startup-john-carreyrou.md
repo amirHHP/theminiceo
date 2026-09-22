@@ -1,5 +1,5 @@
 ---
-title: "کتاب Bad Blood Secrets and Lies in a Silicon Valley Startup John Carreyrou"
+title: کتاب Bad Blood
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Bad Blood Secrets and Lies in a Silicon Valley Startup John Carreyrou در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

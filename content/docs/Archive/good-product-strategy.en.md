@@ -1,5 +1,5 @@
 ---
-title: What does good product strategy look like? + Snapp case study
+title: "What Is Good Product Strategy? + Snapp Case Study"
 date: 2019-01-25
 categories:
   - product-strategy

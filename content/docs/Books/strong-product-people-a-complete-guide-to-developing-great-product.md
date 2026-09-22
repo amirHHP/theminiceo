@@ -1,5 +1,5 @@
 ---
-title: "کتاب Strong Product People A Complete Guide to Developing Great Product"
+title: کتاب Strong Product People
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Strong Product People A Complete Guide to Developing Great Product در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

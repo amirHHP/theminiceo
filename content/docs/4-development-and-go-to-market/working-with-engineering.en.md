@@ -1,5 +1,5 @@
 ---
-title: "Working with engineering: delivery, technical debt, and communication"
+title: Working with engineering
 date: 2026-08-30
 weight: 1
 linkTitle: "Working with Engineering"

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Coaching for Performance GROWing Human Potential and Purpose The"
+title: کتاب Coaching for Performance
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Coaching for Performance GROWing Human Potential and Purpose The در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

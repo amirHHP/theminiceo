@@ -1,5 +1,5 @@
 ---
-title: "کتاب Good Products, Bad Products Essential Elements to Achieving Superior"
+title: "کتاب Good Products, Bad Products"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Good Products, Bad Products Essential Elements to Achieving Superior در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

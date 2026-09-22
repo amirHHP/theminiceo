@@ -1,5 +1,5 @@
 ---
-title: "Product management tools: what tools does a product manager use?"
+title: Product management tools
 date: 2020-03-30
 categories:
   - product-skills

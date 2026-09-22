@@ -1,5 +1,5 @@
 ---
-title: "کتاب Leading Lean Ensuring Success and Developing a Framework for Leadership"
+title: کتاب Leading Lean
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Leading Lean Ensuring Success and Developing a Framework for Leadership در حوزه توسعه چابک و نوپای ناب برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "توسعه چابک و نوپای ناب", "مدیریت محصول"]

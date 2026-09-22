@@ -1,5 +1,5 @@
 ---
-title: "کتاب Scramble How Agile Strategy Can Build Epic Brands In Record Time"
+title: کتاب Scramble
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Scramble How Agile Strategy Can Build Epic Brands In Record Time در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

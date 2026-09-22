@@ -1,5 +1,5 @@
 ---
-title: "کتاب Start with Why How Great Leaders Inspire Everyone to Take Action"
+title: کتاب Start with Why
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Start with Why How Great Leaders Inspire Everyone to Take Action در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

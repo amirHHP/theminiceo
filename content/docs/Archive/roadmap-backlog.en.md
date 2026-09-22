@@ -1,5 +1,5 @@
 ---
-title: Product roadmap and product backlog — similarities and differences
+title: Product roadmap and product backlog
 date: 2019-03-14
 categories:
   - product-basics

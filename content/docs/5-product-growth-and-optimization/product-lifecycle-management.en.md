@@ -1,5 +1,5 @@
 ---
-title: "Product lifecycle management: introduction, growth, maturity, and decline"
+title: Product lifecycle management
 date: 2026-08-30
 weight: 2
 linkTitle: "Product Lifecycle Management"

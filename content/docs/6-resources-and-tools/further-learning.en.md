@@ -1,5 +1,5 @@
 ---
-title: "Further product-management learning: books, podcasts, and courses"
+title: "Further product-management learning"
 date: 2026-08-30
 weight: 3
 linkTitle: "Further learning"

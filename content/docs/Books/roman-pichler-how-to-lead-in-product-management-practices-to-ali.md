@@ -1,5 +1,5 @@
 ---
-title: "کتاب Roman Pichler How to Lead in Product Management Practices to Ali"
+title: کتاب How to Lead in Product Management
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Roman Pichler How to Lead in Product Management Practices to Ali در حوزه استراتژی و رهبری محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و رهبری محصول", "مدیریت محصول"]

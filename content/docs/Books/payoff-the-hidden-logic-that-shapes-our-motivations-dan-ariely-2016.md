@@ -1,5 +1,5 @@
 ---
-title: "کتاب Payoff The Hidden Logic That Shapes Our Motivations Dan Ariely 2016"
+title: کتاب Payoff (Dan Ariely)
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Payoff The Hidden Logic That Shapes Our Motivations Dan Ariely 2016 در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

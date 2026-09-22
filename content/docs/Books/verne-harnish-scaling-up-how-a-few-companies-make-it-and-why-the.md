@@ -1,5 +1,5 @@
 ---
-title: "کتاب Verne Harnish Scaling Up How a Few Companies Make It and Why the"
+title: کتاب Scaling Up (Verne Harnish)
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Verne Harnish Scaling Up How a Few Companies Make It and Why the در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

@@ -1,5 +1,5 @@
 ---
-title: "کتاب Competing in the Age of AI Karim R Lakhani Marco Iansiti 2024"
+title: کتاب Competing in the Age of AI
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Competing in the Age of AI Karim R Lakhani Marco Iansiti 2024 در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

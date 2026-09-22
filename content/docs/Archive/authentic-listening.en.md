@@ -1,5 +1,5 @@
 ---
-title: "Active listening: the core skill product managers need for effective communication"
+title: Active listening
 date: 2019-03-27
 categories:
   - product-skills

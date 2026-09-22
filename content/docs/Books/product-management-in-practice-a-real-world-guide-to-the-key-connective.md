@@ -1,5 +1,5 @@
 ---
-title: "کتاب Product Management in Practice A Real World Guide to the Key Connective"
+title: کتاب Product Management in Practice
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Product Management in Practice A Real World Guide to the Key Connective در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

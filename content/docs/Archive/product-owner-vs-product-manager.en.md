@@ -1,5 +1,5 @@
 ---
-title: Who is a product owner and how do they differ from a product manager?
+title: "Product Owner vs Product Manager: Key Differences"
 date: 2021-03-06
 categories:
   - product-articles

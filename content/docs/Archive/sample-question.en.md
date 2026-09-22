@@ -1,5 +1,5 @@
 ---
-title: Sample product-manager interview questions at different companies
+title: "Top Product Manager Interview Questions & Answers"
 date: 2019-04-25
 categories:
   - product-skills

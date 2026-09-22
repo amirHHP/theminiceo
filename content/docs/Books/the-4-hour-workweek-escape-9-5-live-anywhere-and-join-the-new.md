@@ -1,5 +1,5 @@
 ---
-title: "کتاب The 4 Hour Workweek Escape 9 5, Live Anywhere, and Join the New"
+title: "کتاب The 4-Hour Workweek"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The 4 Hour Workweek Escape 9 5, Live Anywhere, and Join the New در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

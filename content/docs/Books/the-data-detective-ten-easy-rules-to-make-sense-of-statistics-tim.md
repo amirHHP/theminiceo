@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Data Detective Ten Easy Rules to Make Sense of Statistics Tim"
+title: کتاب The Data Detective
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Data Detective Ten Easy Rules to Make Sense of Statistics Tim در حوزه سنجه‌ها، رشد و تحلیل داده برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "سنجه‌ها، رشد و تحلیل داده", "مدیریت محصول"]

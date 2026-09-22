@@ -1,5 +1,5 @@
 ---
-title: "کتاب Building Products for the Enterprise O'Reilly Media 2018"
+title: کتاب Building Products for the Enterprise
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Building Products for the Enterprise O'Reilly Media 2018 در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]

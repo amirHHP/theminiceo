@@ -1,5 +1,5 @@
 ---
-title: "کتاب Forget the Funnel A Customer Led Approach for Driving Predictable"
+title: کتاب Forget the Funnel
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Forget the Funnel A Customer Led Approach for Driving Predictable در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

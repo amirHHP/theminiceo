@@ -1,5 +1,5 @@
 ---
-title: "کتاب The Greatness Mindset Unlock the Power of Your Mind and Live Your"
+title: کتاب The Greatness Mindset
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب The Greatness Mindset Unlock the Power of Your Mind and Live Your در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

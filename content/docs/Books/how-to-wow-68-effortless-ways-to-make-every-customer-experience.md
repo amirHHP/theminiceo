@@ -1,5 +1,5 @@
 ---
-title: "کتاب How to wow 68 effortless ways to make every customer experience"
+title: کتاب How to WOW
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب How to wow 68 effortless ways to make every customer experience در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

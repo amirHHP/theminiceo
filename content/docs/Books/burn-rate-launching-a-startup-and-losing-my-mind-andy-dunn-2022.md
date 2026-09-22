@@ -1,5 +1,5 @@
 ---
-title: "کتاب Burn Rate Launching a Startup and Losing My Mind Andy Dunn 2022"
+title: کتاب Burn Rate (Andy Dunn)
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Burn Rate Launching a Startup and Losing My Mind Andy Dunn 2022 در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

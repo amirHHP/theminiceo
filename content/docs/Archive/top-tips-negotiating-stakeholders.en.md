@@ -1,5 +1,5 @@
 ---
-title: "Negotiating with stakeholders: the best advice for product managers"
+title: Negotiating with stakeholders
 date: 2020-05-01
 categories:
   - product-skills

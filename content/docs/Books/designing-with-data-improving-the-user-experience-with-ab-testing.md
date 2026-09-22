@@ -1,5 +1,5 @@
 ---
-title: "کتاب Designing with Data Improving the User Experience with AB Testing"
+title: کتاب Designing with Data
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Designing with Data Improving the User Experience with AB Testing در حوزه کشف محصول و پژوهش کاربر برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "کشف محصول و پژوهش کاربر", "مدیریت محصول"]

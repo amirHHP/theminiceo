@@ -1,5 +1,5 @@
 ---
-title: "The product roadmap: types, how to build one, and how to present it"
+title: The product roadmap
 date: 2026-08-30
 weight: 4
 linkTitle: "Product Roadmap"

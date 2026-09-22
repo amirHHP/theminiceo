@@ -1,5 +1,5 @@
 ---
-title: "کتاب Cracked It How to Solve Big Problems and Sell Solutions like Top"
+title: "کتاب Cracked It!"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Cracked It How to Solve Big Problems and Sell Solutions like Top در حوزه استراتژی و توسعه محصول برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "استراتژی و توسعه محصول", "مدیریت محصول"]

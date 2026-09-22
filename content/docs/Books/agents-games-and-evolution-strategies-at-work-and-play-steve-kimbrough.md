@@ -1,5 +1,5 @@
 ---
-title: "کتاب Agents, games, and evolution strategies at work and play Steve Kimbrough"
+title: "کتاب Agents, Games, and Evolution"
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Agents, games, and evolution strategies at work and play Steve Kimbrough در حوزه هوش مصنوعی و فناوری برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "هوش مصنوعی و فناوری", "مدیریت محصول"]

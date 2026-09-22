@@ -1,5 +1,5 @@
 ---
-title: "Market and user research: personas, journeys, and competitor analysis"
+title: Market and user research
 date: 2026-08-30
 weight: 2
 linkTitle: "Market & User Research"

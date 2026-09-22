@@ -1,5 +1,5 @@
 ---
-title: "کتاب Business Analysis Methodology Book Business Analysts Guide to Requirements"
+title: کتاب Business Analysis Methodology Book
 date: 2026-09-15
 description: "معرفی تخصصی، بررسی سرفصل‌ها، چارچوب‌های کاربردی و دانلود نسخه کامل کتاب Business Analysis Methodology Book Business Analysts Guide to Requirements در حوزه طراحی تجربه کاربری و روانشناسی برای مدیران محصول و نوآوران."
 tags: ["کتابخانه", "طراحی تجربه کاربری و روانشناسی", "مدیریت محصول"]
