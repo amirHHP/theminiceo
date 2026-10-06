@@ -27,19 +27,49 @@ jobs:
           hugo mod get -u
           hugo --minify
       
-      # The S3 Upload Step
-      - name: Deploy to S3
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: 'us-east-1' # Change to your bucket region
-        run: |
-          aws s3 sync ./public s3://theminiceo --delete
-      - name: Verify Secrets (Debug)
+      # Verify Secrets (Fail fast if missing)
+      - name: Verify Deployment Credentials
         run: |
           if [ -z "${{ secrets.AWS_ACCESS_KEY_ID }}" ]; then
             echo "AWS_ACCESS_KEY_ID is EMPTY"
             exit 1
-          else
-            echo "AWS_ACCESS_KEY_ID is set"
           fi
+
+      # Deploy to S3 with optimized cache headers
+      - name: Deploy to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
+        run: |
+          # 1. Sync immutable static assets with 1-year cache
+          aws s3 sync ./public s3://theminiceo \
+            --exclude "*" \
+            --include "*.css" \
+            --include "*.js" \
+            --include "*.woff2" \
+            --include "*.woff" \
+            --include "*.ttf" \
+            --include "*.webp" \
+            --include "*.png" \
+            --include "*.jpg" \
+            --include "*.jpeg" \
+            --include "*.svg" \
+            --include "*.ico" \
+            --cache-control "public, max-age=31536000, immutable"
+
+          # 2. Sync HTML, XML, JSON, and remaining files with must-revalidate
+          aws s3 sync ./public s3://theminiceo \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*.woff2" \
+            --exclude "*.woff" \
+            --exclude "*.ttf" \
+            --exclude "*.webp" \
+            --exclude "*.png" \
+            --exclude "*.jpg" \
+            --exclude "*.jpeg" \
+            --exclude "*.svg" \
+            --exclude "*.ico" \
+            --cache-control "public, max-age=0, must-revalidate" \
+            --delete

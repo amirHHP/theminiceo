@@ -7,10 +7,12 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 relativeURLs = false
 
+ignoreFiles = ['content/pdfs/.*']
+
 [minify]
   [minify.tdewolff]
     [minify.tdewolff.html]
-      keepComments = true
+      keepComments = false
 
 [taxonomies]
   category = "categories"
@@ -20,11 +22,8 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.fa]
-    languageName = 'فارسی'
     label = 'فارسی'
-    languageCode = 'fa'
     locale = 'fa-IR'
-    languageDirection = 'rtl'
     direction = 'rtl'
     weight = 1
     title = 'مدیرعامل کوچک | TheMiniCEO'
@@ -32,11 +31,8 @@ defaultContentLanguageInSubdir = false
       description = 'مدیرعامل کوچک؛ مرجع تخصصی مدیریت محصول، فریم‌ورک‌های توسعه، کتاب‌ها، دوره‌های آموزشی و مشاوره اختصاصی رشد کسب‌وکار و استارتاپ'
 
   [languages.en]
-    languageName = 'English'
     label = 'English'
-    languageCode = 'en'
     locale = 'en'
-    languageDirection = 'ltr'
     direction = 'ltr'
     weight = 2
     title = 'TheMiniCEO'
@@ -44,7 +40,7 @@ defaultContentLanguageInSubdir = false
       description = 'TheMiniCEO: product management guides, frameworks, books, courses, and advisory for building products people actually need.'
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
 
@@ -209,8 +205,13 @@ defaultContentLanguageInSubdir = false
     default_link = "https://zarinp.al/392035" # لینک پرداخت زرین‌پال پیش‌فرض دوره‌ها
 
 [imaging]
-  quality = 70
   resampleFilter = "CatmullRom"
+  [imaging.jpeg]
+    quality = 70
+  [imaging.webp]
+    quality = 70
+  [imaging.avif]
+    quality = 70
 
 [module]
   [[module.mounts]]

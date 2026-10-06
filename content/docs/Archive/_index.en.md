@@ -4,6 +4,9 @@ draft = false
 weight = 90
 title = 'Product management article archive'
 description = 'Articles, lessons, and notes on product management, development methods, and business analysis'
+
+[sidebar]
+  open = false
 +++
 
 This is the archive of articles and experience published by **TheMiniCEO**.

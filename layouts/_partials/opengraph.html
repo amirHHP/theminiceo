@@ -40,8 +40,8 @@
 {{- end -}}
 
 {{- with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
-{{- with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
-{{- with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+<meta property="og:locale" content="{{ .Params.locale | default (.Language.Locale | replaceRE "-" "_") | default "fa_IR" }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
 {{- with .Params.videos }}{{- range . }}
 <meta property="og:video" content="{{ . | absURL }}" />
 {{ end }}{{ end }}

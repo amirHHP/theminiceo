@@ -22,6 +22,6 @@
 {{- end -}}
 {{- $desc = $desc | plainify | htmlUnescape | chomp -}}
 {{- if gt (strings.RuneCount $desc) 155 -}}
-  {{- $desc = printf "%s…" (substr $desc 0 152) -}}
+  {{- $desc = $desc | truncate 155 -}}
 {{- end -}}
 {{- $desc -}}

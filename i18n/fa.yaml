@@ -77,3 +77,25 @@ coursePaymentGuarantee: "تضمین امنیت پرداخت توسط شاپرک 
 buySecurePayment: "پرداخت امن از درگاه زرین‌پال"
 buyInstantAccess: "دسترسی فوری به دوره بلافاصله پس از پرداخت"
 buyDefaultText: "خرید و پرداخت آنلاین با زرین‌پال"
+
+# Menu items & Sections
+docs: "مقالات و مستندات"
+courses: "دوره‌های آموزشی"
+library: "کتابخانه"
+reports: "گزارش‌ها"
+frameworks: "فریم‌ورک‌ها"
+consulting: "مشاوره محصول"
+about: "درباره ما"
+tools: "ابزارها"
+zendo: "Zendo"
+search: "جستجو"
+
+# Callouts & Alerts
+note: "نکته"
+tip: "پیشنهاد"
+info: "اطلاعات"
+warning: "هشدار"
+important: "مهم"
+caution: "احتیاط"
+
+redirectingTo: "در حال انتقال به"

@@ -39,30 +39,7 @@
   {{- partial "schema.html" . -}}
   {{- partial "twitter_cards.html" . -}}
 
-  {{- $mainCss := resources.Get "css/compiled/main.css" -}}
-  {{- $customCss := resources.Get "css/custom.css" -}}
-  {{- $variablesCss := resources.Get "css/variables.css" | resources.ExecuteAsTemplate "css/variables.css" . -}}
-
-  {{- /* Production: inline CSS so it is not a render-blocking request.
-       printf+safeHTML avoids Go replacing SVG data-URIs in <style> with ZgotmplZ. */ -}}
-  {{- if hugo.IsProduction }}
-    {{- $styles := slice $variablesCss $mainCss $customCss | resources.Concat "css/compiled/main.css" | minify }}
-    {{ (printf "<style>%s</style>" $styles.Content) | safeHTML }}
-
-  {{- /* Theme development mode (non-production + theme environment) */ -}}
-  {{- else if eq hugo.Environment "theme" }}
-    {{- $devStyles := resources.Get "css/styles.css" | postCSS (dict "inlineImports" true) }}
-    <link href="{{ $devStyles.RelPermalink }}" rel="stylesheet" />
-    <link href="{{ $variablesCss.RelPermalink }}" rel="stylesheet" />
-    <link href="{{ $customCss.RelPermalink }}" rel="stylesheet" />
-
-  {{- /* User local development */ -}}
-  {{- else }}
-    {{- $styles := resources.Get "css/compiled/main.css" -}}
-    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-    <link href="{{ $variablesCss.RelPermalink }}" rel="stylesheet" />
-    <link href="{{ $customCss.RelPermalink }}" rel="stylesheet" />
-  {{- end }}
+  {{- partialCached "head-css.html" . .Language.Lang -}}
 
 
   <!-- Google Analytics -->

@@ -50,7 +50,7 @@
             <div class="tmc-course-media">
               {{ if $cover }}
                 <div class="tmc-course-cover">
-                  <img src="{{ $cover }}" alt="{{ .Title }}" />
+                  <img src="{{ $cover }}" alt="{{ .Title }}" decoding="async" width="600" height="340" style="width:100%;height:auto;object-fit:cover;border-radius:1rem;" />
                 </div>
               {{ end }}
 

@@ -1,11 +1,17 @@
 {{- range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
-{{- end }}
-{{- range .AllTranslations }}
   {{- if eq .Lang "fa" }}
     <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
   {{- end }}
 {{- end }}
 {{- if .HasShortcode "framework-tool" -}}
-  <script src="{{ "js/framework-tools.js" | relURL }}" defer></script>
+  {{- $fwTools := resources.Get "js/framework-tools.js" -}}
+  {{- if $fwTools -}}
+    {{- if hugo.IsProduction -}}
+      {{- $fwTools = $fwTools | minify | fingerprint -}}
+    {{- end -}}
+    <script src="{{ $fwTools.RelPermalink }}" integrity="{{ $fwTools.Data.Integrity }}" defer></script>
+  {{- else -}}
+    <script src="{{ "js/framework-tools.js" | relURL }}" defer></script>
+  {{- end -}}
 {{- end -}}

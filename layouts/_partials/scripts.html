@@ -1,0 +1,10 @@
+{{/* Core scripts (theme, menu, tabs, etc.) */}}
+{{- partialCached "scripts/core.html" . .Language.Lang -}}
+
+{{/* Search */}}
+{{- partialCached "scripts/search.html" . .Language.Lang -}}
+
+{{/* Mermaid */}}
+{{- if (.Store.Get "hasMermaid") -}}
+  {{- partial "scripts/mermaid.html" . -}}
+{{- end -}}

@@ -75,5 +75,27 @@ courseRegisterPay: "Enroll and pay with ZarinPal"
 coursePaymentGuarantee: "Payment security guaranteed by Shaparak and ZarinPal"
 
 buySecurePayment: "Secure payment via ZarinPal"
-buyInstantAccess: "Instant course access right after payment"
-buyDefaultText: "Buy and pay online with ZarinPal"
+buyInstantAccess: "Instant access immediately after purchase"
+buyDefaultText: "Buy and pay online via ZarinPal"
+
+# Menu items & Sections
+docs: "Articles & Docs"
+courses: "Courses"
+library: "Library"
+reports: "Reports"
+frameworks: "Frameworks"
+consulting: "Product Advisory"
+about: "About"
+tools: "Tools"
+zendo: "Zendo"
+search: "Search"
+
+# Callouts & Alerts
+note: "Note"
+tip: "Tip"
+info: "Info"
+warning: "Warning"
+important: "Important"
+caution: "Caution"
+
+redirectingTo: "Redirecting to"
