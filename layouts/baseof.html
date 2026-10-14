@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang | default `fa` }}" dir="{{ .Language.Direction | default `rtl` }}">
+{{- $dir := cond (eq .Language.Lang "en") "ltr" "rtl" -}}
+<html lang="{{ .Site.Language.Lang | default `fa` }}" dir="{{ $dir }}">
   {{- partial "head.html" . -}}
-  <body dir="{{ .Language.Direction | default `rtl` }}">
+  <body dir="{{ $dir }}">
     {{- partial "navbar.html" . -}}
     {{- block "main" . }}{{ end -}}
     {{- if or (eq .Site.Params.footer.enable nil) (.Site.Params.footer.enable) }}
