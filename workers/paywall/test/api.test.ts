@@ -84,7 +84,7 @@ describe("Worker API Endpoints & Router", () => {
 
     const json = (await res.json()) as any;
     assert.equal(json.success, true);
-    assert.equal(json.pricing.amount, "5.00");
+    assert.equal(json.pricing.amount, "1.00");
     assert.equal(json.pricing.currency, "USDT");
     assert.equal(json.storeWallet, DEFAULT_STORE_WALLET);
     assert.equal(json.downloadExpirySeconds, 7200);
@@ -188,7 +188,7 @@ describe("Worker API Endpoints & Router", () => {
                 topicAddress(buyerWallet),
                 topicAddress(DEFAULT_STORE_WALLET),
               ],
-              data: dataValue(5000000000000000000n), // 5.0 USDT
+              data: dataValue(1000000000000000000n), // 1.0 USDT
             },
           ],
         };
@@ -225,7 +225,7 @@ describe("Worker API Endpoints & Router", () => {
     assert.equal(verifyData.book.id, "the-lean-startup");
     assert.equal(verifyData.txDetails.network, "bsc");
     assert.equal(verifyData.txDetails.txHash, validTxHash);
-    assert.equal(verifyData.txDetails.amountUsdt, "5.00");
+    assert.equal(verifyData.txDetails.amountUsdt, "1.00");
     assert.equal(verifyData.emailDispatched, true);
 
     // Replay Attempt with exact same txHash
@@ -264,7 +264,7 @@ describe("Worker API Endpoints & Router", () => {
                 topicAddress(buyerWallet),
                 topicAddress(DEFAULT_STORE_WALLET),
               ],
-              data: dataValue(5000000000000000000n),
+              data: dataValue(1000000000000000000n),
             },
           ],
         };

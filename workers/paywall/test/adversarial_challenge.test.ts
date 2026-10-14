@@ -269,13 +269,13 @@ describe("Adversarial Stress Test: Malformed Transaction Hashes", () => {
 // ============================================================================
 describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", () => {
   // --- BSC (18 Decimals) Tests ---
-  describe("BNB Smart Chain (18 Decimals, Min Units: 5 * 10^18)", () => {
+  describe("BNB Smart Chain (18 Decimals, Min Units: 1 * 10^18)", () => {
     const net = "bsc";
-    const minUnits = 5000000000000000000n; // 5.00 USDT
+    const minUnits = 1000000000000000000n; // 1.00 USDT
 
-    test("Underpayment by 1 wei (4.999999999999999999 USDT) is strictly rejected with 400 INSUFFICIENT_AMOUNT", async () => {
+    test("Underpayment by 1 wei (0.999999999999999999 USDT) is strictly rejected with 400 INSUFFICIENT_AMOUNT", async () => {
       const txHash = "0x" + "10".repeat(32);
-      const underByOneWei = minUnits - 1n; // 4999999999999999999n
+      const underByOneWei = minUnits - 1n; // 999999999999999999n
 
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -292,17 +292,17 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
       assert.equal(res.success, false);
       assert.equal(res.status, 400);
       assert.equal(res.error, DIAGNOSTIC_ERRORS.INSUFFICIENT_AMOUNT.code);
-      assert.ok(res.message.includes("4.99 USDT"), `Expected 4.99 formatted string, got: ${res.message}`);
+      assert.ok(res.message.includes("0.99 USDT"), `Expected 0.99 formatted string, got: ${res.message}`);
     });
 
-    test("Underpayment 4.990000000000000000 USDT is strictly rejected", async () => {
+    test("Underpayment 0.990000000000000000 USDT is strictly rejected", async () => {
       const txHash = "0x" + "11".repeat(32);
-      const amount499 = 4990000000000000000n;
+      const amount099 = 990000000000000000n;
 
       const mockRpc = buildMockRpcClient({
         txHash,
         network: net,
-        rawAmount: amount499,
+        rawAmount: amount099,
       });
 
       const res = await verifyPaymentOnChain(
@@ -337,7 +337,7 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
       }
     });
 
-    test("Exact boundary 5.000000000000000000 USDT (5000000000000000000n) succeeds with 200 OK", async () => {
+    test("Exact boundary 1.000000000000000000 USDT (1000000000000000000n) succeeds with 200 OK", async () => {
       const txHash = "0x" + "13".repeat(32);
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -353,11 +353,11 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
 
       assert.equal(res.success, true);
       assert.equal(res.status, 200);
-      assert.equal(res.data?.amountUsdt, "5.00");
+      assert.equal(res.data?.amountUsdt, "1.00");
       assert.equal(res.data?.amountRaw, minUnits.toString());
     });
 
-    test("Overpayment by 1 wei (5000000000000000001n) and massive overpayment succeed", async () => {
+    test("Overpayment by 1 wei (1000000000000000001n) and massive overpayment succeed", async () => {
       const txHash1 = "0x" + "14".repeat(32);
       const overByOneWei = minUnits + 1n;
 
@@ -375,7 +375,7 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
 
       assert.equal(res1.success, true);
       assert.equal(res1.status, 200);
-      assert.equal(res1.data?.amountUsdt, "5.00");
+      assert.equal(res1.data?.amountUsdt, "1.00");
 
       const txHash2 = "0x" + "15".repeat(32);
       const massiveOverpayment = 5000000000000000000000n; // 5000 USDT
@@ -398,13 +398,13 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
   });
 
   // --- Polygon (6 Decimals) Tests ---
-  describe("Polygon PoS (6 Decimals, Min Units: 5 * 10^6 = 5000000n)", () => {
+  describe("Polygon PoS (6 Decimals, Min Units: 1 * 10^6 = 1000000n)", () => {
     const net = "polygon";
-    const minUnits = 5000000n; // 5.00 USDT
+    const minUnits = 1000000n; // 1.00 USDT
 
-    test("Underpayment by 1 unit (4.999999 USDT / 4999999n) is strictly rejected with 400 INSUFFICIENT_AMOUNT", async () => {
+    test("Underpayment by 1 unit (0.999999 USDT / 999999n) is strictly rejected with 400 INSUFFICIENT_AMOUNT", async () => {
       const txHash = "0x" + "20".repeat(32);
-      const underByOneUnit = minUnits - 1n; // 4999999n
+      const underByOneUnit = minUnits - 1n; // 999999n
 
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -421,17 +421,17 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
       assert.equal(res.success, false);
       assert.equal(res.status, 400);
       assert.equal(res.error, DIAGNOSTIC_ERRORS.INSUFFICIENT_AMOUNT.code);
-      assert.ok(res.message.includes("4.99 USDT"), `Expected 4.99 formatted string, got: ${res.message}`);
+      assert.ok(res.message.includes("0.99 USDT"), `Expected 0.99 formatted string, got: ${res.message}`);
     });
 
-    test("Underpayment 4.990000 USDT (4990000n) is strictly rejected", async () => {
+    test("Underpayment 0.990000 USDT (990000n) is strictly rejected", async () => {
       const txHash = "0x" + "21".repeat(32);
-      const amount499 = 4990000n;
+      const amount099 = 990000n;
 
       const mockRpc = buildMockRpcClient({
         txHash,
         network: net,
-        rawAmount: amount499,
+        rawAmount: amount099,
       });
 
       const res = await verifyPaymentOnChain(
@@ -445,7 +445,7 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
       assert.equal(res.error, DIAGNOSTIC_ERRORS.INSUFFICIENT_AMOUNT.code);
     });
 
-    test("Exact boundary 5.000000 USDT (5000000n) succeeds with 200 OK", async () => {
+    test("Exact boundary 1.000000 USDT (1000000n) succeeds with 200 OK", async () => {
       const txHash = "0x" + "22".repeat(32);
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -461,16 +461,16 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
 
       assert.equal(res.success, true);
       assert.equal(res.status, 200);
-      assert.equal(res.data?.amountUsdt, "5.00");
-      assert.equal(res.data?.amountRaw, "5000000");
+      assert.equal(res.data?.amountUsdt, "1.00");
+      assert.equal(res.data?.amountRaw, "1000000");
     });
 
-    test("Overpayment by 1 unit (5.000001 USDT / 5000001n) succeeds with 200 OK", async () => {
+    test("Overpayment by 1 unit (1.000001 USDT / 1000001n) succeeds with 200 OK", async () => {
       const txHash = "0x" + "23".repeat(32);
       const mockRpc = buildMockRpcClient({
         txHash,
         network: net,
-        rawAmount: 5000001n,
+        rawAmount: 1000001n,
       });
 
       const res = await verifyPaymentOnChain(
@@ -481,16 +481,16 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
 
       assert.equal(res.success, true);
       assert.equal(res.status, 200);
-      assert.equal(res.data?.amountUsdt, "5.00");
+      assert.equal(res.data?.amountUsdt, "1.00");
     });
   });
 
   // --- Arbitrum One (6 Decimals) Tests ---
-  describe("Arbitrum One (6 Decimals, Min Units: 5 * 10^6 = 5000000n)", () => {
+  describe("Arbitrum One (6 Decimals, Min Units: 1 * 10^6 = 1000000n)", () => {
     const net = "arbitrum";
-    const minUnits = 5000000n;
+    const minUnits = 1000000n;
 
-    test("Underpayment by 1 unit (4.999999 USDT / 4999999n) is strictly rejected", async () => {
+    test("Underpayment by 1 unit (0.999999 USDT / 999999n) is strictly rejected", async () => {
       const txHash = "0x" + "30".repeat(32);
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -509,7 +509,7 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
       assert.equal(res.error, DIAGNOSTIC_ERRORS.INSUFFICIENT_AMOUNT.code);
     });
 
-    test("Exact boundary 5.000000 USDT (5000000n) succeeds with 200 OK", async () => {
+    test("Exact boundary 1.000000 USDT (1000000n) succeeds with 200 OK", async () => {
       const txHash = "0x" + "31".repeat(32);
       const mockRpc = buildMockRpcClient({
         txHash,
@@ -525,7 +525,7 @@ describe("Adversarial Stress Test: Critical Boundary Amounts & Decimal Math", ()
 
       assert.equal(res.success, true);
       assert.equal(res.status, 200);
-      assert.equal(res.data?.amountUsdt, "5.00");
+      assert.equal(res.data?.amountUsdt, "1.00");
     });
   });
 
@@ -960,11 +960,11 @@ describe("Adversarial Stress Test: Receipt & Contract Manipulation Attacks", () 
         topics: [ERC20_TRANSFER_TOPIC, topicAddress("0x1111"), topicAddress(wrongRecipient)],
         data: dataValue(5000000000000000000n),
       },
-      // Decoy 4: Legitimate USDT to store wallet with INSUFFICIENT amount (1 USDT)
+      // Decoy 4: Legitimate USDT to store wallet with INSUFFICIENT amount (0.5 USDT)
       {
         address: legitimateBscUsdt,
         topics: [ERC20_TRANSFER_TOPIC, topicAddress("0x1111"), topicAddress(storeWallet)],
-        data: dataValue(1000000000000000000n),
+        data: dataValue(500000000000000000n),
       },
       // Decoy 5: Removed log (reorg event)
       {

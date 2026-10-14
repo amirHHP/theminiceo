@@ -9,7 +9,7 @@ send_email = [
 
 [vars]
 STORE_WALLET_ADDRESS = "0x4370D6c7A90A2f1d57C9788233792152A95204C7"
-USDT_PRICE = "5.00"
+USDT_PRICE = "1.00"
 BASE_URL = "https://theminiceo.ir"
 ALLOWED_ORIGIN = "*"
 

@@ -7,7 +7,7 @@
   'use strict';
 
   const STORE_WALLET = "0x4370D6c7A90A2f1d57C9788233792152A95204C7";
-  const DEFAULT_PRICE = "5.00";
+  const DEFAULT_PRICE = "1.00";
 
   const NETWORKS = {
     bsc: {
@@ -45,7 +45,7 @@
       copyAddr: "کپی آدرس",
       verifying: "در حال استعلام از گره‌های بلاکچین...",
       pending: "تراکنش روی شبکه ارسال شده و در انتظار ثبت در بلاک است. سیستم تا چند ثانیه دیگر مجدداً وضعیت را بررسی می‌کند...",
-      confirmed: "پرداخت ۵ تتر با موفقیت تأیید شد! فایل برای دانلود آماده است و نسخه پشتیبان به ایمیل ارسال شد.",
+      confirmed: "پرداخت ۱ تتر با موفقیت تأیید شد! فایل برای دانلود آماده است و نسخه پشتیبان به ایمیل ارسال شد.",
       downloadNow: "دانلود نسخه کامل کتاب (PDF)",
       invalidEmail: "لطفاً یک آدرس ایمیل معتبر وارد کنید.",
       invalidTxHash: "شناسه تراکنش باید یک هش معتبر هگزادسیمال با فرمت 0x باشد (۶۶ کاراکتر).",
@@ -55,7 +55,7 @@
         TRANSACTION_NOT_FOUND: "تراکنش روی این شبکه یافت نشد. لطفاً از نهایی شدن تراکنش و انتخاب شبکه درست اطمینان حاصل کنید.",
         TRANSACTION_FAILED: "تراکنش در بلاکچین ناموفق (Reverted) شده است.",
         TRANSACTION_ALREADY_REDEEMED: "این تراکنش قبلاً مصرف شده است و امکان استفاده مجدد ندارد.",
-        INSUFFICIENT_AMOUNT: "مبلغ دریافتی کمتر از ۵ تتر است.",
+        INSUFFICIENT_AMOUNT: "مبلغ دریافتی کمتر از ۱ تتر است.",
         WRONG_RECIPIENT: "آدرس کیف‌پول مقصد با آدرس فروشگاه مطابقت ندارد.",
         INVALID_TOKEN_CONTRACT: "توکن انتقال یافته، قرارداد رسمی تتر (USDT) روی این شبکه نیست.",
         UNSUPPORTED_NETWORK: "شبکه انتخاب شده پشتیبانی نمی‌شود.",
@@ -68,7 +68,7 @@
       copyAddr: "Copy Address",
       verifying: "Querying blockchain RPC nodes...",
       pending: "Transaction detected. Waiting for block confirmations (auto-retrying in seconds)...",
-      confirmed: "Payment of 5 USDT verified successfully! File is ready for download and a backup link was emailed.",
+      confirmed: "Payment of 1 USDT verified successfully! File is ready for download and a backup link was emailed.",
       downloadNow: "Download Full Book (PDF)",
       invalidEmail: "Please provide a valid email address.",
       invalidTxHash: "Transaction hash must be a valid 0x-prefixed 66-character hex string.",
@@ -78,7 +78,7 @@
         TRANSACTION_NOT_FOUND: "Transaction not found on this chain. Ensure the transaction is mined and correct network is chosen.",
         TRANSACTION_FAILED: "Transaction was reverted on-chain.",
         TRANSACTION_ALREADY_REDEEMED: "This transaction hash has already been redeemed.",
-        INSUFFICIENT_AMOUNT: "Transferred amount is less than 5 USDT.",
+        INSUFFICIENT_AMOUNT: "Transferred amount is less than 1 USDT.",
         WRONG_RECIPIENT: "Recipient address does not match the store wallet.",
         INVALID_TOKEN_CONTRACT: "Transferred token is not genuine USDT on this network.",
         UNSUPPORTED_NETWORK: "The selected network is not supported.",
@@ -183,8 +183,9 @@
           // 3. Encode ERC20 transfer(address, uint256)
           // Selector for transfer(address,uint256) is 0xa9059cbb
           const cleanRecipient = storeWallet.toLowerCase().replace("0x", "").padStart(64, "0");
-          // Calculate raw amount (5 USDT = 5 * 10^decimals)
-          const rawAmount = (BigInt(5) * BigInt(10) ** BigInt(net.decimals)).toString(16).padStart(64, "0");
+          // Calculate raw amount dynamically based on book price (default 1.00 USDT)
+          const priceNum = parseFloat(container.dataset.bookPrice || DEFAULT_PRICE) || 1.0;
+          const rawAmount = (BigInt(Math.round(priceNum * (10 ** net.decimals)))).toString(16).padStart(64, "0");
           const callData = "0xa9059cbb" + cleanRecipient + rawAmount;
 
           showNotice(t.verifying, "warning");

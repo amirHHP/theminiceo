@@ -108,7 +108,7 @@ export const DIAGNOSTIC_ERRORS = {
     status: 400,
     code: "INSUFFICIENT_AMOUNT",
     message: (actualUsdt: string) =>
-      `Payment amount is insufficient. Received ${actualUsdt} USDT; required amount is 5.00 USDT.`,
+      `Payment amount is insufficient. Received ${actualUsdt} USDT; required amount is 1.00 USDT.`,
   },
   RPC_CONNECTION_FAILURE: {
     status: 503,

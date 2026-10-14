@@ -184,7 +184,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
         assert.equal(res.error, DIAGNOSTIC_ERRORS.WRONG_RECIPIENT.code);
     });
     test("Error 11: INSUFFICIENT_AMOUNT (status 400)", async () => {
-        const underpayment = 2500000000000000000n; // 2.5 USDT on BSC
+        const underpayment = 500000000000000000n; // 0.5 USDT on BSC
         const mockRpcClient = {
             async eth_getTransactionReceipt() {
                 return {
@@ -212,7 +212,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
         assert.equal(res.success, false);
         assert.equal(res.status, 400);
         assert.equal(res.error, DIAGNOSTIC_ERRORS.INSUFFICIENT_AMOUNT.code);
-        assert.ok(res.message.includes("2.50 USDT"));
+        assert.ok(res.message.includes("0.50 USDT"));
     });
     test("Error 12: RPC_CONNECTION_FAILURE (status 503)", async () => {
         const mockRpcClient = {
@@ -258,7 +258,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
                                 topicAddress(buyerWallet),
                                 topicAddress(storeWallet),
                             ],
-                            data: dataValue(5000000000000000000n), // 5.0 USDT
+                            data: dataValue(1000000000000000000n), // 1.0 USDT
                         },
                     ],
                 };
@@ -272,7 +272,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
         assert.equal(res.status, 200);
         assert.ok(res.data);
         assert.equal(res.data.network, "bsc");
-        assert.equal(res.data.amountUsdt, "5.00");
+        assert.equal(res.data.amountUsdt, "1.00");
         assert.equal(res.data.senderAddress, buyerWallet);
         assert.equal(res.data.storeWallet, storeWallet);
     });
@@ -291,7 +291,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
                                 topicAddress(buyerWallet),
                                 topicAddress(storeWallet),
                             ],
-                            data: dataValue(5000000n), // 5 USDT (6 decimals)
+                            data: dataValue(1000000n), // 1 USDT (6 decimals)
                         },
                     ],
                 };
@@ -303,7 +303,7 @@ describe("Payment Verification Engine (12 Diagnostic Errors & Multi-Log Traversa
         const res = await verifyPaymentOnChain({ network: "polygon", txHash }, {}, { customRpcClient: mockRpcClient });
         assert.equal(res.success, true);
         assert.equal(res.data?.network, "polygon");
-        assert.equal(res.data?.amountUsdt, "5.00");
+        assert.equal(res.data?.amountUsdt, "1.00");
     });
     test("Successful verification on Arbitrum One (6 decimals)", async () => {
         const mockRpcClient = {

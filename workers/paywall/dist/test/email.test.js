@@ -10,7 +10,7 @@ describe("Resend Email Dispatch & Templates", () => {
         downloadUrl: "https://theminiceo.ir/api/download?token=valid.download.token",
         txHash: "0x" + "a".repeat(64),
         network: "bsc",
-        amountUsdt: "5.00",
+        amountUsdt: "1.00",
         storeWallet: DEFAULT_STORE_WALLET,
     };
     test("generateEmailPayload generates valid Resend payload with bilingual content", () => {
@@ -23,7 +23,7 @@ describe("Resend Email Dispatch & Templates", () => {
         assert.ok(payload.html.includes(DEFAULT_STORE_WALLET));
         assert.ok(payload.html.includes(sampleOptions.txHash));
         assert.ok(payload.html.includes("BSC"));
-        assert.ok(payload.html.includes("5.00 USDT"));
+        assert.ok(payload.html.includes("1.00 USDT"));
         assert.ok(payload.html.includes("2 hours"));
         assert.ok(payload.html.includes("با تشکر از خرید شما"));
         assert.ok(payload.html.includes("support@theminiceo.ir"));

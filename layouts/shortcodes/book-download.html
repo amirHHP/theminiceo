@@ -13,6 +13,7 @@
 {{ $btnText := cond $isEn "Download Book File" "دریافت فایل کتاب" }}
 {{ $bookId := .Get "id" | default (.Page.File.TranslationBaseName | default "book") }}
 {{ $storeWallet := "0x4370D6c7A90A2f1d57C9788233792152A95204C7" }}
+{{ $price := .Get "price" | default "1.00" }}
 
 <div class="paywall-wrapper not-prose js-paywall-container"
      data-paywall-container="true"
@@ -22,6 +23,7 @@
      data-book-size="{{ $size }}"
      data-book-format="{{ $format }}"
      data-store-wallet="{{ $storeWallet }}"
+     data-book-price="{{ $price }}"
      data-lang="{{ cond $isEn "en" "fa" }}">
 
   <!-- Header: Book Specs & Price Badge -->
@@ -55,7 +57,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
-        <span>5.00 USDT</span>
+        <span>{{ $price }} USDT</span>
       </span>
     </div>
   </div>
@@ -111,9 +113,9 @@
         </svg>
         <div>
           {{ if $isEn }}
-            <strong>Important:</strong> Send exactly <strong>5 USDT</strong> on your selected network to the address above. Cross-network transfers cannot be recovered.
+            <strong>Important:</strong> Send exactly <strong>{{ $price }} USDT</strong> on your selected network to the address above. Cross-network transfers cannot be recovered.
           {{ else }}
-            <strong>توجه مهم:</strong> لطفاً دقیقاً مبلغ <strong>۵ تتر</strong> را روی شبکه انتخابی واریز فرمایید. ارسال روی شبکه اشتباه قابل بازگشت نخواهد بود.
+            <strong>توجه مهم:</strong> لطفاً دقیقاً مبلغ <strong>{{ $price }} تتر</strong> را روی شبکه انتخابی واریز فرمایید. ارسال روی شبکه اشتباه قابل بازگشت نخواهد بود.
           {{ end }}
         </div>
       </div>

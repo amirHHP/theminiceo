@@ -44,7 +44,7 @@ BOOKS_METADATA_PATH = DATA_DIR / "books_metadata.json"
 
 # Store Configuration per PROJECT.md & ORIGINAL_REQUEST.md
 STORE_WALLET = "0x4370D6c7A90A2f1d57C9788233792152A95204C7"
-PRICE_USDT = "5.00"
+PRICE_USDT = "1.00"
 DOWNLOAD_EXPIRY_SECONDS = 7200  # 2 hours
 MAX_DOWNLOAD_ATTEMPTS = 5
 TRANSFER_EVENT_TOPIC0 = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
@@ -98,7 +98,7 @@ DIAGNOSTIC_ERRORS = {
     "TRANSACTION_REVERTED": {"status": 400, "message": "Transaction was reverted on-chain. Payment execution failed."},
     "INSUFFICIENT_CONFIRMATIONS": {"status": 202, "message": "Transaction has insufficient block confirmations for secure settlement."},
     "TRANSACTION_ALREADY_REDEEMED": {"status": 409, "message": "Transaction hash has already been redeemed. Double-spending is prohibited."},
-    "INSUFFICIENT_AMOUNT": {"status": 400, "message": "Transferred amount is less than the required price of 5.00 USDT."},
+    "INSUFFICIENT_AMOUNT": {"status": 400, "message": "Transferred amount is less than the required price of 1.00 USDT."},
     "WRONG_RECIPIENT": {"status": 400, "message": "Payment recipient does not match the official store wallet address."},
     "WRONG_TOKEN_CONTRACT": {"status": 400, "message": "Transferred token does not match the official USDT contract on this network."},
     "UNSUPPORTED_NETWORK": {"status": 400, "message": "Unsupported blockchain network selected. Choose BSC, Polygon, or Arbitrum."},
@@ -238,7 +238,7 @@ class CryptoPaywallOracle:
         if not net:
             raise ValueError(f"Unknown network: {network}")
         decimals = net["decimals"]
-        return int(5 * (10 ** decimals))
+        return int(float(PRICE_USDT) * (10 ** decimals))
 
     def mint_download_token(
         self,
@@ -590,7 +590,7 @@ class CryptoPaywallE2ETestSuite:
 
         t.assert_true(isinstance(config, dict), "Config must return a dictionary")
         t.assert_equal(config.get("success"), True, "Config success field must be True")
-        t.assert_equal(config.get("pricing", {}).get("amount"), "5.00", "Pricing amount must be 5.00")
+        t.assert_equal(config.get("pricing", {}).get("amount"), "1.00", "Pricing amount must be 1.00")
         t.assert_equal(config.get("pricing", {}).get("currency"), "USDT", "Pricing currency must be USDT")
         t.assert_equal(config.get("storeWallet"), STORE_WALLET, "Store wallet must match official address")
         t.assert_equal(config.get("downloadExpirySeconds"), 7200, "Download expiry seconds must be 7200")
@@ -652,16 +652,16 @@ class CryptoPaywallE2ETestSuite:
     def test_t1_3_canonical_usdt_decimals_normalization(self, t: AssertionTracker):
         """F3: Canonical USDT token contracts and native BigInt decimal normalization."""
         bsc_raw = self.oracle.calculate_required_raw_amount("bsc")
-        t.assert_equal(bsc_raw, 5000000000000000000, "BSC 5 USDT must equal 5 * 10^18")
-        t.assert_equal(hex(bsc_raw), "0x4563918244f40000", "BSC 5 USDT hex representation")
+        t.assert_equal(bsc_raw, 1000000000000000000, "BSC 1 USDT must equal 1 * 10^18")
+        t.assert_equal(hex(bsc_raw), "0xde0b6b3a7640000", "BSC 1 USDT hex representation")
 
         poly_raw = self.oracle.calculate_required_raw_amount("polygon")
-        t.assert_equal(poly_raw, 5000000, "Polygon 5 USDT must equal 5 * 10^6")
-        t.assert_equal(hex(poly_raw), "0x4c4b40", "Polygon 5 USDT hex representation")
+        t.assert_equal(poly_raw, 1000000, "Polygon 1 USDT must equal 1 * 10^6")
+        t.assert_equal(hex(poly_raw), "0xf4240", "Polygon 1 USDT hex representation")
 
         arb_raw = self.oracle.calculate_required_raw_amount("arbitrum")
-        t.assert_equal(arb_raw, 5000000, "Arbitrum 5 USDT must equal 5 * 10^6")
-        t.assert_equal(hex(arb_raw), "0x4c4b40", "Arbitrum 5 USDT hex representation")
+        t.assert_equal(arb_raw, 1000000, "Arbitrum 1 USDT must equal 1 * 10^6")
+        t.assert_equal(hex(arb_raw), "0xf4240", "Arbitrum 1 USDT hex representation")
 
         # BigInt precision verification (zero floating point inaccuracies)
         wei_diff = bsc_raw - 1
@@ -748,7 +748,7 @@ class CryptoPaywallE2ETestSuite:
         t.assert_equal(resp.get("success"), True, "Success flag must be True")
         t.assert_in("downloadUrl", resp, "Response must include downloadUrl")
         t.assert_equal(resp.get("txDetails", {}).get("network"), "polygon", "Network must be polygon")
-        t.assert_equal(resp.get("txDetails", {}).get("amountUsdt"), "5.00", "Amount must be 5.00 USDT")
+        t.assert_equal(resp.get("txDetails", {}).get("amountUsdt"), "1.00", "Amount must be 1.00 USDT")
         t.assert_true(TRANSFER_EVENT_TOPIC0.startswith("0xddf252ad"), "Transfer topic0 must match canonical keccak")
 
     def test_t1_6_persistent_replay_protection(self, t: AssertionTracker):
@@ -876,42 +876,42 @@ class CryptoPaywallE2ETestSuite:
     # --------------------------------------------------------------------------
 
     def test_t2_1_boundary_amounts_and_decimals(self, t: AssertionTracker):
-        """T2.1: Boundary amounts (4.99 vs 5.00 USDT) across 18 and 6 decimals."""
+        """T2.1: Boundary amounts (0.99 vs 1.00 USDT) across 18 and 6 decimals."""
         self.oracle.reset_state()
 
-        # BSC (18 decimals): Required is 5 * 10^18 = 5000000000000000000
+        # BSC (18 decimals): Required is 1 * 10^18 = 1000000000000000000
         # Underpayment by 1 wei
-        bsc_under_1 = 4999999999999999999
+        bsc_under_1 = 999999999999999999
         receipt_bsc_under = build_test_receipt("bsc", "0x" + "10" * 32, SUPPORTED_NETWORKS["bsc"]["usdtContract"], STORE_WALLET, bsc_under_1)
         st, res = self.oracle.verify_payment("bsc", "0x" + "10" * 32, "book", "u@m.com", receipt=receipt_bsc_under)
         t.assert_equal(st, 400, "BSC underpayment by 1 wei must be rejected")
         t.assert_equal(res.get("error"), "INSUFFICIENT_AMOUNT", "Error must be INSUFFICIENT_AMOUNT")
 
-        # BSC exact 5.00 USDT
-        bsc_exact = 5000000000000000000
+        # BSC exact 1.00 USDT
+        bsc_exact = 1000000000000000000
         receipt_bsc_exact = build_test_receipt("bsc", "0x" + "11" * 32, SUPPORTED_NETWORKS["bsc"]["usdtContract"], STORE_WALLET, bsc_exact)
         st, res = self.oracle.verify_payment("bsc", "0x" + "11" * 32, "book", "u@m.com", receipt=receipt_bsc_exact)
-        t.assert_equal(st, 200, "BSC exact 5.00 USDT must be accepted")
+        t.assert_equal(st, 200, "BSC exact 1.00 USDT must be accepted")
 
-        # Polygon (6 decimals): Required is 5 * 10^6 = 5000000
-        # 4.99 USDT = 4990000
-        poly_499 = 4990000
-        receipt_poly_499 = build_test_receipt("polygon", "0x" + "12" * 32, SUPPORTED_NETWORKS["polygon"]["usdtContract"], STORE_WALLET, poly_499)
-        st, res = self.oracle.verify_payment("polygon", "0x" + "12" * 32, "book", "u@m.com", receipt=receipt_poly_499)
-        t.assert_equal(st, 400, "Polygon 4.99 USDT must be rejected")
+        # Polygon (6 decimals): Required is 1 * 10^6 = 1000000
+        # 0.99 USDT = 990000
+        poly_099 = 990000
+        receipt_poly_099 = build_test_receipt("polygon", "0x" + "12" * 32, SUPPORTED_NETWORKS["polygon"]["usdtContract"], STORE_WALLET, poly_099)
+        st, res = self.oracle.verify_payment("polygon", "0x" + "12" * 32, "book", "u@m.com", receipt=receipt_poly_099)
+        t.assert_equal(st, 400, "Polygon 0.99 USDT must be rejected")
         t.assert_equal(res.get("error"), "INSUFFICIENT_AMOUNT", "Error must be INSUFFICIENT_AMOUNT")
 
-        # Polygon 4.999999 USDT = 4999999 (underpayment by 1 unit)
-        poly_under_1 = 4999999
+        # Polygon 0.999999 USDT = 999999 (underpayment by 1 unit)
+        poly_under_1 = 999999
         receipt_poly_under = build_test_receipt("polygon", "0x" + "13" * 32, SUPPORTED_NETWORKS["polygon"]["usdtContract"], STORE_WALLET, poly_under_1)
         st, res = self.oracle.verify_payment("polygon", "0x" + "13" * 32, "book", "u@m.com", receipt=receipt_poly_under)
-        t.assert_equal(st, 400, "Polygon 4.999999 USDT must be rejected")
+        t.assert_equal(st, 400, "Polygon 0.999999 USDT must be rejected")
 
-        # Polygon exact 5.000000 USDT = 5000000
-        poly_exact = 5000000
+        # Polygon exact 1.000000 USDT = 1000000
+        poly_exact = 1000000
         receipt_poly_exact = build_test_receipt("polygon", "0x" + "14" * 32, SUPPORTED_NETWORKS["polygon"]["usdtContract"], STORE_WALLET, poly_exact)
         st, res = self.oracle.verify_payment("polygon", "0x" + "14" * 32, "book", "u@m.com", receipt=receipt_poly_exact)
-        t.assert_equal(st, 200, "Polygon exact 5.000000 USDT must be accepted")
+        t.assert_equal(st, 200, "Polygon exact 1.000000 USDT must be accepted")
 
         # Arbitrum Overpayment: 100 USDT = 100000000
         receipt_arb_over = build_test_receipt("arbitrum", "0x" + "15" * 32, SUPPORTED_NETWORKS["arbitrum"]["usdtContract"], STORE_WALLET, 100000000)
@@ -1145,14 +1145,14 @@ class CryptoPaywallE2ETestSuite:
     def test_t3_5_qr_code_uri_and_svg_structure(self, t: AssertionTracker):
         """T3.5: Network payment URI schemes and client-side vector SVG QR structure."""
         # BSC transfer URI
-        bsc_uri = f"ethereum:{SUPPORTED_NETWORKS['bsc']['usdtContract']}@56/transfer?address={STORE_WALLET}&uint256=5000000000000000000"
+        bsc_uri = f"ethereum:{SUPPORTED_NETWORKS['bsc']['usdtContract']}@56/transfer?address={STORE_WALLET}&uint256=1000000000000000000"
         t.assert_in("56", bsc_uri, "BSC URI must specify chainId 56")
         t.assert_in(STORE_WALLET, bsc_uri, "BSC URI must specify recipient store wallet")
 
         # Polygon transfer URI
-        poly_uri = f"ethereum:{SUPPORTED_NETWORKS['polygon']['usdtContract']}@137/transfer?address={STORE_WALLET}&uint256=5000000"
+        poly_uri = f"ethereum:{SUPPORTED_NETWORKS['polygon']['usdtContract']}@137/transfer?address={STORE_WALLET}&uint256=1000000"
         t.assert_in("137", poly_uri, "Polygon URI must specify chainId 137")
-        t.assert_in("5000000", poly_uri, "Polygon URI must specify 5 USDT with 6 decimals")
+        t.assert_in("1000000", poly_uri, "Polygon URI must specify 1 USDT with 6 decimals")
 
         # Mock vector SVG structure check
         mock_svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="#fff"/><path d="M0 0h10v10H0z"/></svg>'
@@ -1164,11 +1164,11 @@ class CryptoPaywallE2ETestSuite:
     # --------------------------------------------------------------------------
 
     def test_t4_1_scenario_1_bsc_purchase(self, t: AssertionTracker):
-        """Scenario 1: Happy Path BSC Purchase (Select BSC -> Pay 5 USDT -> Verify -> Stream PDF -> Email)."""
+        """Scenario 1: Happy Path BSC Purchase (Select BSC -> Pay 1 USDT -> Verify -> Stream PDF -> Email)."""
         self.oracle.reset_state()
         net = "bsc"
         tx_hash = "0x" + "11" * 32
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 5000000000000000000, block_number=5000)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 1000000000000000000, block_number=5000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "the-lean-startup", "alice@theminiceo.ir", receipt=receipt, current_block=5005)
         t.assert_equal(status, 200, "Scenario 1 payment verification must succeed")
@@ -1183,7 +1183,7 @@ class CryptoPaywallE2ETestSuite:
         self.oracle.reset_state()
         net = "polygon"
         tx_hash = "0x" + "22" * 32
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 5000000, block_number=6000)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 1000000, block_number=6000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "inspired", "bob@theminiceo.ir", receipt=receipt, current_block=6015)
         t.assert_equal(status, 200, "Scenario 2 payment verification must succeed")
@@ -1194,7 +1194,7 @@ class CryptoPaywallE2ETestSuite:
         self.oracle.reset_state()
         net = "arbitrum"
         tx_hash = "0x" + "33" * 32
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 5000000, block_number=7000)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 1000000, block_number=7000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "behind-every-great-product", "carol@theminiceo.ir", receipt=receipt, current_block=7004)
         t.assert_equal(status, 200, "Scenario 3 payment verification must succeed")
@@ -1205,7 +1205,7 @@ class CryptoPaywallE2ETestSuite:
         self.oracle.reset_state()
         net = "bsc"
         tx_hash = "0x" + "44" * 32
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 5000000000000000000)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 1000000000000000000)
 
         # Legitimate purchase
         st1, _ = self.oracle.verify_payment(net, tx_hash, "book1", "alice@theminiceo.ir", receipt=receipt)
@@ -1216,12 +1216,12 @@ class CryptoPaywallE2ETestSuite:
         t.assert_equal(st2, 409, "Replay attack must be rejected with 409 Conflict")
 
     def test_t4_5_scenario_5_underpayment_rejection(self, t: AssertionTracker):
-        """Scenario 5: Underpayment Attack Rejection (4.99 USDT fails with diagnostic delta)."""
+        """Scenario 5: Underpayment Attack Rejection (0.99 USDT fails with diagnostic delta)."""
         self.oracle.reset_state()
         net = "bsc"
         tx_hash = "0x" + "55" * 32
-        # Sending 4.99 USDT
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 4990000000000000000)
+        # Sending 0.99 USDT
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 990000000000000000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "book", "u@theminiceo.ir", receipt=receipt)
         t.assert_equal(status, 400, "Underpayment must return HTTP 400")
@@ -1233,7 +1233,7 @@ class CryptoPaywallE2ETestSuite:
         net = "polygon"
         tx_hash = "0x" + "66" * 32
         fake_store = "0x9999999999999999999999999999999999999999"
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], fake_store, 5000000)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], fake_store, 1000000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "book", "u@theminiceo.ir", receipt=receipt)
         t.assert_equal(status, 400, "Wrong recipient must return HTTP 400")
@@ -1245,7 +1245,7 @@ class CryptoPaywallE2ETestSuite:
         net = "arbitrum"
         tx_hash = "0x" + "77" * 32
         fake_token = "0x1111111111111111111111111111111111111111"
-        receipt = build_test_receipt(net, tx_hash, fake_token, STORE_WALLET, 5000000)
+        receipt = build_test_receipt(net, tx_hash, fake_token, STORE_WALLET, 1000000)
 
         status, resp = self.oracle.verify_payment(net, tx_hash, "book", "u@theminiceo.ir", receipt=receipt)
         t.assert_equal(status, 400, "Fake token contract must return HTTP 400")
@@ -1257,7 +1257,7 @@ class CryptoPaywallE2ETestSuite:
         net = "bsc"
         tx_hash = "0x" + "88" * 32
         tx_block = 1000
-        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 5000000000000000000, block_number=tx_block)
+        receipt = build_test_receipt(net, tx_hash, SUPPORTED_NETWORKS[net]["usdtContract"], STORE_WALLET, 1000000000000000000, block_number=tx_block)
 
         # Fresh broadcast (1 confirmation)
         st1, resp1 = self.oracle.verify_payment(net, tx_hash, "book", "u@theminiceo.ir", receipt=receipt, current_block=tx_block)
@@ -1329,7 +1329,7 @@ class CryptoPaywallE2ETestSuite:
             ("T1.12", "Backup Email Dispatch Payload (Resend API)", 1, self.test_t1_12_backup_email_dispatch_payload),
 
             # Tier 2
-            ("T2.1", "Boundary Amounts (4.99 vs 5.00 USDT across Decimals)", 2, self.test_t2_1_boundary_amounts_and_decimals),
+            ("T2.1", "Boundary Amounts (0.99 vs 1.00 USDT across Decimals)", 2, self.test_t2_1_boundary_amounts_and_decimals),
             ("T2.2", "Hex Address & TxHash Case Insensitivity", 2, self.test_t2_2_hex_and_address_case_insensitivity),
             ("T2.3", "Malformed & Non-Hex Transaction Hashes", 2, self.test_t2_3_malformed_transaction_hashes),
             ("T2.4", "Invalid & Unsupported Blockchain Networks", 2, self.test_t2_4_invalid_and_unsupported_networks),

@@ -3,7 +3,7 @@
  * Direct On-Chain Crypto Payment Verification Worker
  */
 export const DEFAULT_STORE_WALLET = "0x4370D6c7A90A2f1d57C9788233792152A95204C7";
-export const DEFAULT_USDT_PRICE = "5.00";
+export const DEFAULT_USDT_PRICE = "1.00";
 export const DEFAULT_DOWNLOAD_EXPIRY_SECONDS = 7200; // 2 hours
 export const RPC_TIMEOUT_MS = 3500; // 3.5s per RPC attempt
 /**
@@ -20,7 +20,7 @@ export const NETWORKS = {
         symbol: "BNB",
         usdtContract: "0x55d398326f99059ff775485246999027b3197955".toLowerCase(),
         decimals: 18,
-        minUnits: 5000000000000000000n, // 5 * 10^18
+        minUnits: 1000000000000000000n, // 1 * 10^18 (1 USDT)
         minConfirmations: 3,
         rpcUrls: [
             "https://bsc-dataseed.bnbchain.org",
@@ -40,7 +40,7 @@ export const NETWORKS = {
         symbol: "POL",
         usdtContract: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F".toLowerCase(),
         decimals: 6,
-        minUnits: 5000000n, // 5 * 10^6
+        minUnits: 1000000n, // 1 * 10^6 (1 USDT)
         minConfirmations: 10,
         // Note: polygon-rpc.com is permanently retired by Polygon Labs in 2026; avoided
         rpcUrls: [
@@ -60,7 +60,7 @@ export const NETWORKS = {
         symbol: "ETH",
         usdtContract: "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9".toLowerCase(),
         decimals: 6,
-        minUnits: 5000000n, // 5 * 10^6
+        minUnits: 1000000n, // 1 * 10^6 (1 USDT)
         minConfirmations: 2,
         rpcUrls: [
             "https://arb1.arbitrum.io/rpc",

@@ -12,7 +12,7 @@ export function generateEmailPayload(options) {
     const from = options.env?.EMAIL_FROM || "TheMiniCEO Books <books@theminiceo.ir>";
     const title = options.bookTitle || options.bookId;
     const networkName = options.network ? options.network.toUpperCase() : "EVM";
-    const amount = options.amountUsdt || "5.00";
+    const amount = options.amountUsdt || "1.00";
     const subject = `Your Book Download: ${title} (${options.bookId}) - TheMiniCEO`;
     const html = `<!DOCTYPE html>
 <html lang="en" dir="ltr">
