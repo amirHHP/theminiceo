@@ -1,46 +1,178 @@
-{{/* Book Download Shortcode for Hextra Theme */}}
+{{/* Book Download Shortcode for Hextra Theme (Decentralized Crypto Paywall & Multilingual Support) */}}
+{{ $isEn := eq .Page.Language.Lang "en" }}
+{{ $defaultTitle := cond $isEn "Direct Download Original Book Edition" "دانلود مستقیم نسخه اصلی کتاب" }}
+{{ $defaultLang := cond $isEn "English" "انگلیسی" }}
 {{ $url := .Get "url" | default (.Get 0) }}
-{{ $title := .Get "title" | default "دانلود مستقیم نسخه اصلی کتاب" }}
+{{ $title := .Get "title" | default $defaultTitle }}
 {{ $size := .Get "size" | default "" }}
 {{ $format := .Get "format" | default "PDF" }}
-{{ $lang := .Get "lang" | default "انگلیسی" }}
+{{ $lang := .Get "lang" | default $defaultLang }}
+{{ $sizePrefix := cond $isEn "Size: " "حجم: " }}
+{{ $langPrefix := cond $isEn "Language: " "زبان: " }}
+{{ $serverBadge := cond $isEn "High-speed Direct CDN" "سرور پرسرعت داخلی" }}
+{{ $btnText := cond $isEn "Download Book File" "دریافت فایل کتاب" }}
+{{ $bookId := .Get "id" | default (.Page.File.TranslationBaseName | default "book") }}
+{{ $storeWallet := "0x4370D6c7A90A2f1d57C9788233792152A95204C7" }}
 
-<div class="book-download-box hx:my-8 hx:p-5 hx:rounded-2xl hx:bg-gradient-to-br hx:from-blue-50/70 hx:via-indigo-50/40 hx:to-slate-50/60 hx:dark:from-blue-950/20 hx:dark:via-indigo-950/15 hx:dark:to-slate-900/30 hx:border hx:border-blue-200/80 hx:dark:border-blue-800/40 hx:shadow-sm">
-  <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:justify-between hx:gap-4">
-    <div class="hx:flex hx:items-center hx:gap-3.5">
-      <div class="hx:w-12 hx:h-12 hx:rounded-xl hx:bg-blue-600 hx:text-white hx:flex hx:items-center hx:justify-center hx:shrink-0 hx:shadow-md hx:shadow-blue-500/20">
+<div class="paywall-wrapper not-prose js-paywall-container"
+     data-paywall-container="true"
+     data-paywall-url="{{ $url }}"
+     data-book-id="{{ $bookId }}"
+     data-book-title="{{ $title }}"
+     data-book-size="{{ $size }}"
+     data-book-format="{{ $format }}"
+     data-store-wallet="{{ $storeWallet }}"
+     data-lang="{{ cond $isEn "en" "fa" }}">
+
+  <!-- Header: Book Specs & Price Badge -->
+  <div class="paywall-header">
+    <div class="paywall-title-group">
+      <div class="paywall-icon">
         <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-6 hx:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       </div>
       <div>
-        <div class="hx:text-base hx:font-bold hx:text-slate-900 hx:dark:text-white">
-          {{ $title }}
-        </div>
-        <div class="hx:flex hx:items-center hx:gap-2 hx:mt-1 hx:text-xs hx:text-slate-600 hx:dark:text-slate-400">
-          <span class="hx:inline-flex hx:items-center hx:px-2 hx:py-0.5 hx:rounded-md hx:font-medium hx:bg-blue-100 hx:text-blue-800 hx:dark:bg-blue-900/50 hx:dark:text-blue-300">
-            {{ $format }}
-          </span>
+        <div class="paywall-title">{{ $title }}</div>
+        <div class="paywall-meta">
+          <span class="paywall-badge paywall-badge-blue">{{ $format }}</span>
           {{ if $size }}
             <span>•</span>
-            <span>حجم: {{ $size }}</span>
+            <span>{{ $sizePrefix }}{{ $size }}</span>
           {{ end }}
           {{ if $lang }}
             <span>•</span>
-            <span>زبان: {{ $lang }}</span>
+            <span>{{ $langPrefix }}{{ $lang }}</span>
           {{ end }}
           <span>•</span>
-          <span class="hx:text-emerald-600 hx:dark:text-emerald-400 hx:font-medium">سرور پرسرعت داخلی</span>
+          <span class="paywall-badge paywall-badge-green">{{ $serverBadge }}</span>
         </div>
       </div>
     </div>
 
-    <div class="hx:w-full hx:sm:w-auto hx:flex hx:justify-end">
-      <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" download class="hx:w-full hx:sm:w-auto hx:inline-flex hx:items-center hx:justify-center hx:gap-2 hx:py-2.5 hx:px-6 hx:rounded-xl hx:text-sm hx:font-bold hx:text-white hx:bg-blue-600 hx:hover:bg-blue-700 hx:active:scale-[0.98] hx:shadow-md hx:shadow-blue-600/25 hx:transition-all hx:no-underline">
+    <div>
+      <span class="paywall-price-badge">
         <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        <span>5.00 USDT</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Body: QR Code & Payment Form -->
+  <div class="paywall-body">
+    <!-- QR Code Column -->
+    <div class="paywall-qr-container js-paywall-qr-col">
+      <div class="paywall-qr-box js-paywall-qr"></div>
+      <div class="paywall-qr-caption">
+        {{ if $isEn }}
+          Scan with crypto wallet or exchange app
+        {{ else }}
+          اسکن با اپلیکیشن صرافی یا کیف‌پول
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Form Column -->
+    <div class="paywall-form-col js-paywall-form-col">
+      <!-- Network Selector -->
+      <div>
+        <label class="paywall-field-label">
+          {{ if $isEn }}Select Payment Network (USDT):{{ else }}انتخاب شبکه پرداخت تتر (USDT):{{ end }}
+        </label>
+        <select class="paywall-select js-paywall-network">
+          <option value="bsc" selected>BNB Smart Chain (BEP-20) - {{ cond $isEn "Lowest Fee" "کمترین کارمزد" }}</option>
+          <option value="polygon">Polygon PoS (POL) - {{ cond $isEn "Fast & Stable" "سریع و پایدار" }}</option>
+          <option value="arbitrum">Arbitrum One - {{ cond $isEn "Ethereum Layer 2" "لایه دوم اتریوم" }}</option>
+        </select>
+      </div>
+
+      <!-- Store Wallet Box -->
+      <div>
+        <label class="paywall-field-label">
+          {{ if $isEn }}Store Wallet Address:{{ else }}آدرس کیف‌پول مقصد برای واریز:{{ end }}
+        </label>
+        <div class="paywall-wallet-box">
+          <span class="paywall-wallet-addr js-paywall-wallet">{{ $storeWallet }}</span>
+          <button type="button" class="paywall-copy-btn js-paywall-copy">
+            <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-3.5 hx:h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <span>{{ cond $isEn "Copy" "کپی" }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Warning Badge -->
+      <div class="paywall-notice paywall-notice-warning">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-5 hx:h-5 hx:shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <div>
+          {{ if $isEn }}
+            <strong>Important:</strong> Send exactly <strong>5 USDT</strong> on your selected network to the address above. Cross-network transfers cannot be recovered.
+          {{ else }}
+            <strong>توجه مهم:</strong> لطفاً دقیقاً مبلغ <strong>۵ تتر</strong> را روی شبکه انتخابی واریز فرمایید. ارسال روی شبکه اشتباه قابل بازگشت نخواهد بود.
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Inputs: Email & TxHash -->
+      <div class="hx:grid hx:grid-cols-1 hx:sm:grid-cols-2 hx:gap-3">
+        <div>
+          <label class="paywall-field-label">
+            {{ if $isEn }}Your Email (for backup download link):{{ else }}ایمیل شما (جهت دریافت لینک پشتیبان):{{ end }}
+          </label>
+          <input type="email" class="paywall-input js-paywall-email" placeholder="name@example.com" required />
+        </div>
+        <div>
+          <label class="paywall-field-label">
+            {{ if $isEn }}Transaction Hash (TxHash):{{ else }}شناسه تراکنش واریز (TxHash):{{ end }}
+          </label>
+          <input type="text" class="paywall-input js-paywall-tx" placeholder="0x..." required />
+        </div>
+      </div>
+
+      <!-- Buttons: Web3 1-click & Verify -->
+      <div class="hx:flex hx:flex-col hx:sm:flex-row hx:gap-2.5 hx:mt-1">
+        <button type="button" class="paywall-btn-primary js-paywall-verify">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>{{ cond $isEn "Verify Payment & Unlock" "تأیید پرداخت و باز کردن دانلود" }}</span>
+        </button>
+        <button type="button" class="paywall-btn-web3 js-paywall-web3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span>{{ cond $isEn "Pay with Web3 Wallet" "پرداخت ۱-کلیکی با وب۳" }}</span>
+        </button>
+      </div>
+
+      <!-- Live Notice Container -->
+      <div class="js-paywall-notice" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Success Unlocked Container -->
+  <div class="js-paywall-success hx:p-6" style="display: none;">
+    <div class="paywall-notice paywall-notice-success hx:mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-6 hx:h-6 hx:shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div>
+        <div class="hx:font-bold hx:text-base">{{ cond $isEn "Payment Confirmed!" "پرداخت شما با موفقیت تأیید شد!" }}</div>
+        <div class="js-paywall-success-msg hx:mt-1 hx:text-sm"></div>
+      </div>
+    </div>
+
+    <div class="hx:flex hx:justify-center">
+      <a href="#" class="paywall-download-cta js-paywall-download-cta" target="_blank" rel="noopener noreferrer" download>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-5 hx:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
         </svg>
-        <span>دریافت فایل کتاب</span>
+        <span>{{ $btnText }}</span>
       </a>
     </div>
   </div>

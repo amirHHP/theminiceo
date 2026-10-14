@@ -52,8 +52,39 @@
       window.location.replace(encodeURI(target));
       return;
     }
+
+    // 7. Old downloads & books -> Redirect to /docs/books/ or tag
+    if (path.startsWith('/downloads/tag/')) {
+      var dTag = path.substring(15);
+      var target = '/tags/' + dTag + (dTag.endsWith('/') ? '' : '/');
+      window.location.replace(encodeURI(target));
+      return;
+    }
+    if (path.startsWith('/downloads/')) {
+      window.location.replace('/docs/books/');
+      return;
+    }
+
+    // 8. Old courses & lessons -> Redirect to /course/
+    if (path.startsWith('/course-category/') || path.startsWith('/course-tag/') || path.startsWith('/lesson/') || path.startsWith('/purchase')) {
+      window.location.replace('/course/');
+      return;
+    }
+
+    // 9. Old pagination -> Redirect to home
+    if (/^\/page\/\d+\/?$/.test(path)) {
+      window.location.replace('/');
+      return;
+    }
+
+    // 10. Strip WordPress embed suffix
+    if (path.endsWith('/embed') || path.endsWith('/embed/')) {
+      var target = path.replace(/\/embed\/?$/, '/');
+      window.location.replace(encodeURI(target));
+      return;
+    }
     
-    // 7. If it was an article feed (e.g. /product-skills/foo/feed/ -> /product-skills/foo/)
+    // 11. If it was an article feed (e.g. /product-skills/foo/feed/ -> /product-skills/foo/)
     if (isFeed && path) {
       var target = path.endsWith('/') ? path : (path + '/');
       window.location.replace(encodeURI(target));

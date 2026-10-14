@@ -15,3 +15,34 @@
     <script src="{{ "js/framework-tools.js" | relURL }}" defer></script>
   {{- end -}}
 {{- end -}}
+{{- if .HasShortcode "book-download" -}}
+  {{- $paywallCss := resources.Get "css/paywall.css" -}}
+  {{- if $paywallCss -}}
+    {{- if hugo.IsProduction -}}
+      {{- $paywallCss = $paywallCss | minify | fingerprint -}}
+    {{- end -}}
+    <link rel="stylesheet" href="{{ $paywallCss.RelPermalink }}" integrity="{{ $paywallCss.Data.Integrity }}" />
+  {{- else -}}
+    <link rel="stylesheet" href="{{ "css/paywall.css" | relURL }}" />
+  {{- end -}}
+
+  {{- $paywallQr := resources.Get "js/paywall-qr.js" -}}
+  {{- if $paywallQr -}}
+    {{- if hugo.IsProduction -}}
+      {{- $paywallQr = $paywallQr | minify | fingerprint -}}
+    {{- end -}}
+    <script src="{{ $paywallQr.RelPermalink }}" integrity="{{ $paywallQr.Data.Integrity }}" defer></script>
+  {{- else -}}
+    <script src="{{ "js/paywall-qr.js" | relURL }}" defer></script>
+  {{- end -}}
+
+  {{- $bookPaywall := resources.Get "js/book-paywall.js" -}}
+  {{- if $bookPaywall -}}
+    {{- if hugo.IsProduction -}}
+      {{- $bookPaywall = $bookPaywall | minify | fingerprint -}}
+    {{- end -}}
+    <script src="{{ $bookPaywall.RelPermalink }}" integrity="{{ $bookPaywall.Data.Integrity }}" defer></script>
+  {{- else -}}
+    <script src="{{ "js/book-paywall.js" | relURL }}" defer></script>
+  {{- end -}}
+{{- end -}}

@@ -5,6 +5,8 @@ weight = 91
 title = 'کتابخانه جامع مدیریت محصول'
 description = 'معرفی، خلاصه تحلیلی و لینک دانلود مستقیم بیش از ۴۰۰ کتاب، هندبوک و گزارش تخصصی مدیریت محصول، نوپای ناب، طراحی UX و توسعه کسب‌وکار.'
 
+aliases = ['/downloads/', '/downloads/category/کتاب/', '/downloads/category/%da%a9%d8%aa%d8%a7%d8%a8/']
+
 [sidebar]
   open = false
 +++

@@ -1,8 +1,33 @@
 ---
-title: Storytelling with Data
-date: 2021-09-16
-coverImage: storytelling-with-data.jpg
+title: "Storytelling with Data"
+date: 2026-09-15
+description: "A comprehensive data visualization guide for business and product professionals to communicate impactful stories."
+tags: ["Library", "Analytics & Data", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Cole Nussbaumer Knaflic |
+| **Category** | Analytics & Data |
+| **Page Count** | 288 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 10.8 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Cole Nussbaumer Knaflic |
+| **Category** | Analytics & Data |
+| **Page Count** | 288 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 10.8 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 ![](images/storytelling-with-data.jpg)
 Presenting data, figures, and numbers, and putting together presentation files, has always been hard and time-consuming. We usually use a handful of charts at random, without being sure that the chart actually carries the meaning we want to the audience. *Storytelling with Data* helps you know your audience and, in line with that audience and your goal, prepare the best display and story for your data.
 
@@ -29,3 +54,9 @@ We also suggest you not miss the companion site for the book ([Storytellingwithd
 [Buy the print edition on Digikala](https://affstat.adro.co/click/0c16f374-504e-4077-8cc4-7c231e4870bc)
 
 You can also download *Storytelling with Data* (original edition) from the section below:
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/Storytelling_with_Data_A_Data_Visualization_Guide_for_Business_.pdf" title="Download Storytelling with Data (Full English Edition)" size="10.8 MB" format="PDF" lang="English" >}}

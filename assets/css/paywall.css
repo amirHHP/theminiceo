@@ -1,0 +1,472 @@
+/**
+ * Paywall Stylesheet - theminiceo Crypto Paywall
+ * Fully responsive, accessible, dark/light mode compatible with Hextra theme.
+ */
+
+.paywall-wrapper {
+  margin: 2rem 0;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.85) 0%, rgba(241, 245, 249, 0.6) 100%);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.dark .paywall-wrapper {
+  border-color: rgba(51, 65, 85, 0.7);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.5) 100%);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Paywall Header Banner */
+.paywall-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dark .paywall-header {
+  border-bottom-color: rgba(51, 65, 85, 0.6);
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.paywall-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.paywall-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.paywall-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.dark .paywall-title {
+  color: #f8fafc;
+}
+
+.paywall-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.dark .paywall-meta {
+  color: #94a3b8;
+}
+
+.paywall-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.paywall-badge-blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.dark .paywall-badge-blue {
+  background: rgba(30, 58, 138, 0.4);
+  color: #93c5fd;
+}
+
+.paywall-badge-green {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.dark .paywall-badge-green {
+  background: rgba(6, 78, 59, 0.4);
+  color: #6ee7b7;
+}
+
+.paywall-badge-amber {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.dark .paywall-badge-amber {
+  background: rgba(120, 53, 15, 0.4);
+  color: #fde68a;
+}
+
+/* Price Tag */
+.paywall-price-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);
+  letter-spacing: -0.01em;
+}
+
+/* Paywall Body Grid */
+.paywall-body {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .paywall-body {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+/* QR Code Section */
+.paywall-qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.dark .paywall-qr-container {
+  background: #ffffff; /* keep QR scan area high-contrast white */
+  border-color: rgba(71, 85, 105, 0.4);
+}
+
+.paywall-qr-box {
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paywall-qr-caption {
+  margin-top: 0.75rem;
+  font-size: 0.725rem;
+  color: #475569;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Details & Form Column */
+.paywall-form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Network Selector */
+.paywall-field-label {
+  display: block;
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.35rem;
+}
+
+.dark .paywall-field-label {
+  color: #cbd5e1;
+}
+
+.paywall-select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.dark .paywall-select {
+  border-color: #475569;
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.paywall-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Wallet Copy Box */
+.paywall-wallet-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0.85rem;
+  background: rgba(241, 245, 249, 0.7);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  border-radius: 0.75rem;
+}
+
+.dark .paywall-wallet-box {
+  background: rgba(15, 23, 42, 0.6);
+  border-color: rgba(51, 65, 85, 0.8);
+}
+
+.paywall-wallet-addr {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  color: #0f172a;
+  word-break: break-all;
+  direction: ltr;
+  text-align: left;
+}
+
+.dark .paywall-wallet-addr {
+  color: #e2e8f0;
+}
+
+.paywall-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.dark .paywall-copy-btn {
+  background: #1e293b;
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+.paywall-copy-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.dark .paywall-copy-btn:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+/* Inputs */
+.paywall-input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  outline: none;
+  direction: ltr;
+}
+
+.dark .paywall-input {
+  border-color: #475569;
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.paywall-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.paywall-input::placeholder {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+/* Action Buttons */
+.paywall-btn-primary {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  transition: all 0.2s ease;
+}
+
+.paywall-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.paywall-btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.paywall-btn-web3 {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.dark .paywall-btn-web3 {
+  background: #1e293b;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+.paywall-btn-web3:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.dark .paywall-btn-web3:hover {
+  background: #334155;
+}
+
+/* Feedback Notifications */
+.paywall-notice {
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.825rem;
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.paywall-notice-warning {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+}
+
+.dark .paywall-notice-warning {
+  background: rgba(120, 53, 15, 0.25);
+  border-color: rgba(217, 119, 6, 0.4);
+  color: #fde68a;
+}
+
+.paywall-notice-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+}
+
+.dark .paywall-notice-error {
+  background: rgba(127, 29, 29, 0.25);
+  border-color: rgba(220, 38, 38, 0.4);
+  color: #fca5a5;
+}
+
+.paywall-notice-success {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+
+.dark .paywall-notice-success {
+  background: rgba(6, 78, 59, 0.25);
+  border-color: rgba(5, 150, 105, 0.4);
+  color: #6ee7b7;
+}
+
+.paywall-download-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #10b981, #059669);
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.paywall-download-cta:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
+}
+
+/* Spinner */
+.paywall-spinner {
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: paywall-spin 0.75s linear infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes paywall-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

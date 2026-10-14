@@ -1,0 +1,28 @@
+{
+  "name": "theminiceo-paywall",
+  "version": "1.0.0",
+  "description": "Direct On-Chain Crypto Payment Verification Worker for theminiceo",
+  "main": "dist/src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/test/*.test.js",
+    "test:src": "node --test --loader ts-node/esm test/*.test.ts 2>/dev/null || node --test dist/test/*.test.js",
+    "test:runner": "node dist/test/runner.js"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "crypto-paywall",
+    "evm",
+    "usdt",
+    "web3"
+  ],
+  "author": "theminiceo",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241004.0",
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3"
+  }
+}

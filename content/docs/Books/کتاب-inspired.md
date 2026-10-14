@@ -4,6 +4,7 @@ date: 2024-09-12
 coverImage: inspired-book-cover.png
 aliases:
   - /docs/books/inspired-how-to-create-tech-products-customers-love-by-marty-cagan/
+  - /downloads/کتاب-inspired/
   - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-inspired/
 ---
 

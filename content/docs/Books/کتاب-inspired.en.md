@@ -1,8 +1,33 @@
 ---
-title: INSPIRED
-date: 2024-09-12
-coverImage: inspired-book-cover.png
+title: "INSPIRED: How to Create Tech Products Customers Love"
+date: 2026-09-15
+description: "The seminal masterwork by Marty Cagan on modern tech product discovery, team empowerment, and customer love."
+tags: ["Library", "Product Strategy", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Marty Cagan |
+| **Category** | Product Strategy |
+| **Page Count** | 368 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 1.9 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Marty Cagan |
+| **Category** | Product Strategy |
+| **Page Count** | 368 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 1.9 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 ![](./images/inspired-book-cover.png)
 **Title: How do you build technology products that customers love?**
 
@@ -57,3 +82,9 @@ Cagan is strongly against writing long documents (50-page PRDs). He argues that 
 If you want to work by the principles of this book, you have to go from being an **order-taker** (who only ticks off the CEO’s feature list) to a **problem-solver**. Your success is not in how many features you released, but in how much change you created in user behavior and in the company’s profitability.
 
 > **The book’s famous line:** “It doesn’t matter how good your engineering team is; if they work on the wrong product, talent is wasted.”
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/INSPIRED_How_to_Create_Tech_Products_Customers_Love_by_Marty_Cagan.pdf" title="Download INSPIRED: How to Create Tech Products Customers Love (Full English Edition)" size="1.9 MB" format="PDF" lang="English" >}}

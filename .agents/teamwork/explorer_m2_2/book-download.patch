@@ -1,0 +1,48 @@
+--- a/layouts/shortcodes/book-download.html
++++ b/layouts/shortcodes/book-download.html
+@@ -1,8 +1,15 @@
+-{{/* Book Download Shortcode for Hextra Theme */}}
++{{/* Book Download Shortcode for Hextra Theme (Multilingual Support) */}}
++{{ $isEn := eq .Page.Language.Lang "en" }}
++{{ $defaultTitle := cond $isEn "Direct Download Original Book Edition" "دانلود مستقیم نسخه اصلی کتاب" }}
++{{ $defaultLang := cond $isEn "English" "انگلیسی" }}
+ {{ $url := .Get "url" | default (.Get 0) }}
+-{{ $title := .Get "title" | default "دانلود مستقیم نسخه اصلی کتاب" }}
++{{ $title := .Get "title" | default $defaultTitle }}
+ {{ $size := .Get "size" | default "" }}
+ {{ $format := .Get "format" | default "PDF" }}
+-{{ $lang := .Get "lang" | default "انگلیسی" }}
++{{ $lang := .Get "lang" | default $defaultLang }}
++{{ $sizePrefix := cond $isEn "Size: " "حجم: " }}
++{{ $langPrefix := cond $isEn "Language: " "زبان: " }}
++{{ $serverBadge := cond $isEn "High-speed Direct CDN" "سرور پرسرعت داخلی" }}
++{{ $btnText := cond $isEn "Download Book File" "دریافت فایل کتاب" }}
+ 
+ <div class="book-download-box hx:my-8 hx:p-5 hx:rounded-2xl hx:bg-gradient-to-br hx:from-blue-50/70 hx:via-indigo-50/40 hx:to-slate-50/60 hx:dark:from-blue-950/20 hx:dark:via-indigo-950/15 hx:dark:to-slate-900/30 hx:border hx:border-blue-200/80 hx:dark:border-blue-800/40 hx:shadow-sm">
+@@ -23,14 +30,14 @@
+           </span>
+           {{ if $size }}
+             <span>•</span>
+-            <span>حجم: {{ $size }}</span>
++            <span>{{ $sizePrefix }}{{ $size }}</span>
+           {{ end }}
+           {{ if $lang }}
+             <span>•</span>
+-            <span>زبان: {{ $lang }}</span>
++            <span>{{ $langPrefix }}{{ $lang }}</span>
+           {{ end }}
+           <span>•</span>
+-          <span class="hx:text-emerald-600 hx:dark:text-emerald-400 hx:font-medium">سرور پرسرعت داخلی</span>
++          <span class="hx:text-emerald-600 hx:dark:text-emerald-400 hx:font-medium">{{ $serverBadge }}</span>
+         </div>
+       </div>
+     </div>
+@@ -40,7 +47,7 @@
+         <svg xmlns="http://www.w3.org/2000/svg" class="hx:w-4 hx:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+         </svg>
+-        <span>دریافت فایل کتاب</span>
++        <span>{{ $btnText }}</span>
+       </a>
+     </div>
+   </div>

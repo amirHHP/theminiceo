@@ -1,0 +1,27 @@
+name = "theminiceo-paywall"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+send_email = [
+  { name = "EMAIL" }
+]
+
+[vars]
+STORE_WALLET_ADDRESS = "0x4370D6c7A90A2f1d57C9788233792152A95204C7"
+USDT_PRICE = "5.00"
+BASE_URL = "https://theminiceo.ir"
+ALLOWED_ORIGIN = "*"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "theminiceo-paywall-db"
+database_id = "d99697b0-ab51-4750-ae4d-c5b5b3e12d17"
+
+[[kv_namespaces]]
+binding = "PAYMENT_KV"
+id = "fb45a27eac434c7bbe7fed600afb219f"
+
+[[r2_buckets]]
+binding = "BOOKS_BUCKET"
+bucket_name = "theminiceo-books"

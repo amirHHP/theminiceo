@@ -1,8 +1,33 @@
 ---
-title: The Product Manager’s Survival Guide
-date: 2020-09-16
-coverImage: 1599932837.png
+title: "Survival Guide for Product Managers"
+date: 2026-09-15
+description: "Essential survival tactics, organizational navigation, and leadership frameworks for modern product managers."
+tags: ["Library", "Leadership", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Steven Haines |
+| **Category** | Leadership |
+| **Page Count** | 128 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 4.5 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Steven Haines |
+| **Category** | Leadership |
+| **Page Count** | 128 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 4.5 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 ![](images/1599932837.png)
 In *The Product Manager’s Survival Guide* you learn how to manage products in ambiguous organizations.
 
@@ -37,3 +62,9 @@ He became familiar with product management after launching the Mibarim startup i
 * * *
 
 If you have trouble paying, please transfer the purchase amount to card number 6219861044637659 and send the receipt to the Telegram account amirhp.
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/survival-guide-for-product-managers.pdf" title="Download Survival Guide for Product Managers (Full English Edition)" size="4.5 MB" format="PDF" lang="English" >}}

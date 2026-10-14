@@ -3,6 +3,7 @@ title: کتاب Roadmap
 date: 2024-09-12
 coverImage: s-l1200.jpg
 aliases:
+  - /downloads/کتاب-roadmap/
   - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-roadmap/
 ---
 

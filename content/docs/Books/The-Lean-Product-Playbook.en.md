@@ -1,7 +1,33 @@
 ---
-title: The Lean Product Playbook
-date: 2026-08-29
+title: "The Lean Product Playbook"
+date: 2026-09-15
+description: "A practical guide to innovating with minimum viable products and achieving repeatable Product-Market Fit."
+tags: ["Library", "Product Strategy", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Dan Olsen |
+| **Category** | Product Strategy |
+| **Page Count** | 336 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 5.5 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Dan Olsen |
+| **Category** | Product Strategy |
+| **Page Count** | 336 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 5.5 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 <style>
 .mermaid { direction: ltr; }
 </style>
@@ -99,3 +125,9 @@ If *Inspired* tells you “how to staff your team,” and *The Lean Startup* tel
 To start, use the **PMF pyramid**. Always ask yourself: “Am I talking about the problem (the user’s pain) or the solution (buttons and code)?” If it is the latter, take a step back.
 
 ![lean-product-playbook-info](./images/lean-product-playbook.jpeg)
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/The_lean_product_playbook_How_to_innovate_with_minimum_viable_products.pdf" title="Download The Lean Product Playbook (Full English Edition)" size="5.5 MB" format="PDF" lang="English" >}}

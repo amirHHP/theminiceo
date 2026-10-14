@@ -5,6 +5,7 @@ coverImage: 71qklvirzml.webp
 aliases:
   - /docs/books/lean-analytics-harkat-aval/
   - /docs/books/lean-analytics-use-data-to-build-a-better-startup-faster-by-alistair/
+  - /downloads/کتاب-lean-analytics/
   - /downloads/%da%a9%d8%aa%d8%a7%d8%a8-lean-analytics/
 ---
 

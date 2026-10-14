@@ -1,7 +1,33 @@
 ---
-title: The Lean Startup by Eric Ries
-date: 2026-08-29
+title: "The Lean Startup"
+date: 2026-09-15
+description: "How today's entrepreneurs use continuous innovation, validated learning, and rapid experimentation to build successful businesses."
+tags: ["Library", "Agile & Delivery", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Eric Ries |
+| **Category** | Agile & Delivery |
+| **Page Count** | 288 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 2.0 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Eric Ries |
+| **Category** | Agile & Delivery |
+| **Page Count** | 288 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 2.0 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 **The Lean Startup** by Eric Ries shifted product-management philosophy from “rigid planning” to “agile learning.” Ries’s core claim is: **“The biggest waste of human time is building, with high efficiency, something that should never have been built at all!”**
 
 If you want the essence of this book so you never have to pick it up again, remember these six key ideas:
@@ -59,3 +85,9 @@ Eric Ries says you should not get excited about **vanity metrics** such as total
 * **The Lean Startup (Ries):** Focuses more on a **scientific methodology** for testing a business model under uncertainty.
 
 **Final takeaway:** In 2026, with AI, the speed of the Build-Measure-Learn loop has gone from “a few weeks” to “a few hours.” Eric Ries’s logic is still the same: **before you waste money and time, prove with a small experiment that someone wants your product.**
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/The_Lean_Startup_How_Todays_Entrepreneurs_Use_Continuous_Innovation.pdf" title="Download The Lean Startup (Full English Edition)" size="2.0 MB" format="PDF" lang="English" >}}

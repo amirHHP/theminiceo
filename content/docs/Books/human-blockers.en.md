@@ -1,8 +1,33 @@
 ---
-title: "Human Blockers: Hiring & Culture Guide for Startups"
-date: 2020-09-19
-coverImage: 1599932768.png
+title: "Human Blockers"
+date: 2026-09-15
+description: "Exploring interpersonal conflicts, team dynamics, and human blockers that impede high-velocity product execution."
+tags: ["Library", "Leadership", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Amin Sajedi & Amirhossein Hosseinipazhouh |
+| **Category** | Leadership |
+| **Page Count** | 164 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 5.2 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | Amin Sajedi & Amirhossein Hosseinipazhouh |
+| **Category** | Leadership |
+| **Page Count** | 164 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 5.2 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 ![](images/1599932768.png)
 If you have never worked in human resources and have just launched your startup, *Human Blockers* helps you solve the problem like a set of instructions.
 
@@ -27,3 +52,9 @@ In his first job he entered the startup world with Packfood, and they took the A
 After three years of teamwork and one year managing a four-person team at a news-and-analysis site, he launched the Mibarim startup. A hundred interviews in one year, and experimenting with different hiring strategies at the lowest possible salaries, created challenges that produced a range of experience in hiring and retaining low-cost talent for startups. After that he gained further experience in team-building and launching startups, which helped him finish this book.
 
 * * *
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/human-blockers.pdf" title="Download Human Blockers (Full English Edition)" size="5.2 MB" format="PDF" lang="English" >}}

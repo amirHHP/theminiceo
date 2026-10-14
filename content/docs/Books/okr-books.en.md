@@ -1,8 +1,33 @@
 ---
-title: OKR books
-date: 2021-09-28
-coverImage: 5cc6f8fbad143af6c903ab12_Measure-what-matters.png
+title: "OKR Books Collection"
+date: 2026-09-15
+description: "A curated collection and guide to leading literature on Objectives and Key Results (OKRs) for goal alignment."
+tags: ["Library", "Analytics & Data", "Product Management"]
+categories: ["Books"]
 ---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | TheMiniCEO Editorial Team |
+| **Category** | Analytics & Data |
+| **Page Count** | 135 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 8.0 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
+| Book Specification | Details |
+| :--- | :--- |
+| **Author** | TheMiniCEO Editorial Team |
+| **Category** | Analytics & Data |
+| **Page Count** | 135 pages |
+| **Format & Quality** | PDF • Standard Digital Edition |
+| **File Size** | 8.0 MB |
+| **Target Audience** | Specialized • Product Managers & Innovators |
+
+---
+
 ![okr](images/5cc6f8fbad143af6c903ab12_Measure-what-matters.png)
 OKR stands for Objective & Key Results, meaning “objectives and key results.” In the OKR model, there are approaches for defining and tracking goals and evaluating their results, usually on a quarterly (three-month) and annual basis.
 
@@ -24,3 +49,9 @@ In this method there is a leader or manager who guides and leads the team. An ac
 - Everyone in the organization is told what matters. As a result, communication becomes correct and clear.
 - Metrics are created for measuring the organization’s progress, and on that basis it becomes clear how far you are from the organization’s main goals.
 - With the OKR model, the effort that happens in the organization is focused. In practice, it keeps everyone in the organization together.
+
+---
+
+### 📥 Download Book File
+
+{{< book-download url="https://dl.theminiceo.ir/2021-Step-by-Step-Guide-to-OKRs-1.pdf" title="Download OKR Books Collection (Full English Edition)" size="8.0 MB" format="PDF" lang="English" >}}

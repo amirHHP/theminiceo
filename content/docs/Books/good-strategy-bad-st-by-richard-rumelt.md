@@ -47,4 +47,4 @@ categories: ["کتاب‌ها"]
 
 ### 📥 دریافت فایل کتاب
 
-{{< book-download url="https://dl.theminiceo.ir/Good%20Strategy%20Bad%20St...%20by%20Richard%20Rumelt.pdf" title="دانلود کتاب استراتژی خوب، استراتژی بد (Good Strategy Bad Strategy) (نسخه کامل)" size="1.8 مگابایت" format="PDF" >}}
+{{< book-download url="https://dl.theminiceo.ir/Good-Strategy-Bad-Strategy-Richard-Rumelt.pdf" title="دانلود کتاب استراتژی خوب، استراتژی بد (Good Strategy Bad Strategy) (نسخه کامل)" size="1.8 مگابایت" format="PDF" >}}
